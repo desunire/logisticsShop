@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor =[UIColor cz_randomColor];// cz_randomColor();
+    self.view.backgroundColor =[UIColor cz_randomColor];// cz_randomColor();
 }
 
 - (void)didReceiveMemoryWarning {
