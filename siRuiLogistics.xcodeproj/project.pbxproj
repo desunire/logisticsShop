@@ -35,6 +35,19 @@
 		653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653989001F692E4B007BD83B /* KLIndexViewController.m */; };
 		653989041F692E56007BD83B /* KLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653989031F692E56007BD83B /* KLProfileViewController.m */; };
 		653989061F693414007BD83B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 653989051F693414007BD83B /* main.json */; };
+		6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580812E1F6F8FB20061367E /* KLCategoryObject.m */; };
+		658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081351F6F9D450061367E /* KLCategoryItemButton.m */; };
+		658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081371F6F9D450061367E /* KLScrollTableViewCell.m */; };
+		6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580813B1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m */; };
+		658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580813E1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m */; };
+		658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6580813F1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib */; };
+		658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081431F6FB09E0061367E /* KLGoodListTableViewCell.m */; };
+		658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658081441F6FB09E0061367E /* KLGoodListTableViewCell.xib */; };
+		658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081481F6FB69F0061367E /* KLGoodCollectView.m */; };
+		6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6580814A1F6FB6B80061367E /* KLGoodCollectView.xib */; };
+		6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580814D1F6FC20D0061367E /* KLSalePromotionTableViewCell.m */; };
+		658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081511F6FCD320061367E /* UIImage+KLExtentsion.m */; };
+		788A6A3842A63D7C51B937E9 /* Pods_siRuiLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BEDD0645C8D3C9CC0C35F58 /* Pods-siRuiLogistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.release.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.release.xcconfig"; sourceTree = "<group>"; };
 		653988871F692028007BD83B /* siRuiLogistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siRuiLogistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6539888B1F692028007BD83B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6539888D1F692028007BD83B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +126,29 @@
 		653989021F692E56007BD83B /* KLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileViewController.h; sourceTree = "<group>"; };
 		653989031F692E56007BD83B /* KLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileViewController.m; sourceTree = "<group>"; };
 		653989051F693414007BD83B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		6580812D1F6F8FB20061367E /* KLCategoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryObject.h; sourceTree = "<group>"; };
+		6580812E1F6F8FB20061367E /* KLCategoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryObject.m; sourceTree = "<group>"; };
+		658081341F6F9D450061367E /* KLCategoryItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryItemButton.h; sourceTree = "<group>"; };
+		658081351F6F9D450061367E /* KLCategoryItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryItemButton.m; sourceTree = "<group>"; };
+		658081361F6F9D450061367E /* KLScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLScrollTableViewCell.h; sourceTree = "<group>"; };
+		658081371F6F9D450061367E /* KLScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLScrollTableViewCell.m; sourceTree = "<group>"; };
+		6580813A1F6F9D6A0061367E /* KLCategoryItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryItemTableViewCell.h; sourceTree = "<group>"; };
+		6580813B1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryItemTableViewCell.m; sourceTree = "<group>"; };
+		6580813D1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubtitleAndMoreTableViewCell.h; sourceTree = "<group>"; };
+		6580813E1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubtitleAndMoreTableViewCell.m; sourceTree = "<group>"; };
+		6580813F1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSubtitleAndMoreTableViewCell.xib; sourceTree = "<group>"; };
+		658081421F6FB09D0061367E /* KLGoodListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodListTableViewCell.h; sourceTree = "<group>"; };
+		658081431F6FB09E0061367E /* KLGoodListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodListTableViewCell.m; sourceTree = "<group>"; };
+		658081441F6FB09E0061367E /* KLGoodListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLGoodListTableViewCell.xib; sourceTree = "<group>"; };
+		658081471F6FB69F0061367E /* KLGoodCollectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodCollectView.h; sourceTree = "<group>"; };
+		658081481F6FB69F0061367E /* KLGoodCollectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodCollectView.m; sourceTree = "<group>"; };
+		6580814A1F6FB6B80061367E /* KLGoodCollectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLGoodCollectView.xib; sourceTree = "<group>"; };
+		6580814C1F6FC20D0061367E /* KLSalePromotionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSalePromotionTableViewCell.h; sourceTree = "<group>"; };
+		6580814D1F6FC20D0061367E /* KLSalePromotionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSalePromotionTableViewCell.m; sourceTree = "<group>"; };
+		658081501F6FCD320061367E /* UIImage+KLExtentsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KLExtentsion.h"; sourceTree = "<group>"; };
+		658081511F6FCD320061367E /* UIImage+KLExtentsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KLExtentsion.m"; sourceTree = "<group>"; };
+		99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.debug.xcconfig"; sourceTree = "<group>"; };
+		A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siRuiLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788A6A3842A63D7C51B937E9 /* Pods_siRuiLogistics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CD4DC8472ACDDDF2ED1D97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6539887E1F692028007BD83B = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +192,8 @@
 				653988A31F692029007BD83B /* siRuiLogisticsTests */,
 				653988AE1F692029007BD83B /* siRuiLogisticsUITests */,
 				653988881F692028007BD83B /* Products */,
+				7D1436729A56F891BBFDAA30 /* Pods */,
+				11CD4DC8472ACDDDF2ED1D97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,6 +264,7 @@
 		653988BE1F6920F1007BD83B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6580814F1F6FCD0D0061367E /* Extensions */,
 				653988C51F6921D7007BD83B /* Additions */,
 			);
 			path = Tools;
@@ -225,9 +274,9 @@
 			isa = PBXGroup;
 			children = (
 				653988C01F6920F1007BD83B /* Main */,
+				653988F71F692DF9007BD83B /* Index */,
 				653988F81F692DFE007BD83B /* ShopCar */,
 				653988F61F692DF9007BD83B /* Category */,
-				653988F71F692DF9007BD83B /* Index */,
 				653988F51F692DF3007BD83B /* Profile */,
 			);
 			path = View;
@@ -307,6 +356,8 @@
 		653988F71F692DF9007BD83B /* Index */ = {
 			isa = PBXGroup;
 			children = (
+				658081331F6F9D450061367E /* ViewModel */,
+				6580812C1F6F8F860061367E /* Model */,
 				653988FF1F692E4B007BD83B /* KLIndexViewController.h */,
 				653989001F692E4B007BD83B /* KLIndexViewController.m */,
 			);
@@ -322,6 +373,57 @@
 			path = ShopCar;
 			sourceTree = "<group>";
 		};
+		6580812C1F6F8F860061367E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6580812D1F6F8FB20061367E /* KLCategoryObject.h */,
+				6580812E1F6F8FB20061367E /* KLCategoryObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		658081331F6F9D450061367E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				658081341F6F9D450061367E /* KLCategoryItemButton.h */,
+				658081351F6F9D450061367E /* KLCategoryItemButton.m */,
+				658081361F6F9D450061367E /* KLScrollTableViewCell.h */,
+				658081371F6F9D450061367E /* KLScrollTableViewCell.m */,
+				6580813A1F6F9D6A0061367E /* KLCategoryItemTableViewCell.h */,
+				6580813B1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m */,
+				6580813D1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.h */,
+				6580813E1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m */,
+				6580813F1F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib */,
+				658081421F6FB09D0061367E /* KLGoodListTableViewCell.h */,
+				658081431F6FB09E0061367E /* KLGoodListTableViewCell.m */,
+				658081441F6FB09E0061367E /* KLGoodListTableViewCell.xib */,
+				658081471F6FB69F0061367E /* KLGoodCollectView.h */,
+				658081481F6FB69F0061367E /* KLGoodCollectView.m */,
+				6580814A1F6FB6B80061367E /* KLGoodCollectView.xib */,
+				6580814C1F6FC20D0061367E /* KLSalePromotionTableViewCell.h */,
+				6580814D1F6FC20D0061367E /* KLSalePromotionTableViewCell.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6580814F1F6FCD0D0061367E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				658081501F6FCD320061367E /* UIImage+KLExtentsion.h */,
+				658081511F6FCD320061367E /* UIImage+KLExtentsion.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7D1436729A56F891BBFDAA30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */,
+				1BEDD0645C8D3C9CC0C35F58 /* Pods-siRuiLogistics.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,9 +431,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 653988B41F692029007BD83B /* Build configuration list for PBXNativeTarget "siRuiLogistics" */;
 			buildPhases = (
+				00DD0EABE607D5327B676731 /* [CP] Check Pods Manifest.lock */,
 				653988831F692028007BD83B /* Sources */,
 				653988841F692028007BD83B /* Frameworks */,
 				653988851F692028007BD83B /* Resources */,
+				1F7E24E4C75FC22B15605159 /* [CP] Embed Pods Frameworks */,
+				E657A5D011CB5F997D70094D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -433,6 +538,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6539889A1F692028007BD83B /* LaunchScreen.storyboard in Resources */,
+				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
+				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
+				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
 				653988971F692028007BD83B /* Assets.xcassets in Resources */,
 				653989061F693414007BD83B /* main.json in Resources */,
 				653988951F692028007BD83B /* Main.storyboard in Resources */,
@@ -455,6 +563,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00DD0EABE607D5327B676731 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1F7E24E4C75FC22B15605159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E657A5D011CB5F997D70094D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		653988831F692028007BD83B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -462,14 +618,23 @@
 			files = (
 				653988DF1F6921D7007BD83B /* NSArray+Log.m in Sources */,
 				653988E41F6921D7007BD83B /* NSString+CZPath.m in Sources */,
+				658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */,
 				653988EE1F692A38007BD83B /* KLBaseViewController.m in Sources */,
+				658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */,
+				658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */,
+				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
+				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
+				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
 				653988FE1F692E41007BD83B /* KLCategoryViewController.m in Sources */,
 				653988E81F6921D7007BD83B /* UIScreen+CZAddition.m in Sources */,
 				653988E71F6921D7007BD83B /* UILabel+CZAddition.m in Sources */,
+				658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */,
 				653988E51F6921D7007BD83B /* UIButton+CZAddition.m in Sources */,
+				6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */,
 				653988E11F6921D7007BD83B /* NSObject+CZRuntime.m in Sources */,
+				6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */,
 				653988F41F692ABB007BD83B /* KLNavgationViewController.m in Sources */,
 				653989041F692E56007BD83B /* KLProfileViewController.m in Sources */,
 				653988E21F6921D7007BD83B /* NSString+CZBase64.m in Sources */,
@@ -630,6 +795,7 @@
 		};
 		653988B51F692029007BD83B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -648,6 +814,7 @@
 		};
 		653988B61F692029007BD83B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BEDD0645C8D3C9CC0C35F58 /* Pods-siRuiLogistics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

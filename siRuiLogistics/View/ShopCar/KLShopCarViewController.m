@@ -19,6 +19,14 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor =[UIColor cz_randomColor];// cz_randomColor();
     self.view.backgroundColor =[UIColor cz_randomColor];// cz_randomColor();
+    
+  //  UINib *nib = [UINib nibWithNibName:@"" bundle:nil];
+    
+   // UIButton *btn = [[nib instantiateWithOwner:nil options:nil] firstObject];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

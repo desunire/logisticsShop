@@ -8,7 +8,9 @@
 
 #import "KLBaseViewController.h"
 
-@interface KLBaseViewController ()
+@interface KLBaseViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+
 
 @end
 
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self initTableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +26,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark 初始化tableView
+-(void)initTableView{
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+   // self.tableView.style =  UITableViewStylePlain;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20)];
+    backView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:backView];
+    [self.view insertSubview:self.tableView belowSubview:backView];
 }
-*/
+
+#pragma mark tableView代理和数据源方法实现
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    
+    return  0;
+}
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 0;
+}
+
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [UITableViewCell new];
+    return cell;
+}
+
 
 @end

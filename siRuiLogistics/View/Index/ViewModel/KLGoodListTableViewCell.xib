@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KLGoodListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="Xou-hH-kgN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="rr1-AU-Hqn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宾利真的很棒很棒的车车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdY-zi-Nhl">
+                        <rect key="frame" x="10" y="155" width="365" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5pq-zi-phE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥125800.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJq-iE-b4o">
+                        <rect key="frame" x="10" y="175" width="365" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.67410701510000004" green="0.1856709272" blue="0.1255377084" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xou-hH-kgN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Mh-Dy-xH2"/>
+                    <constraint firstItem="hJq-iE-b4o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DCw-7M-muu"/>
+                    <constraint firstItem="Xou-hH-kgN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DZj-GR-0XL"/>
+                    <constraint firstAttribute="trailing" secondItem="Xou-hH-kgN" secondAttribute="trailing" id="FGF-de-tQF"/>
+                    <constraint firstItem="KdY-zi-Nhl" firstAttribute="top" secondItem="Xou-hH-kgN" secondAttribute="bottom" constant="5" id="b3f-FI-fbE"/>
+                    <constraint firstAttribute="trailing" secondItem="hJq-iE-b4o" secondAttribute="trailing" id="f1p-Ed-hm0"/>
+                    <constraint firstAttribute="trailing" secondItem="KdY-zi-Nhl" secondAttribute="trailing" id="gm3-l5-fNe"/>
+                    <constraint firstAttribute="bottom" secondItem="hJq-iE-b4o" secondAttribute="bottom" constant="5" id="hKj-1E-NLG"/>
+                    <constraint firstItem="hJq-iE-b4o" firstAttribute="top" secondItem="KdY-zi-Nhl" secondAttribute="bottom" id="mm7-60-0zp"/>
+                    <constraint firstItem="KdY-zi-Nhl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zg6-Lg-cYy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="39.5" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car" width="512" height="337"/>
+    </resources>
+</document>

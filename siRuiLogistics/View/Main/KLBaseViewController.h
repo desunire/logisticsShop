@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface KLBaseViewController : UIViewController
-
+/**
+ 展现内容的tableView视图
+ */
+@property(strong,nonatomic)UITableView *tableView;
 @end
