@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.29999999999999999" contentMode="scaleToFill" id="TJO-x5-DvI" customClass="KLChooseLanguageView">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxT-gq-44j">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="EN  English">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chooseEnglish:" destination="TJO-x5-DvI" eventType="touchUpInside" id="0X0-Rr-r9a"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-m6-nAt">
+                    <rect key="frame" x="0.0" y="63" width="80" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="ES  ESpan">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chooseEspan:" destination="TJO-x5-DvI" eventType="touchUpInside" id="Rs0-je-jXb"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjE-YB-O63">
+                    <rect key="frame" x="0.0" y="27" width="80" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NCl-BT-Qwx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqq-mk-2M3">
+                    <rect key="frame" x="0.0" y="63" width="80" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xjm-3X-HVY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-Ky-pdp">
+                    <rect key="frame" x="0.0" y="27" width="80" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="CN    中文">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="chooseChiness:" destination="TJO-x5-DvI" eventType="touchUpInside" id="5HE-tL-ITr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AXy-Ky-pdp" firstAttribute="top" secondItem="vxT-gq-44j" secondAttribute="bottom" id="7xT-59-I7W"/>
+                <constraint firstAttribute="trailing" secondItem="kJ8-m6-nAt" secondAttribute="trailing" id="Bty-50-Bh8"/>
+                <constraint firstItem="GjE-YB-O63" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="DCk-a0-aDK"/>
+                <constraint firstAttribute="bottom" secondItem="kJ8-m6-nAt" secondAttribute="bottom" id="JFB-oP-WxY"/>
+                <constraint firstAttribute="trailing" secondItem="GjE-YB-O63" secondAttribute="trailing" id="MvW-Ya-nXc"/>
+                <constraint firstItem="AXy-Ky-pdp" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="PS0-GO-TqX"/>
+                <constraint firstItem="wqq-mk-2M3" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="VRB-6A-R8C"/>
+                <constraint firstItem="wqq-mk-2M3" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="WBs-m2-J84"/>
+                <constraint firstItem="kJ8-m6-nAt" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="aX1-gP-o8n"/>
+                <constraint firstAttribute="trailing" secondItem="wqq-mk-2M3" secondAttribute="trailing" id="cEh-yr-NMs"/>
+                <constraint firstItem="kJ8-m6-nAt" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="gU5-nG-qeU"/>
+                <constraint firstItem="vxT-gq-44j" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="kKd-y0-PRm"/>
+                <constraint firstAttribute="trailing" secondItem="AXy-Ky-pdp" secondAttribute="trailing" id="ktg-uv-1np"/>
+                <constraint firstItem="GjE-YB-O63" firstAttribute="top" secondItem="vxT-gq-44j" secondAttribute="bottom" id="kzg-7D-1s5"/>
+                <constraint firstAttribute="trailing" secondItem="vxT-gq-44j" secondAttribute="trailing" id="r4L-hT-Dbb"/>
+                <constraint firstItem="vxT-gq-44j" firstAttribute="top" secondItem="TJO-x5-DvI" secondAttribute="top" id="vNB-gq-vlB"/>
+                <constraint firstItem="kJ8-m6-nAt" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="zC4-F7-aXa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chineseBtn" destination="AXy-Ky-pdp" id="Pkt-fO-naH"/>
+                <outlet property="englishBtn" destination="vxT-gq-44j" id="HvY-cw-npf"/>
+                <outlet property="espanBtn" destination="kJ8-m6-nAt" id="71z-ZZ-Ffu"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="-7"/>
+        </view>
+    </objects>
+</document>

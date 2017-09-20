@@ -47,6 +47,7 @@ static NSString *customManagerCell  = @"customManagerCell";
     [super viewDidLoad];
     //self.view.backgroundColor =[UIColor cz_randomColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.indexSearchTopView.hidden = YES;
      [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionInitial context:nil];
     self.offY = 0.0;
     NSString *path  = [[NSBundle mainBundle] pathForResource:@"ProfileItem.plist" ofType:nil];
@@ -186,6 +187,9 @@ static NSString *customManagerCell  = @"customManagerCell";
     
     
 }
-
+#pragma mark  内存管理
+-(void)dealloc{
+     [self.tableView removeObserver:self forKeyPath:@"contentOffset"];
+}
 
 @end

@@ -67,6 +67,26 @@
 		658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6584191F1F70FF8600A51A34 /* KLSuggestViewController.m */; };
 		658419231F70FF9600A51A34 /* KLChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419221F70FF9600A51A34 /* KLChangePwdViewController.m */; };
 		658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */; };
+		659E76371F71F916002DFA42 /* ShopCarSettlementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76361F71F916002DFA42 /* ShopCarSettlementView.m */; };
+		659E763B1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76391F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m */; };
+		659E763C1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659E763A1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib */; };
+		659E76401F71FB56002DFA42 /* KLShopCarItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E763E1F71FB56002DFA42 /* KLShopCarItemTableViewCell.m */; };
+		659E76411F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659E763F1F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib */; };
+		659E76471F720208002DFA42 /* ic_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 659E76431F720208002DFA42 /* ic_add.png */; };
+		659E76481F720208002DFA42 /* ic_reduce.png in Resources */ = {isa = PBXBuildFile; fileRef = 659E76441F720208002DFA42 /* ic_reduce.png */; };
+		659E76491F720208002DFA42 /* icon10.png in Resources */ = {isa = PBXBuildFile; fileRef = 659E76451F720208002DFA42 /* icon10.png */; };
+		659E764A1F720208002DFA42 /* icon9.png in Resources */ = {isa = PBXBuildFile; fileRef = 659E76461F720208002DFA42 /* icon9.png */; };
+		659E764D1F723D93002DFA42 /* SCJPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E764C1F723D93002DFA42 /* SCJPromptView.m */; };
+		659E76521F72451A002DFA42 /* KLCategoryTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76501F72451A002DFA42 /* KLCategoryTitleTableViewCell.m */; };
+		659E76531F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659E76511F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib */; };
+		659E76571F724889002DFA42 /* KLScratchableLatexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76561F724889002DFA42 /* KLScratchableLatexView.m */; };
+		659E765A1F724E7A002DFA42 /* KLCategoryContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76591F724E7A002DFA42 /* KLCategoryContentTableViewCell.m */; };
+		659E765D1F7254CF002DFA42 /* KLChooseLanguageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E765C1F7254CF002DFA42 /* KLChooseLanguageView.m */; };
+		659E765F1F7254F6002DFA42 /* KLChooseLanguageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659E765E1F7254F6002DFA42 /* KLChooseLanguageView.xib */; };
+		659E76621F7265A4002DFA42 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76611F7265A4002DFA42 /* NSBundle+Language.m */; };
+		659E76651F72665D002DFA42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659E76671F72665D002DFA42 /* Localizable.strings */; };
+		659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E766C1F727186002DFA42 /* KLSearchViewController.m */; };
+		659E76701F727623002DFA42 /* UIBarButtonItem+KLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E766F1F727623002DFA42 /* UIBarButtonItem+KLExtension.m */; };
 		788A6A3842A63D7C51B937E9 /* Pods_siRuiLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */; };
 /* End PBXBuildFile section */
 
@@ -200,6 +220,39 @@
 		658419221F70FF9600A51A34 /* KLChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLChangePwdViewController.m; sourceTree = "<group>"; };
 		658419241F7102E900A51A34 /* NSDictionary+NTESJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NTESJson.h"; sourceTree = "<group>"; };
 		658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NTESJson.m"; sourceTree = "<group>"; };
+		659E76351F71F916002DFA42 /* ShopCarSettlementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarSettlementView.h; sourceTree = "<group>"; };
+		659E76361F71F916002DFA42 /* ShopCarSettlementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarSettlementView.m; sourceTree = "<group>"; };
+		659E76381F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLShopCarTitleTableViewCell.h; sourceTree = "<group>"; };
+		659E76391F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLShopCarTitleTableViewCell.m; sourceTree = "<group>"; };
+		659E763A1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLShopCarTitleTableViewCell.xib; sourceTree = "<group>"; };
+		659E763D1F71FB56002DFA42 /* KLShopCarItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLShopCarItemTableViewCell.h; sourceTree = "<group>"; };
+		659E763E1F71FB56002DFA42 /* KLShopCarItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLShopCarItemTableViewCell.m; sourceTree = "<group>"; };
+		659E763F1F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLShopCarItemTableViewCell.xib; sourceTree = "<group>"; };
+		659E76431F720208002DFA42 /* ic_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_add.png; sourceTree = "<group>"; };
+		659E76441F720208002DFA42 /* ic_reduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_reduce.png; sourceTree = "<group>"; };
+		659E76451F720208002DFA42 /* icon10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon10.png; sourceTree = "<group>"; };
+		659E76461F720208002DFA42 /* icon9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon9.png; sourceTree = "<group>"; };
+		659E764B1F723D93002DFA42 /* SCJPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCJPromptView.h; sourceTree = "<group>"; };
+		659E764C1F723D93002DFA42 /* SCJPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCJPromptView.m; sourceTree = "<group>"; };
+		659E764F1F72451A002DFA42 /* KLCategoryTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryTitleTableViewCell.h; sourceTree = "<group>"; };
+		659E76501F72451A002DFA42 /* KLCategoryTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryTitleTableViewCell.m; sourceTree = "<group>"; };
+		659E76511F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCategoryTitleTableViewCell.xib; sourceTree = "<group>"; };
+		659E76551F724889002DFA42 /* KLScratchableLatexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLScratchableLatexView.h; sourceTree = "<group>"; };
+		659E76561F724889002DFA42 /* KLScratchableLatexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLScratchableLatexView.m; sourceTree = "<group>"; };
+		659E76581F724E7A002DFA42 /* KLCategoryContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryContentTableViewCell.h; sourceTree = "<group>"; };
+		659E76591F724E7A002DFA42 /* KLCategoryContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryContentTableViewCell.m; sourceTree = "<group>"; };
+		659E765B1F7254CF002DFA42 /* KLChooseLanguageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLChooseLanguageView.h; sourceTree = "<group>"; };
+		659E765C1F7254CF002DFA42 /* KLChooseLanguageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLChooseLanguageView.m; sourceTree = "<group>"; };
+		659E765E1F7254F6002DFA42 /* KLChooseLanguageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLChooseLanguageView.xib; sourceTree = "<group>"; };
+		659E76601F7265A4002DFA42 /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		659E76611F7265A4002DFA42 /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		659E76661F72665D002DFA42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659E76681F726678002DFA42 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		659E76691F726681002DFA42 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659E766B1F727186002DFA42 /* KLSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSearchViewController.h; sourceTree = "<group>"; };
+		659E766C1F727186002DFA42 /* KLSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSearchViewController.m; sourceTree = "<group>"; };
+		659E766E1F727623002DFA42 /* UIBarButtonItem+KLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KLExtension.h"; sourceTree = "<group>"; };
+		659E766F1F727623002DFA42 /* UIBarButtonItem+KLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KLExtension.m"; sourceTree = "<group>"; };
 		99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siRuiLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -284,6 +337,7 @@
 		6539888A1F692028007BD83B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				659E76671F72665D002DFA42 /* Localizable.strings */,
 				6539888B1F692028007BD83B /* main.m */,
 			);
 			name = "Supporting Files";
@@ -339,6 +393,7 @@
 		653988C01F6920F1007BD83B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				659E766A1F727160002DFA42 /* searchView */,
 				653989051F693414007BD83B /* main.json */,
 				653988EC1F692A38007BD83B /* KLBaseViewController.h */,
 				653988ED1F692A38007BD83B /* KLBaseViewController.m */,
@@ -346,6 +401,9 @@
 				653988F01F692A65007BD83B /* KLMainViewController.m */,
 				653988F21F692ABB007BD83B /* KLNavgationViewController.h */,
 				653988F31F692ABB007BD83B /* KLNavgationViewController.m */,
+				659E765B1F7254CF002DFA42 /* KLChooseLanguageView.h */,
+				659E765C1F7254CF002DFA42 /* KLChooseLanguageView.m */,
+				659E765E1F7254F6002DFA42 /* KLChooseLanguageView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -361,6 +419,8 @@
 			isa = PBXGroup;
 			children = (
 				653988C61F6921D7007BD83B /* CZAdditions.h */,
+				659E76601F7265A4002DFA42 /* NSBundle+Language.h */,
+				659E76611F7265A4002DFA42 /* NSBundle+Language.m */,
 				658419241F7102E900A51A34 /* NSDictionary+NTESJson.h */,
 				658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */,
 				653988C71F6921D7007BD83B /* NSArray+Log.h */,
@@ -409,6 +469,8 @@
 		653988F61F692DF9007BD83B /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				659E76541F72484E002DFA42 /* ViewModel */,
+				659E764E1F724495002DFA42 /* ViewCell */,
 				653988FC1F692E41007BD83B /* KLCategoryViewController.h */,
 				653988FD1F692E41007BD83B /* KLCategoryViewController.m */,
 			);
@@ -429,6 +491,7 @@
 		653988F81F692DFE007BD83B /* ShopCar */ = {
 			isa = PBXGroup;
 			children = (
+				659E76341F71F8FB002DFA42 /* ViewCell */,
 				653988F91F692E32007BD83B /* KLShopCarViewController.h */,
 				653988FA1F692E32007BD83B /* KLShopCarViewController.m */,
 			);
@@ -476,6 +539,8 @@
 			children = (
 				658081501F6FCD320061367E /* UIImage+KLExtentsion.h */,
 				658081511F6FCD320061367E /* UIImage+KLExtentsion.m */,
+				659E766E1F727623002DFA42 /* UIBarButtonItem+KLExtension.h */,
+				659E766F1F727623002DFA42 /* UIBarButtonItem+KLExtension.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -520,6 +585,8 @@
 		658419021F70E75C00A51A34 /* NormalUI */ = {
 			isa = PBXGroup;
 			children = (
+				659E764B1F723D93002DFA42 /* SCJPromptView.h */,
+				659E764C1F723D93002DFA42 /* SCJPromptView.m */,
 				658419031F70E78C00A51A34 /* UpPicDownTextBtn.h */,
 				658419041F70E78C00A51A34 /* UpPicDownTextBtn.m */,
 			);
@@ -539,6 +606,63 @@
 				658419221F70FF9600A51A34 /* KLChangePwdViewController.m */,
 			);
 			path = SubController;
+			sourceTree = "<group>";
+		};
+		659E76341F71F8FB002DFA42 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				659E76421F720208002DFA42 /* Image */,
+				659E76351F71F916002DFA42 /* ShopCarSettlementView.h */,
+				659E76361F71F916002DFA42 /* ShopCarSettlementView.m */,
+				659E76381F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.h */,
+				659E76391F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m */,
+				659E763A1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib */,
+				659E763D1F71FB56002DFA42 /* KLShopCarItemTableViewCell.h */,
+				659E763E1F71FB56002DFA42 /* KLShopCarItemTableViewCell.m */,
+				659E763F1F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		659E76421F720208002DFA42 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				659E76431F720208002DFA42 /* ic_add.png */,
+				659E76441F720208002DFA42 /* ic_reduce.png */,
+				659E76451F720208002DFA42 /* icon10.png */,
+				659E76461F720208002DFA42 /* icon9.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		659E764E1F724495002DFA42 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				659E764F1F72451A002DFA42 /* KLCategoryTitleTableViewCell.h */,
+				659E76501F72451A002DFA42 /* KLCategoryTitleTableViewCell.m */,
+				659E76511F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib */,
+				659E76581F724E7A002DFA42 /* KLCategoryContentTableViewCell.h */,
+				659E76591F724E7A002DFA42 /* KLCategoryContentTableViewCell.m */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		659E76541F72484E002DFA42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				659E76551F724889002DFA42 /* KLScratchableLatexView.h */,
+				659E76561F724889002DFA42 /* KLScratchableLatexView.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		659E766A1F727160002DFA42 /* searchView */ = {
+			isa = PBXGroup;
+			children = (
+				659E766B1F727186002DFA42 /* KLSearchViewController.h */,
+				659E766C1F727186002DFA42 /* KLSearchViewController.m */,
+			);
+			path = searchView;
 			sourceTree = "<group>";
 		};
 		7D1436729A56F891BBFDAA30 /* Pods */ = {
@@ -645,6 +769,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				es,
 			);
 			mainGroup = 6539887E1F692028007BD83B;
 			productRefGroup = 653988881F692028007BD83B /* Products */;
@@ -664,17 +790,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				6539889A1F692028007BD83B /* LaunchScreen.storyboard in Resources */,
+				659E76491F720208002DFA42 /* icon10.png in Resources */,
+				659E76651F72665D002DFA42 /* Localizable.strings in Resources */,
+				659E764A1F720208002DFA42 /* icon9.png in Resources */,
 				658419011F70E60100A51A34 /* KLProfileOperateOrderView.xib in Resources */,
+				659E765F1F7254F6002DFA42 /* KLChooseLanguageView.xib in Resources */,
 				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
 				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
 				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
 				658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */,
 				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
+				659E76411F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib in Resources */,
+				659E76481F720208002DFA42 /* ic_reduce.png in Resources */,
+				659E76531F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib in Resources */,
 				653988971F692028007BD83B /* Assets.xcassets in Resources */,
 				653989061F693414007BD83B /* main.json in Resources */,
+				659E763C1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib in Resources */,
 				658419121F70F85900A51A34 /* KLProfileItemTableViewCell.xib in Resources */,
 				658418F11F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib in Resources */,
+				659E76471F720208002DFA42 /* ic_add.png in Resources */,
 				653988951F692028007BD83B /* Main.storyboard in Resources */,
 				658419141F70FC8500A51A34 /* ProfileItem.plist in Resources */,
 			);
@@ -749,6 +884,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659E76621F7265A4002DFA42 /* NSBundle+Language.m in Sources */,
 				653988DF1F6921D7007BD83B /* NSArray+Log.m in Sources */,
 				658418FA1F70BFD300A51A34 /* KLProfileInfoView.m in Sources */,
 				658419081F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m in Sources */,
@@ -756,22 +892,29 @@
 				658419111F70F85900A51A34 /* KLProfileItemTableViewCell.m in Sources */,
 				658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */,
 				653988EE1F692A38007BD83B /* KLBaseViewController.m in Sources */,
+				659E765A1F724E7A002DFA42 /* KLCategoryContentTableViewCell.m in Sources */,
 				658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */,
 				658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */,
+				659E76401F71FB56002DFA42 /* KLShopCarItemTableViewCell.m in Sources */,
 				658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */,
 				6584191A1F70FF6A00A51A34 /* KLMyCollectionViewController.m in Sources */,
 				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
+				659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */,
 				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
 				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
+				659E76701F727623002DFA42 /* UIBarButtonItem+KLExtension.m in Sources */,
+				659E76521F72451A002DFA42 /* KLCategoryTitleTableViewCell.m in Sources */,
 				653988FE1F692E41007BD83B /* KLCategoryViewController.m in Sources */,
 				6584191D1F70FF7700A51A34 /* KLAddressViewController.m in Sources */,
 				658418EF1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m in Sources */,
 				658418F71F70BFB200A51A34 /* KLProfileInfoTableViewCell.m in Sources */,
 				658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */,
 				653988E81F6921D7007BD83B /* UIScreen+CZAddition.m in Sources */,
+				659E764D1F723D93002DFA42 /* SCJPromptView.m in Sources */,
 				653988E71F6921D7007BD83B /* UILabel+CZAddition.m in Sources */,
+				659E76371F71F916002DFA42 /* ShopCarSettlementView.m in Sources */,
 				658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */,
 				653988E51F6921D7007BD83B /* UIButton+CZAddition.m in Sources */,
 				6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */,
@@ -780,6 +923,8 @@
 				6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */,
 				653988F41F692ABB007BD83B /* KLNavgationViewController.m in Sources */,
 				6584190C1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m in Sources */,
+				659E765D1F7254CF002DFA42 /* KLChooseLanguageView.m in Sources */,
+				659E76571F724889002DFA42 /* KLScratchableLatexView.m in Sources */,
 				653989041F692E56007BD83B /* KLProfileViewController.m in Sources */,
 				653988E21F6921D7007BD83B /* NSString+CZBase64.m in Sources */,
 				653988EA1F6921D7007BD83B /* UIViewController+CZAddition.m in Sources */,
@@ -788,6 +933,7 @@
 				653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */,
 				653988E01F6921D7007BD83B /* NSAttributedString+CZAdditon.m in Sources */,
 				653988E61F6921D7007BD83B /* UIColor+CZAddition.m in Sources */,
+				659E763B1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m in Sources */,
 				6539888F1F692028007BD83B /* AppDelegate.m in Sources */,
 				653988FB1F692E32007BD83B /* KLShopCarViewController.m in Sources */,
 				658419231F70FF9600A51A34 /* KLChangePwdViewController.m in Sources */,
@@ -844,6 +990,16 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		659E76671F72665D002DFA42 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659E76661F72665D002DFA42 /* en */,
+				659E76681F726678002DFA42 /* zh-Hans */,
+				659E76691F726681002DFA42 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -851,6 +1007,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -900,6 +1057,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryTitle" rowHeight="40" id="KGk-i7-Jjw" customClass="KLCategoryTitleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovn-sz-d08">
+                        <rect key="frame" x="0.0" y="48.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eXD-AZ-V8d"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-pS-qI0">
+                        <rect key="frame" x="10" y="5" width="2" height="40"/>
+                        <color key="backgroundColor" red="0.73333333333333328" green="0.11764705882352941" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="LPY-Xx-u0v"/>
+                            <constraint firstAttribute="height" constant="40" id="uSq-P7-C62"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="轮胎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zug-kC-pIw">
+                        <rect key="frame" x="22" y="0.0" width="353" height="48.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ovn-sz-d08" secondAttribute="trailing" id="98c-Te-tHs"/>
+                    <constraint firstItem="xFf-pS-qI0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="A0G-Yj-EgN"/>
+                    <constraint firstAttribute="trailing" secondItem="zug-kC-pIw" secondAttribute="trailing" id="Ef6-zQ-6KG"/>
+                    <constraint firstItem="ovn-sz-d08" firstAttribute="top" secondItem="zug-kC-pIw" secondAttribute="bottom" id="LaR-Uj-M5B"/>
+                    <constraint firstAttribute="bottom" secondItem="ovn-sz-d08" secondAttribute="bottom" id="OK1-ep-Aoe"/>
+                    <constraint firstItem="ovn-sz-d08" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Od9-gW-ewj"/>
+                    <constraint firstItem="xFf-pS-qI0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="etb-xM-Yvx"/>
+                    <constraint firstItem="zug-kC-pIw" firstAttribute="leading" secondItem="xFf-pS-qI0" secondAttribute="trailing" constant="10" id="fCd-EX-9ac"/>
+                    <constraint firstItem="zug-kC-pIw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sii-OG-UTg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-81" y="9"/>
+        </tableViewCell>
+    </objects>
+</document>

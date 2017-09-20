@@ -64,7 +64,8 @@
             if (dic[@"imageName"]) {
                 Class cls = NSClassFromString(dic[@"clsName"]);
                 KLBaseViewController *vc = [[cls alloc] init];
-                vc.title = dic[@"title"];
+                //设置TabBar的title
+                vc.title = NSLocalizedString(dic[@"title"], nil);
                 //设置图形
                 vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@",dic[@"imageName"]]];
                 

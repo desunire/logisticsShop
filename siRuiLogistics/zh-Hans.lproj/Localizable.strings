@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  siRuiLogistics
+
+  Created by desunire on 2017/9/20.
+  Copyright © 2017年 desunire. All rights reserved.
+*/
+
+"index" = "首页";
+
+"category" = "分类";
+
+"shopcar" = "购物车";
+
+"me" = "我的";

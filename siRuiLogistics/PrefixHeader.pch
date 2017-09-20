@@ -14,7 +14,23 @@
 //#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 //#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
 //#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+//字符串 数组 字典 对象空判断
+#define KlStringisEmpty(str) ([str isKindOfClass:[NSNull class]]||str == nil||[str length] <1 ?YES:NO)
+#define klArrayisEmpty(array) (array == nil||[array isKindOfClass:[NSNull class]] ||array.count==0)
+#define klDicisEmpty(dic) (dic ==nil||[dic isKindOfClass:[NSNull class]]||dic.allKeys ==0)
+#define klObjectisEmpty(_object) (_object ==nil|| [_object isKindOfClass:[NSNull class]]||([_object respondsToSelector:@selector(length)]&&[(NSData *)_object length]==0)||([_object respondsToSelector:@selector(count)]&&[(NSArray *)_object count]==0))
 
+//4.1 设置RGB颜色
+#define DefaultBackColor  UIColorFromRGB(0xbb1e10)
+
+#define KLsRCBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
+
+#define UIColorFromRGBA(rgbValue, alphaValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0x0000FF))/255.0 \
+alpha:alphaValue]
+#define UIColorFromRGB(rgbValue) UIColorFromRGBA(rgbValue, 1.0)
 
 //需要横屏或者竖屏，获取屏幕宽度与高度
 //#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 // 当前Xcode支持iOS8及以上
@@ -28,7 +44,8 @@
 
 #pragma mark 图片设置
 #define plachHolderImage [UIImage imageNamed:@"placeholder"]
-
+#import "KLIndexSearchMessageChangeView.h"
+#import "SCJPromptView.h"
 #import "DCURLRouter.h"
 #import "KLMainViewController.h"
 #import "CZAdditions.h"
@@ -40,4 +57,6 @@
 #import "Masonry.h"
 #import "SDWebImageManager.h"
 #import "UIImage+KLExtentsion.h"
+#import "UIImageView+WebCache.h"
+#import "KLChooseLanguageView.h"
 #endif /* PrefixHeader_pch */

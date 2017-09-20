@@ -20,6 +20,11 @@
     
     [DCURLRouter loadConfigDictFromPlist:@"DCURLRouter.plist"];
     
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@""]) {
+        [NSBundle setLanguage:[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"]];
+    }
+    
+    
     _window = [[UIWindow alloc] init];
     
     _window.backgroundColor = [UIColor whiteColor];

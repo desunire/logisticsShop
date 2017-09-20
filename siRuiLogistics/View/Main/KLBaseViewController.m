@@ -7,11 +7,8 @@
 //
 
 #import "KLBaseViewController.h"
-
-@interface KLBaseViewController ()<UITableViewDelegate,UITableViewDataSource>
-
-
-
+#import "KLSearchViewController.h"
+@interface KLBaseViewController ()<UITableViewDelegate,UITableViewDataSource,KLIndexSearchMessageChangeViewDelegate>
 @end
 
 @implementation KLBaseViewController
@@ -19,11 +16,73 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initTableView];
+    [self initSearchView];
+    [self initChangeLanguageView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setChooseLanguage{
+    //设置当前选中的语言
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@""]) {
+        if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@"en"]) {
+            [self.indexSearchTopView.languageBtn setTitle:@"EN" forState:UIControlStateNormal];
+        }
+        
+        if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@"zh-Hans"]) {
+            [self.indexSearchTopView.languageBtn setTitle:@"CN" forState:UIControlStateNormal];
+        }
+        if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@"es"]) {
+            [self.indexSearchTopView.languageBtn setTitle:@"ES" forState:UIControlStateNormal];
+        }
+        
+    }
+}
+
+#pragma mark 设置上面的搜索视图
+-(void)initSearchView{
+    self.indexDefaultBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 50)];
+    _indexDefaultBackView.backgroundColor = [UIColor whiteColor];
+    _indexDefaultBackView.alpha = 0;
+    self.indexDefaultBackView.hidden = YES;
+    self.indexSearchTopView = [KLIndexSearchMessageChangeView initView];
+    self.indexSearchTopView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 50);
+    self.indexSearchTopView.delegate = self;
+    self.indexSearchTopView.state = NormalState;
+    [self.view addSubview:self.indexDefaultBackView];
+    [self.view addSubview:self.indexSearchTopView];
+   
+}
+
+#pragma mark KLIndexSearchMessageChangeViewDelegate
+-(void)gotoSearchView:(UISearchBar *)senderBar{
+    
+    KLSearchViewController *vc= [[KLSearchViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+#pragma mark 切换语言视图设置 KLIndexSearchMessageChangeViewDelegate
+-(void)initChangeLanguageView{
+    self.chooseLanguageView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLChooseLanguageView class]) owner:self options:nil] firstObject];
+    self.chooseLanguageView.frame = CGRectMake(10, 70, self.chooseLanguageView.frame.size.width, self.chooseLanguageView.frame.size.height);
+    self.chooseLanguageView.hidden = YES;
+    //[self.view insertSubview:self.chooseLanguageView belowSubview:self.indexSearchTopView];
+    [self.view addSubview:self.chooseLanguageView];
+}
+
+
+-(void)changeLangWithBtn:(UIButton *)senderBtn{
+    if (self.indexSearchTopView.state == NormalState) {
+        self.indexSearchTopView.state = ChooseLanguageState;
+        self.chooseLanguageView.hidden = NO;
+    }else{
+        self.indexSearchTopView.state =NormalState;
+        self.chooseLanguageView.hidden = YES;
+    }
 }
 
 #pragma mark 初始化tableView
@@ -58,6 +117,8 @@
     UITableViewCell *cell = [UITableViewCell new];
     return cell;
 }
+
+
 
 
 @end

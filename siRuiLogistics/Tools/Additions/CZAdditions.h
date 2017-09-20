@@ -20,3 +20,4 @@
 #import "NSString+CZPath.h"
 
 #import "NSDictionary+NTESJson.h"
+#import "NSBundle+Language.h"

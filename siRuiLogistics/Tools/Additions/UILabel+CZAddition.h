@@ -18,4 +18,18 @@
 /// @return UILabel
 + (instancetype)cz_labelWithText:(NSString *)text fontSize:(CGFloat)fontSize color:(UIColor *)color;
 
+
+
+
+//设置字体大小,颜色,位置
++(UILabel *)setMyLabel:(UIFont *)font andColor:(UIColor *)color andTextAlignment:(NSTextAlignment )textAlignment;
+
+
+//单行获取label的frame
+-(CGSize)getSize:(CGSize)size andFont:(UIFont *)font andText:(NSString *)str;
+
+//多行行获取label的frame
+-(CGSize)getmultSize:(CGSize)size andFont:(UIFont *)font andText:(NSString *)str;
+
+
 @end

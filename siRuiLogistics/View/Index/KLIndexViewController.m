@@ -38,10 +38,6 @@ static NSString *promotionCell = @"promotionCell";
  */
 @property(strong,nonatomic)NSMutableArray *goodsListArr;
 
-/**
- 首页上搜索和切换语言，查看消息的视图
- */
-@property(strong,nonatomic)KLIndexSearchMessageChangeView *indexSearchTopView;
 
 @end
 
@@ -51,37 +47,12 @@ static NSString *promotionCell = @"promotionCell";
     [super viewDidLoad];
     self.view.backgroundColor =[UIColor cz_randomColor];
     
-    
-    self.test = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 50)];
-    
-    
-    _test.backgroundColor = [UIColor whiteColor];
-    
-    _test.alpha = 0;
-    
-    //_test.layer.borderWidth = 1;
-    
-    
-    
-    self.indexSearchTopView = [KLIndexSearchMessageChangeView initView];
-    
+    self.indexDefaultBackView.hidden =NO;
     self.indexSearchTopView.backgroundColor = [UIColor clearColor];
-    
-    self.indexSearchTopView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
-    self.indexSearchTopView.delegate = self;
-    [self.view addSubview:_test];
-    [self.view addSubview:self.indexSearchTopView];
-    
-    
     [self registCell];
-    
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    
-    
+    [self setChooseLanguage];
+    self.chooseLanguageView.index = 0;
     self.automaticallyAdjustsScrollViewInsets = YES;
-    
-   // self.tableView.bounces = NO;
-    
     
     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionInitial context:nil];
     
@@ -134,24 +105,24 @@ static NSString *promotionCell = @"promotionCell";
     self.navigationController.navigationBar.hidden = YES;
 }
 #pragma mark KLIndexSearchMessageChangeViewDelegate
--(void)gotoMessageViewByBtn:(UIButton *)senderBtn{
-    
-}
+//-(void)gotoMessageViewByBtn:(UIButton *)senderBtn{
+//    
+//}
+//
+//-(void)changeLangWithBtn:(UIButton *)senderBtn{
+//    [senderBtn setTitle:@"EN" forState:UIControlStateNormal];
+//}
 
--(void)changeLangWithBtn:(UIButton *)senderBtn{
-    [senderBtn setTitle:@"EN" forState:UIControlStateNormal];
-}
-
--(void)gotoSearchView:(UISearchBar *)senderBar{
-    NSLog(@"搜索。。");
-    senderBar.text = @"我被点击了";
-    [senderBar resignFirstResponder];
-}
+//-(void)gotoSearchView:(UISearchBar *)senderBar{
+//    NSLog(@"搜索。。");
+//    senderBar.text = @"我被点击了";
+//    [senderBar resignFirstResponder];
+//}
 
 #pragma mark  内存管理
 -(void)dealloc{
     
-    [self removeObserver:self forKeyPath:@"contentOffset"];
+    [self.tableView removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -175,8 +146,12 @@ static NSString *promotionCell = @"promotionCell";
     //NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
     if (self.tableView.contentOffset.y>0) {
         CGFloat alpha = self.tableView.contentOffset.y/50.0;
-        self.test.alpha =(alpha < 1.0 ?alpha:1.0);
-        NSLog(@"%.2f",self.test.alpha);
+        self.indexDefaultBackView.alpha =(alpha < 1.0 ?alpha:1.0);
+        if (self.indexDefaultBackView.alpha == 1) {
+            [self.indexSearchTopView.languageBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        }
+    }else{
+         [self.indexSearchTopView.languageBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     
     
@@ -301,10 +276,7 @@ static NSString *promotionCell = @"promotionCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    NSLog(@"取消选择");
-}
+
 
 
 @end

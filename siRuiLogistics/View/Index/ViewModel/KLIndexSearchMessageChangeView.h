@@ -10,8 +10,8 @@
 
 //当前视图的状态
 typedef enum : NSUInteger {
-    ChooseLanguageState,
-    NormalState,
+    ChooseLanguageState,//选中语言状态
+    NormalState,//普通状态
     clickMessageState,
     clickSearchState
 } KLIndexSearchMessageChangeViewState;
@@ -49,6 +49,8 @@ typedef enum : NSUInteger {
  绘制视图通过界面
  */
 +(instancetype)initView;
+
+@property(assign,nonatomic)KLIndexSearchMessageChangeViewState state;
 
 @property(weak,nonatomic)id<KLIndexSearchMessageChangeViewDelegate>delegate;
 @property (strong, nonatomic) IBOutletCollection(UISearchBar) NSArray *searchView;

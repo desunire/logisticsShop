@@ -25,11 +25,18 @@
     if ([self.delegate respondsToSelector:@selector(changeLangWithBtn:)]) {
         [self.delegate changeLangWithBtn:sender];
     }
-    [UIView animateWithDuration:0.25 animations:^{
-        CGAffineTransform transform= CGAffineTransformMakeRotation(M_PI*1);
-        self.upDownImageView.transform = transform;
-    }];
-    
+    if (self.state == NormalState) {
+        [UIView animateWithDuration:0.25 animations:^{
+            CGAffineTransform transform= CGAffineTransformIdentity;
+            self.upDownImageView.transform = transform;
+        }];
+    }
+    if (self.state == ChooseLanguageState) {
+        [UIView animateWithDuration:0.25 animations:^{
+            CGAffineTransform transform= CGAffineTransformMakeRotation(M_PI*1);
+            self.upDownImageView.transform = transform;
+        }];
+    }
 }
 - (IBAction)goMessage:(id)sender {
     

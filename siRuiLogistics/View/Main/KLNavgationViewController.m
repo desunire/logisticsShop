@@ -7,7 +7,7 @@
 //
 
 #import "KLNavgationViewController.h"
-
+#import "UIBarButtonItem+KLExtension.h"
 @interface KLNavgationViewController ()
 
 @end
@@ -34,15 +34,22 @@
         //不是栈底控制器
          viewController.hidesBottomBarWhenPushed = YES;
          self.navigationBar.hidden = NO;
+//        if ([viewController isKindOfClass:[KLBaseViewController class]]) {
+//            
+//        }
+        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:@"icon_left" andTarget:@selector(goBack:)];
+        
+        viewController.navigationItem.leftBarButtonItem.width = -15;  //偏移距离  -向左偏移, +向右偏移
     }
-//    if (self.childViewControllers.count == 0) {
-//        self.navigationBar.hidden = YES;
-//    }else{
-//        self.navigationBar.hidden = NO;
-//    }
+
     [super pushViewController:viewController animated:animated];
 }
 
+
+-(void)goBack:(id)sender{
+    
+    [self popViewControllerAnimated:YES];
+}
 
 //-(UIViewController *)popViewControllerAnimated:(BOOL)animated{
 //    
