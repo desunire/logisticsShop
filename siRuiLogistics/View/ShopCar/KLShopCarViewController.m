@@ -23,7 +23,7 @@
   //  UINib *nib = [UINib nibWithNibName:@"" bundle:nil];
     
    // UIButton *btn = [[nib instantiateWithOwner:nil options:nil] firstObject];
-    
+//    self.tabBarController.tabBar.hidden = YES;
     
     
     

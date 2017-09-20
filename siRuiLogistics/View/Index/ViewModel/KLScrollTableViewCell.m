@@ -36,7 +36,7 @@
     
     
     // 网络加载 --- 创建自定义图片的pageControlDot的图片轮播器
-    SDCycleScrollView *cycleScrollView3 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, 375, 200) delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    SDCycleScrollView *cycleScrollView3 = [SDCycleScrollView cycleScrollViewWithFrame:self.contentView.frame delegate:self placeholderImage:[UIImage imageNamed:@"placeholder"]];
     cycleScrollView3.pageControlStyle = SDCycleScrollViewPageContolStyleNone;
     cycleScrollView3.autoScroll = false;
     // cycleScrollView3.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5GK-5L-KcC" customClass="KLProfileOperateOrderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXA-Oq-qaS" userLabel="待确认按钮" customClass="UpPicDownTextBtn">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="150"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTE-Vg-Apl" userLabel="待发货按钮" customClass="UpPicDownTextBtn">
+                    <rect key="frame" x="94" y="0.0" width="94" height="150"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKD-kx-ZfS" userLabel="售后按钮" customClass="UpPicDownTextBtn">
+                    <rect key="frame" x="187" y="0.0" width="94" height="150"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmi-Kv-AkS" userLabel="全部订单" customClass="UpPicDownTextBtn">
+                    <rect key="frame" x="281" y="0.0" width="94" height="150"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine-border" translatesAutoresizingMaskIntoConstraints="NO" id="I8s-ar-Hh5" userLabel="竖线">
+                    <rect key="frame" x="281" y="43" width="5" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="ACz-nK-dWx"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tA-Ol-5UP" customClass="KLProfileOperateOrderView">
+                    <rect key="frame" x="0.0" y="149" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yPP-Cw-L2z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="I8s-ar-Hh5" firstAttribute="leading" secondItem="DKD-kx-ZfS" secondAttribute="trailing" id="1qT-FX-mAK"/>
+                <constraint firstItem="XXA-Oq-qaS" firstAttribute="leading" secondItem="5GK-5L-KcC" secondAttribute="leading" id="1sh-0d-P2V"/>
+                <constraint firstItem="sTE-Vg-Apl" firstAttribute="height" secondItem="XXA-Oq-qaS" secondAttribute="height" id="4ic-KI-CyD"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="firstBaseline" secondItem="sTE-Vg-Apl" secondAttribute="firstBaseline" id="8AV-PA-6RA"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="leading" secondItem="DKD-kx-ZfS" secondAttribute="trailing" id="ALH-BO-Rja"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="baseline" secondItem="XXA-Oq-qaS" secondAttribute="baseline" id="Bi1-Aj-SMK"/>
+                <constraint firstAttribute="trailing" secondItem="2tA-Ol-5UP" secondAttribute="trailing" id="Ep5-Cg-RrM"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="firstBaseline" secondItem="DKD-kx-ZfS" secondAttribute="firstBaseline" id="IcJ-u8-p0i"/>
+                <constraint firstAttribute="bottom" secondItem="XXA-Oq-qaS" secondAttribute="bottom" id="J1k-87-4AB"/>
+                <constraint firstItem="sTE-Vg-Apl" firstAttribute="width" secondItem="XXA-Oq-qaS" secondAttribute="width" id="JMm-zZ-Kgt"/>
+                <constraint firstAttribute="bottom" secondItem="2tA-Ol-5UP" secondAttribute="bottom" id="LiU-YL-XsZ"/>
+                <constraint firstItem="DKD-kx-ZfS" firstAttribute="centerY" secondItem="sTE-Vg-Apl" secondAttribute="centerY" id="NzZ-Wg-fi0"/>
+                <constraint firstItem="DKD-kx-ZfS" firstAttribute="width" secondItem="sTE-Vg-Apl" secondAttribute="width" id="QxL-2y-5hA"/>
+                <constraint firstAttribute="trailing" secondItem="lmi-Kv-AkS" secondAttribute="trailing" id="WC4-OZ-xmz"/>
+                <constraint firstItem="sTE-Vg-Apl" firstAttribute="leading" secondItem="XXA-Oq-qaS" secondAttribute="trailing" id="Xox-XP-eX6"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="width" secondItem="DKD-kx-ZfS" secondAttribute="width" id="Xpk-sS-Lob"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="baseline" secondItem="sTE-Vg-Apl" secondAttribute="baseline" id="ap4-zq-GRs"/>
+                <constraint firstItem="2tA-Ol-5UP" firstAttribute="leading" secondItem="5GK-5L-KcC" secondAttribute="leading" id="bu6-hY-qMQ"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="baseline" secondItem="DKD-kx-ZfS" secondAttribute="baseline" id="f8n-mH-Xzk"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="baseline" secondItem="DKD-kx-ZfS" secondAttribute="baseline" id="fOF-Mj-tHw"/>
+                <constraint firstItem="XXA-Oq-qaS" firstAttribute="top" secondItem="5GK-5L-KcC" secondAttribute="top" id="ijs-rd-wk7"/>
+                <constraint firstItem="DKD-kx-ZfS" firstAttribute="leading" secondItem="sTE-Vg-Apl" secondAttribute="trailing" constant="-1" id="k1o-GI-JKt"/>
+                <constraint firstItem="I8s-ar-Hh5" firstAttribute="centerY" secondItem="DKD-kx-ZfS" secondAttribute="centerY" id="lFF-S8-dtd"/>
+                <constraint firstItem="DKD-kx-ZfS" firstAttribute="height" secondItem="sTE-Vg-Apl" secondAttribute="height" id="nxO-rR-y2C"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="height" secondItem="DKD-kx-ZfS" secondAttribute="height" id="qM7-wj-zJS"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="firstBaseline" secondItem="XXA-Oq-qaS" secondAttribute="firstBaseline" id="sSB-lk-rCS"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="top" secondItem="DKD-kx-ZfS" secondAttribute="top" id="tRx-hz-nHC"/>
+                <constraint firstItem="sTE-Vg-Apl" firstAttribute="centerY" secondItem="XXA-Oq-qaS" secondAttribute="centerY" id="vaE-Bc-Ohd"/>
+                <constraint firstItem="lmi-Kv-AkS" firstAttribute="baseline" secondItem="XXA-Oq-qaS" secondAttribute="baseline" id="yIl-Cj-omE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="afterSaleBtn" destination="DKD-kx-ZfS" id="dTY-dp-mul"/>
+                <outlet property="allOrderBtn" destination="lmi-Kv-AkS" id="y8V-Xz-FCH"/>
+                <outlet property="waitSendBtn" destination="sTE-Vg-Apl" id="oop-Na-shM"/>
+                <outlet property="waitSureBtn" destination="XXA-Oq-qaS" id="P2j-KU-fhN"/>
+            </connections>
+            <point key="canvasLocation" x="-32.5" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine-border" width="8" height="65"/>
+    </resources>
+</document>

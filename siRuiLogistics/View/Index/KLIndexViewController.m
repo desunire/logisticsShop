@@ -12,6 +12,7 @@
 #import "KLSubtitleAndMoreTableViewCell.h"
 #import "KLGoodListTableViewCell.h"
 #import "KLSalePromotionTableViewCell.h"
+#import "KLIndexSearchMessageChangeView.h"
 // 轮播图cell
 static NSString *scrollPicCell  =  @"scrollCell";
 //分类cell
@@ -23,7 +24,7 @@ static NSString *goodListCell = @"goodListCell";
 //推广低价Cell
 static NSString *promotionCell = @"promotionCell";
 
-@interface KLIndexViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface KLIndexViewController ()<UITableViewDataSource,UITableViewDelegate,KLIndexSearchMessageChangeViewDelegate>
 
 @property(strong,nonatomic)UIView *test;
 
@@ -31,10 +32,16 @@ static NSString *promotionCell = @"promotionCell";
   分类子项标题
  */
 @property(strong,nonatomic)NSArray *categoryItemArr;
+
 /**
   热卖好货列表数据源
  */
 @property(strong,nonatomic)NSMutableArray *goodsListArr;
+
+/**
+ 首页上搜索和切换语言，查看消息的视图
+ */
+@property(strong,nonatomic)KLIndexSearchMessageChangeView *indexSearchTopView;
 
 @end
 
@@ -45,36 +52,25 @@ static NSString *promotionCell = @"promotionCell";
     self.view.backgroundColor =[UIColor cz_randomColor];
     
     
-    self.test = [[UIView alloc] initWithFrame:CGRectMake(0, 20, 375, 50)];
+    self.test = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 50)];
     
     
     _test.backgroundColor = [UIColor whiteColor];
     
     _test.alpha = 0;
     
-    _test.layer.borderWidth = 1;
+    //_test.layer.borderWidth = 1;
     
     
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(88, 20, 200, 20)];
+    self.indexSearchTopView = [KLIndexSearchMessageChangeView initView];
     
-    label.textColor = [UIColor redColor];
+    self.indexSearchTopView.backgroundColor = [UIColor clearColor];
     
-    label.textAlignment = NSTextAlignmentCenter;
-    
-    label.text = @"test";
-    
-    label.layer.borderWidth = 1;
-    
-   
-    
-    
-    
-   // [self.view addSubview:_test];
-   // [self.view addSubview:label];
-    
-    label.alpha = 1;
-    
+    self.indexSearchTopView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
+    self.indexSearchTopView.delegate = self;
+    [self.view addSubview:_test];
+    [self.view addSubview:self.indexSearchTopView];
     
     
     [self registCell];
@@ -133,6 +129,25 @@ static NSString *promotionCell = @"promotionCell";
 }
 
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
+#pragma mark KLIndexSearchMessageChangeViewDelegate
+-(void)gotoMessageViewByBtn:(UIButton *)senderBtn{
+    
+}
+
+-(void)changeLangWithBtn:(UIButton *)senderBtn{
+    [senderBtn setTitle:@"EN" forState:UIControlStateNormal];
+}
+
+-(void)gotoSearchView:(UISearchBar *)senderBar{
+    NSLog(@"搜索。。");
+    senderBar.text = @"我被点击了";
+    [senderBar resignFirstResponder];
+}
+
 #pragma mark  内存管理
 -(void)dealloc{
     
@@ -159,8 +174,8 @@ static NSString *promotionCell = @"promotionCell";
     
     //NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
     if (self.tableView.contentOffset.y>0) {
-       // self.test.backgroundColor = [UIColor whiteColor];
-        self.test.alpha = self.tableView.contentOffset.y/50.0;
+        CGFloat alpha = self.tableView.contentOffset.y/50.0;
+        self.test.alpha =(alpha < 1.0 ?alpha:1.0);
         NSLog(@"%.2f",self.test.alpha);
     }
     

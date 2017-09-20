@@ -47,6 +47,26 @@
 		6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6580814A1F6FB6B80061367E /* KLGoodCollectView.xib */; };
 		6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580814D1F6FC20D0061367E /* KLSalePromotionTableViewCell.m */; };
 		658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081511F6FCD320061367E /* UIImage+KLExtentsion.m */; };
+		658418EF1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658418EE1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m */; };
+		658418F11F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658418F01F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib */; };
+		658418F71F70BFB200A51A34 /* KLProfileInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658418F61F70BFB200A51A34 /* KLProfileInfoTableViewCell.m */; };
+		658418FA1F70BFD300A51A34 /* KLProfileInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658418F91F70BFD300A51A34 /* KLProfileInfoView.m */; };
+		658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658418FB1F70BFDF00A51A34 /* KLProfileInfoView.xib */; };
+		658418FF1F70E5F700A51A34 /* KLProfileOperateOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 658418FE1F70E5F700A51A34 /* KLProfileOperateOrderView.m */; };
+		658419011F70E60100A51A34 /* KLProfileOperateOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658419001F70E60100A51A34 /* KLProfileOperateOrderView.xib */; };
+		658419051F70E78C00A51A34 /* UpPicDownTextBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419041F70E78C00A51A34 /* UpPicDownTextBtn.m */; };
+		658419081F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419071F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m */; };
+		6584190C1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6584190A1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m */; };
+		6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6584190B1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib */; };
+		658419111F70F85900A51A34 /* KLProfileItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6584190F1F70F85900A51A34 /* KLProfileItemTableViewCell.m */; };
+		658419121F70F85900A51A34 /* KLProfileItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658419101F70F85900A51A34 /* KLProfileItemTableViewCell.xib */; };
+		658419141F70FC8500A51A34 /* ProfileItem.plist in Resources */ = {isa = PBXBuildFile; fileRef = 658419131F70FC8500A51A34 /* ProfileItem.plist */; };
+		658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 658419151F70FEB500A51A34 /* DCURLRouter.plist */; };
+		6584191A1F70FF6A00A51A34 /* KLMyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419191F70FF6A00A51A34 /* KLMyCollectionViewController.m */; };
+		6584191D1F70FF7700A51A34 /* KLAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6584191C1F70FF7700A51A34 /* KLAddressViewController.m */; };
+		658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6584191F1F70FF8600A51A34 /* KLSuggestViewController.m */; };
+		658419231F70FF9600A51A34 /* KLChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419221F70FF9600A51A34 /* KLChangePwdViewController.m */; };
+		658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */; };
 		788A6A3842A63D7C51B937E9 /* Pods_siRuiLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +167,39 @@
 		6580814D1F6FC20D0061367E /* KLSalePromotionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSalePromotionTableViewCell.m; sourceTree = "<group>"; };
 		658081501F6FCD320061367E /* UIImage+KLExtentsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KLExtentsion.h"; sourceTree = "<group>"; };
 		658081511F6FCD320061367E /* UIImage+KLExtentsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KLExtentsion.m"; sourceTree = "<group>"; };
+		658418ED1F70B11200A51A34 /* KLIndexSearchMessageChangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLIndexSearchMessageChangeView.h; sourceTree = "<group>"; };
+		658418EE1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLIndexSearchMessageChangeView.m; sourceTree = "<group>"; };
+		658418F01F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLIndexSearchMessageChangeView.xib; sourceTree = "<group>"; };
+		658418F51F70BFB200A51A34 /* KLProfileInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileInfoTableViewCell.h; sourceTree = "<group>"; };
+		658418F61F70BFB200A51A34 /* KLProfileInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileInfoTableViewCell.m; sourceTree = "<group>"; };
+		658418F81F70BFD300A51A34 /* KLProfileInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileInfoView.h; sourceTree = "<group>"; };
+		658418F91F70BFD300A51A34 /* KLProfileInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileInfoView.m; sourceTree = "<group>"; };
+		658418FB1F70BFDF00A51A34 /* KLProfileInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLProfileInfoView.xib; sourceTree = "<group>"; };
+		658418FD1F70E5F700A51A34 /* KLProfileOperateOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileOperateOrderView.h; sourceTree = "<group>"; };
+		658418FE1F70E5F700A51A34 /* KLProfileOperateOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileOperateOrderView.m; sourceTree = "<group>"; };
+		658419001F70E60100A51A34 /* KLProfileOperateOrderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLProfileOperateOrderView.xib; sourceTree = "<group>"; };
+		658419031F70E78C00A51A34 /* UpPicDownTextBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpPicDownTextBtn.h; sourceTree = "<group>"; };
+		658419041F70E78C00A51A34 /* UpPicDownTextBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpPicDownTextBtn.m; sourceTree = "<group>"; };
+		658419061F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileOperateOrderTableViewCell.h; sourceTree = "<group>"; };
+		658419071F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileOperateOrderTableViewCell.m; sourceTree = "<group>"; };
+		658419091F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCustomManagerInfoTableViewCell.h; sourceTree = "<group>"; };
+		6584190A1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCustomManagerInfoTableViewCell.m; sourceTree = "<group>"; };
+		6584190B1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCustomManagerInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6584190E1F70F85900A51A34 /* KLProfileItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileItemTableViewCell.h; sourceTree = "<group>"; };
+		6584190F1F70F85900A51A34 /* KLProfileItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileItemTableViewCell.m; sourceTree = "<group>"; };
+		658419101F70F85900A51A34 /* KLProfileItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLProfileItemTableViewCell.xib; sourceTree = "<group>"; };
+		658419131F70FC8500A51A34 /* ProfileItem.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProfileItem.plist; sourceTree = "<group>"; };
+		658419151F70FEB500A51A34 /* DCURLRouter.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
+		658419181F70FF6A00A51A34 /* KLMyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMyCollectionViewController.h; sourceTree = "<group>"; };
+		658419191F70FF6A00A51A34 /* KLMyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMyCollectionViewController.m; sourceTree = "<group>"; };
+		6584191B1F70FF7700A51A34 /* KLAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAddressViewController.h; sourceTree = "<group>"; };
+		6584191C1F70FF7700A51A34 /* KLAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAddressViewController.m; sourceTree = "<group>"; };
+		6584191E1F70FF8600A51A34 /* KLSuggestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSuggestViewController.h; sourceTree = "<group>"; };
+		6584191F1F70FF8600A51A34 /* KLSuggestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSuggestViewController.m; sourceTree = "<group>"; };
+		658419211F70FF9600A51A34 /* KLChangePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLChangePwdViewController.h; sourceTree = "<group>"; };
+		658419221F70FF9600A51A34 /* KLChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLChangePwdViewController.m; sourceTree = "<group>"; };
+		658419241F7102E900A51A34 /* NSDictionary+NTESJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NTESJson.h"; sourceTree = "<group>"; };
+		658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NTESJson.m"; sourceTree = "<group>"; };
 		99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siRuiLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -264,6 +317,7 @@
 		653988BE1F6920F1007BD83B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				658419021F70E75C00A51A34 /* NormalUI */,
 				6580814F1F6FCD0D0061367E /* Extensions */,
 				653988C51F6921D7007BD83B /* Additions */,
 			);
@@ -307,6 +361,8 @@
 			isa = PBXGroup;
 			children = (
 				653988C61F6921D7007BD83B /* CZAdditions.h */,
+				658419241F7102E900A51A34 /* NSDictionary+NTESJson.h */,
+				658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */,
 				653988C71F6921D7007BD83B /* NSArray+Log.h */,
 				653988C81F6921D7007BD83B /* NSArray+Log.m */,
 				653988C91F6921D7007BD83B /* NSAttributedString+CZAdditon.h */,
@@ -338,8 +394,14 @@
 		653988F51F692DF3007BD83B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				658419171F70FEEF00A51A34 /* SubController */,
+				658418F31F70BF5900A51A34 /* View */,
+				658418F41F70BF5900A51A34 /* ViewModel */,
+				658418F21F70BF5400A51A34 /* Cell */,
 				653989021F692E56007BD83B /* KLProfileViewController.h */,
 				653989031F692E56007BD83B /* KLProfileViewController.m */,
+				658419131F70FC8500A51A34 /* ProfileItem.plist */,
+				658419151F70FEB500A51A34 /* DCURLRouter.plist */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -402,6 +464,9 @@
 				6580814A1F6FB6B80061367E /* KLGoodCollectView.xib */,
 				6580814C1F6FC20D0061367E /* KLSalePromotionTableViewCell.h */,
 				6580814D1F6FC20D0061367E /* KLSalePromotionTableViewCell.m */,
+				658418ED1F70B11200A51A34 /* KLIndexSearchMessageChangeView.h */,
+				658418EE1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m */,
+				658418F01F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -413,6 +478,67 @@
 				658081511F6FCD320061367E /* UIImage+KLExtentsion.m */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		658418F21F70BF5400A51A34 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				658418F51F70BFB200A51A34 /* KLProfileInfoTableViewCell.h */,
+				658418F61F70BFB200A51A34 /* KLProfileInfoTableViewCell.m */,
+				658419061F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.h */,
+				658419071F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m */,
+				658419091F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.h */,
+				6584190A1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m */,
+				6584190B1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib */,
+				6584190E1F70F85900A51A34 /* KLProfileItemTableViewCell.h */,
+				6584190F1F70F85900A51A34 /* KLProfileItemTableViewCell.m */,
+				658419101F70F85900A51A34 /* KLProfileItemTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		658418F31F70BF5900A51A34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				658418F81F70BFD300A51A34 /* KLProfileInfoView.h */,
+				658418F91F70BFD300A51A34 /* KLProfileInfoView.m */,
+				658418FB1F70BFDF00A51A34 /* KLProfileInfoView.xib */,
+				658418FD1F70E5F700A51A34 /* KLProfileOperateOrderView.h */,
+				658418FE1F70E5F700A51A34 /* KLProfileOperateOrderView.m */,
+				658419001F70E60100A51A34 /* KLProfileOperateOrderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		658418F41F70BF5900A51A34 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		658419021F70E75C00A51A34 /* NormalUI */ = {
+			isa = PBXGroup;
+			children = (
+				658419031F70E78C00A51A34 /* UpPicDownTextBtn.h */,
+				658419041F70E78C00A51A34 /* UpPicDownTextBtn.m */,
+			);
+			path = NormalUI;
+			sourceTree = "<group>";
+		};
+		658419171F70FEEF00A51A34 /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+				658419181F70FF6A00A51A34 /* KLMyCollectionViewController.h */,
+				658419191F70FF6A00A51A34 /* KLMyCollectionViewController.m */,
+				6584191B1F70FF7700A51A34 /* KLAddressViewController.h */,
+				6584191C1F70FF7700A51A34 /* KLAddressViewController.m */,
+				6584191E1F70FF8600A51A34 /* KLSuggestViewController.h */,
+				6584191F1F70FF8600A51A34 /* KLSuggestViewController.m */,
+				658419211F70FF9600A51A34 /* KLChangePwdViewController.h */,
+				658419221F70FF9600A51A34 /* KLChangePwdViewController.m */,
+			);
+			path = SubController;
 			sourceTree = "<group>";
 		};
 		7D1436729A56F891BBFDAA30 /* Pods */ = {
@@ -538,12 +664,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6539889A1F692028007BD83B /* LaunchScreen.storyboard in Resources */,
+				658419011F70E60100A51A34 /* KLProfileOperateOrderView.xib in Resources */,
 				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
+				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
+				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
+				658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */,
 				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
 				653988971F692028007BD83B /* Assets.xcassets in Resources */,
 				653989061F693414007BD83B /* main.json in Resources */,
+				658419121F70F85900A51A34 /* KLProfileItemTableViewCell.xib in Resources */,
+				658418F11F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib in Resources */,
 				653988951F692028007BD83B /* Main.storyboard in Resources */,
+				658419141F70FC8500A51A34 /* ProfileItem.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,25 +750,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				653988DF1F6921D7007BD83B /* NSArray+Log.m in Sources */,
+				658418FA1F70BFD300A51A34 /* KLProfileInfoView.m in Sources */,
+				658419081F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m in Sources */,
 				653988E41F6921D7007BD83B /* NSString+CZPath.m in Sources */,
+				658419111F70F85900A51A34 /* KLProfileItemTableViewCell.m in Sources */,
 				658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */,
 				653988EE1F692A38007BD83B /* KLBaseViewController.m in Sources */,
 				658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */,
+				658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */,
 				658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */,
+				6584191A1F70FF6A00A51A34 /* KLMyCollectionViewController.m in Sources */,
 				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
 				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
 				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
 				653988FE1F692E41007BD83B /* KLCategoryViewController.m in Sources */,
+				6584191D1F70FF7700A51A34 /* KLAddressViewController.m in Sources */,
+				658418EF1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m in Sources */,
+				658418F71F70BFB200A51A34 /* KLProfileInfoTableViewCell.m in Sources */,
+				658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */,
 				653988E81F6921D7007BD83B /* UIScreen+CZAddition.m in Sources */,
 				653988E71F6921D7007BD83B /* UILabel+CZAddition.m in Sources */,
 				658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */,
 				653988E51F6921D7007BD83B /* UIButton+CZAddition.m in Sources */,
 				6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */,
+				658418FF1F70E5F700A51A34 /* KLProfileOperateOrderView.m in Sources */,
 				653988E11F6921D7007BD83B /* NSObject+CZRuntime.m in Sources */,
 				6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */,
 				653988F41F692ABB007BD83B /* KLNavgationViewController.m in Sources */,
+				6584190C1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m in Sources */,
 				653989041F692E56007BD83B /* KLProfileViewController.m in Sources */,
 				653988E21F6921D7007BD83B /* NSString+CZBase64.m in Sources */,
 				653988EA1F6921D7007BD83B /* UIViewController+CZAddition.m in Sources */,
@@ -646,7 +790,9 @@
 				653988E61F6921D7007BD83B /* UIColor+CZAddition.m in Sources */,
 				6539888F1F692028007BD83B /* AppDelegate.m in Sources */,
 				653988FB1F692E32007BD83B /* KLShopCarViewController.m in Sources */,
+				658419231F70FF9600A51A34 /* KLChangePwdViewController.m in Sources */,
 				6539888C1F692028007BD83B /* main.m in Sources */,
+				658419051F70E78C00A51A34 /* UpPicDownTextBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

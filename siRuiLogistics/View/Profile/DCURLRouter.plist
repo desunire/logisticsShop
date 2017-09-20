@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>http</key>
+	<string>WebViewController</string>
+	<key>https</key>
+	<string>WebViewController</string>
+	<key>sun</key>
+	<dict>
+		<key>sun://collection</key>
+		<string>KLMyCollectionViewController</string>
+		<key>sun://address</key>
+		<string>KLAddressViewController</string>
+		<key>sun://suggest</key>
+		<string>KLSuggestViewController</string>
+		<key>sun://changePwd</key>
+		<string>KLChangePwdViewController</string>
+	</dict>
+</dict>
+</plist>

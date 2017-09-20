@@ -18,6 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
+    [DCURLRouter loadConfigDictFromPlist:@"DCURLRouter.plist"];
+    
     _window = [[UIWindow alloc] init];
     
     _window.backgroundColor = [UIColor whiteColor];
