@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchListCell" id="KGk-i7-Jjw" customClass="KLSearchListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="change_password" translatesAutoresizingMaskIntoConstraints="NO" id="ymR-si-XP7">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Te7-jY-KJb"/>
+                            <constraint firstAttribute="width" constant="80" id="Ve3-tu-C3m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="獒龙德龙F3000新气压信号灯獒龙德龙F3000新气压信号灯獒龙德龙F3000新气压信号灯..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFd-l4-l2v">
+                        <rect key="frame" x="100" y="10" width="257" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="fMA-Xq-0Gh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥2355.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sb-sl-wlx">
+                        <rect key="frame" x="100" y="70" width="265" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="H4E-ua-fp0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.73333333333333328" green="0.11764705882352941" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCu-W6-WNJ">
+                        <rect key="frame" x="0.0" y="98.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="h1G-R0-D9A"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="kFd-l4-l2v" secondAttribute="trailing" constant="10" id="4H7-Fy-gj2"/>
+                    <constraint firstItem="3Sb-sl-wlx" firstAttribute="top" secondItem="kFd-l4-l2v" secondAttribute="bottom" id="8yV-WQ-w4o"/>
+                    <constraint firstItem="kFd-l4-l2v" firstAttribute="top" secondItem="ymR-si-XP7" secondAttribute="top" id="Mc9-lz-1PW"/>
+                    <constraint firstItem="ymR-si-XP7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qog-pj-T7K"/>
+                    <constraint firstItem="kFd-l4-l2v" firstAttribute="leading" secondItem="ymR-si-XP7" secondAttribute="trailing" constant="10" id="W4S-KI-trC"/>
+                    <constraint firstAttribute="trailing" secondItem="bCu-W6-WNJ" secondAttribute="trailing" id="XFj-YW-BHt"/>
+                    <constraint firstAttribute="trailing" secondItem="3Sb-sl-wlx" secondAttribute="trailing" constant="10" id="iX0-qM-wJJ"/>
+                    <constraint firstItem="ymR-si-XP7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="q9h-b2-AIQ"/>
+                    <constraint firstItem="bCu-W6-WNJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tWV-hd-H3e"/>
+                    <constraint firstItem="3Sb-sl-wlx" firstAttribute="leading" secondItem="ymR-si-XP7" secondAttribute="trailing" constant="10" id="yTX-34-Xwy"/>
+                    <constraint firstAttribute="bottom" secondItem="bCu-W6-WNJ" secondAttribute="bottom" id="zOf-hJ-rON"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="change_password" width="26" height="26"/>
+    </resources>
+</document>

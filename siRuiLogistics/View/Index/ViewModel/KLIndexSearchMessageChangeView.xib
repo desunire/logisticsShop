@@ -16,30 +16,30 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3w-LY-fA5" userLabel="显示语言">
-                    <rect key="frame" x="10" y="25" width="30" height="30"/>
+                    <rect key="frame" x="10" y="15" width="30" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="ArR-gG-01B"/>
-                        <constraint firstAttribute="height" constant="30" id="VXJ-HM-frs"/>
+                        <constraint firstAttribute="height" constant="30" id="7aY-Cu-kOG"/>
+                        <constraint firstAttribute="width" constant="30" id="Q3P-Tg-lju"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="CN">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="changeLanguage:" destination="Sgq-M1-dz7" eventType="touchUpInside" id="oDf-hN-gQ7"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down" translatesAutoresizingMaskIntoConstraints="NO" id="KAD-dn-dS4" userLabel="上下切换图">
-                    <rect key="frame" x="40" y="30" width="20" height="20"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_left_down" translatesAutoresizingMaskIntoConstraints="NO" id="KAD-dn-dS4" userLabel="上下切换图">
+                    <rect key="frame" x="40" y="25" width="15" height="10"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="Ll3-Bl-k5e"/>
-                        <constraint firstAttribute="width" constant="20" id="jwc-dc-OTT"/>
+                        <constraint firstAttribute="width" constant="15" id="RT8-mV-pY9"/>
+                        <constraint firstAttribute="height" constant="10" id="uko-Xp-q6c"/>
                     </constraints>
                 </imageView>
                 <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="search" translatesAutoresizingMaskIntoConstraints="NO" id="huK-Hz-9F8" userLabel="搜索框">
-                    <rect key="frame" x="60" y="18" width="275" height="44"/>
+                    <rect key="frame" x="55" y="8" width="280" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="VZj-oI-PeC"/>
+                        <constraint firstAttribute="height" constant="44" id="SzX-F9-aLQ"/>
                     </constraints>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
@@ -47,10 +47,10 @@
                     </connections>
                 </searchBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glV-k2-KCV" userLabel="聊天按钮">
-                    <rect key="frame" x="335" y="25" width="30" height="30"/>
+                    <rect key="frame" x="335" y="15" width="30" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="LQG-cQ-d9O"/>
-                        <constraint firstAttribute="width" constant="30" id="MR0-PA-AAd"/>
+                        <constraint firstAttribute="width" constant="30" id="SDt-uY-tlC"/>
+                        <constraint firstAttribute="height" constant="30" id="XJf-Cx-wNT"/>
                     </constraints>
                     <state key="normal" image="chat"/>
                     <connections>
@@ -60,15 +60,15 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="KAD-dn-dS4" firstAttribute="leading" secondItem="C3w-LY-fA5" secondAttribute="trailing" id="10H-YB-Lsa"/>
-                <constraint firstItem="huK-Hz-9F8" firstAttribute="centerY" secondItem="C3w-LY-fA5" secondAttribute="centerY" id="7vS-5n-2oq"/>
-                <constraint firstItem="C3w-LY-fA5" firstAttribute="leading" secondItem="Sgq-M1-dz7" secondAttribute="leading" constant="10" id="8Yr-iy-8Gu"/>
-                <constraint firstItem="C3w-LY-fA5" firstAttribute="top" secondItem="Sgq-M1-dz7" secondAttribute="top" constant="25" id="HWr-hV-ejJ"/>
-                <constraint firstItem="glV-k2-KCV" firstAttribute="leading" secondItem="huK-Hz-9F8" secondAttribute="trailing" id="OaZ-Xy-Q4z"/>
-                <constraint firstItem="KAD-dn-dS4" firstAttribute="top" secondItem="Sgq-M1-dz7" secondAttribute="top" constant="30" id="Skf-Lg-8nG"/>
-                <constraint firstItem="huK-Hz-9F8" firstAttribute="leading" secondItem="KAD-dn-dS4" secondAttribute="trailing" id="n2d-TP-oFM"/>
-                <constraint firstItem="glV-k2-KCV" firstAttribute="top" secondItem="Sgq-M1-dz7" secondAttribute="top" constant="25" id="o8k-Lh-WDd"/>
-                <constraint firstAttribute="trailing" secondItem="glV-k2-KCV" secondAttribute="trailing" constant="10" id="whh-RE-5Sz"/>
+                <constraint firstItem="huK-Hz-9F8" firstAttribute="leading" secondItem="KAD-dn-dS4" secondAttribute="trailing" id="1ao-tH-Zg9"/>
+                <constraint firstItem="KAD-dn-dS4" firstAttribute="leading" secondItem="C3w-LY-fA5" secondAttribute="trailing" id="6Wv-Wc-zm0"/>
+                <constraint firstItem="KAD-dn-dS4" firstAttribute="centerY" secondItem="Sgq-M1-dz7" secondAttribute="centerY" id="94X-xe-MZ8"/>
+                <constraint firstItem="glV-k2-KCV" firstAttribute="leading" secondItem="huK-Hz-9F8" secondAttribute="trailing" id="GcR-9p-IfW"/>
+                <constraint firstItem="C3w-LY-fA5" firstAttribute="centerY" secondItem="Sgq-M1-dz7" secondAttribute="centerY" id="HJ2-hX-JJa"/>
+                <constraint firstItem="huK-Hz-9F8" firstAttribute="centerY" secondItem="Sgq-M1-dz7" secondAttribute="centerY" id="KV0-Nk-y2b"/>
+                <constraint firstItem="glV-k2-KCV" firstAttribute="centerY" secondItem="huK-Hz-9F8" secondAttribute="centerY" id="QI5-S4-vZN"/>
+                <constraint firstItem="C3w-LY-fA5" firstAttribute="leading" secondItem="Sgq-M1-dz7" secondAttribute="leading" constant="10" id="UpZ-Yl-M3X"/>
+                <constraint firstAttribute="trailing" secondItem="glV-k2-KCV" secondAttribute="trailing" constant="10" id="mjA-9N-zNg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -83,6 +83,6 @@
     </objects>
     <resources>
         <image name="chat" width="50" height="50"/>
-        <image name="down" width="7" height="5"/>
+        <image name="icon_left_down" width="8" height="4"/>
     </resources>
 </document>

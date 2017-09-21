@@ -7,7 +7,7 @@
 //
 
 #import "KLCategoryContentTableViewCell.h"
-#import "KLScratchableLatexView.h"
+
 @implementation KLCategoryContentTableViewCell
 
 - (void)awakeFromNib {

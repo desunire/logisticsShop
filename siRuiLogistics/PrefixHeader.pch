@@ -40,10 +40,37 @@ alpha:alphaValue]
 #define SCREEN_SIZE ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale):[UIScreen mainScreen].bounds.size)
 //#else
 
+//筛选视图宽度
+#define FiltrateViewScreenW SCREEN_WIDTH * 0.8
 
+//设置字体大小
+#define PFR [[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 ? @"PingFangSC-Regular" : @"PingFang SC"
+
+#define PFR20Font [UIFont fontWithName:PFR size:20];
+#define PFR18Font [UIFont fontWithName:PFR size:18];
+#define PFR16Font [UIFont fontWithName:PFR size:16];
+#define PFR15Font [UIFont fontWithName:PFR size:15];
+#define PFR14Font [UIFont fontWithName:PFR size:14];
+#define PFR13Font [UIFont fontWithName:PFR size:13];
+#define PFR12Font [UIFont fontWithName:PFR size:12];
+#define PFR11Font [UIFont fontWithName:PFR size:11];
+#define PFR10Font [UIFont fontWithName:PFR size:10];
+
+#define APPDELEGATE ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
+#define KEYWINDOW  [UIApplication sharedApplication].keyWindow
+
+#define TabbarHeight self.tabBarController.tabBar.frame.size.height
 
 #pragma mark 图片设置
 #define plachHolderImage [UIImage imageNamed:@"placeholder"]
+
+
+#import "KLScratchableLatexView.h"
+#import "DCSpeedy.h"
+#import "KLSildeBarView.h"
+#import "KLFilterButton.h"
+#import "KLFilterView.h"
 #import "KLIndexSearchMessageChangeView.h"
 #import "SCJPromptView.h"
 #import "DCURLRouter.h"

@@ -13,3 +13,13 @@
 "shopcar" = "购物车";
 
 "me" = "我的";
+
+"sale"= "销量";
+
+"price" = "价格";
+
+"filter"= "筛选";
+
+"search" = "搜索";
+
+"searchPlaceholder" ="商品，品牌或者分类";

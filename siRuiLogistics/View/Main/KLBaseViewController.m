@@ -44,12 +44,12 @@
 
 #pragma mark 设置上面的搜索视图
 -(void)initSearchView{
-    self.indexDefaultBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 50)];
+    self.indexDefaultBackView = [[UIView alloc] initWithFrame:CGRectMake(0, 10, SCREEN_WIDTH, 60)];
     _indexDefaultBackView.backgroundColor = [UIColor whiteColor];
     _indexDefaultBackView.alpha = 0;
     self.indexDefaultBackView.hidden = YES;
     self.indexSearchTopView = [KLIndexSearchMessageChangeView initView];
-    self.indexSearchTopView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 50);
+    self.indexSearchTopView.frame = CGRectMake(0, 10, SCREEN_WIDTH, 60);
     self.indexSearchTopView.delegate = self;
     self.indexSearchTopView.state = NormalState;
     [self.view addSubview:self.indexDefaultBackView];
@@ -61,7 +61,7 @@
 -(void)gotoSearchView:(UISearchBar *)senderBar{
     
     KLSearchViewController *vc= [[KLSearchViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController pushViewController:vc animated:NO];
     
 }
 

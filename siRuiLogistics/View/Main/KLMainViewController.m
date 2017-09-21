@@ -8,7 +8,7 @@
 
 #import "KLMainViewController.h"
 
-@interface KLMainViewController ()
+@interface KLMainViewController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.delegate = self;
     [self setNavViewController];
 }
 
@@ -67,14 +68,14 @@
                 //设置TabBar的title
                 vc.title = NSLocalizedString(dic[@"title"], nil);
                 //设置图形
-                vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@",dic[@"imageName"]]];
+                vc.tabBarItem.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_gray",dic[@"imageName"]]];
                 
-                UIImage *selectImage =[[UIImage imageNamed:[NSString stringWithFormat:@"tabbar_%@_selected",dic[@"imageName"]]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//设置图片模式 很重要
+                UIImage *selectImage =[[UIImage imageNamed:[NSString stringWithFormat:@"%@_red",dic[@"imageName"]]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//设置图片模式 很重要
                 //selectImage.renderingMode = UIImageRenderingModeAlwaysOriginal;
                 vc.tabBarItem.selectedImage = selectImage;
                // vc.tabBarItem.selectedImage.renderingMode = UIImageRenderingModeAlwaysOriginal;
                 [vc.tabBarItem setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12]} forState:UIControlStateNormal];
-                [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor orangeColor]} forState:UIControlStateHighlighted];
+                [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:DefaultBackColor} forState:UIControlStateHighlighted];
                 KLNavgationViewController *knv = [[KLNavgationViewController alloc] initWithRootViewController:vc];
                 return knv;
                 
@@ -85,5 +86,48 @@
         UIViewController *vc = [UIViewController new];
         return vc;
  }
+
+
+#pragma mark - <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    //点击tabBarItem动画
+    [self tabBarButtonClick:[self getTabBarButton]];
+    
+}
+- (UIControl *)getTabBarButton{
+    NSMutableArray *tabBarButtons = [[NSMutableArray alloc]initWithCapacity:0];
+    
+    for (UIView *tabBarButton in self.tabBar.subviews) {
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]){
+            [tabBarButtons addObject:tabBarButton];
+        }
+    }
+    UIControl *tabBarButton = [tabBarButtons objectAtIndex:self.selectedIndex];
+    
+    return tabBarButton;
+}
+#pragma mark - 点击动画
+- (void)tabBarButtonClick:(UIControl *)tabBarButton
+{
+    for (UIView *imageView in tabBarButton.subviews) {
+        if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
+            //需要实现的帧动画,这里根据自己需求改动
+            CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+            animation.keyPath = @"transform.scale";
+            animation.values = @[@1.0,@1.1,@0.9,@1.0];
+            animation.duration = 0.3;
+            animation.calculationMode = kCAAnimationCubic;
+            //添加动画
+            [imageView.layer addAnimation:animation forKey:nil];
+        }
+    }
+}
+
+
+#pragma mark - 禁止屏幕旋转
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
 
 @end

@@ -35,6 +35,20 @@
 		653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653989001F692E4B007BD83B /* KLIndexViewController.m */; };
 		653989041F692E56007BD83B /* KLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653989031F692E56007BD83B /* KLProfileViewController.m */; };
 		653989061F693414007BD83B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 653989051F693414007BD83B /* main.json */; };
+		6550C7121F73672D00BA5BFD /* KLFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7111F73672D00BA5BFD /* KLFilterView.m */; };
+		6550C7151F73680A00BA5BFD /* KLFilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7141F73680A00BA5BFD /* KLFilterButton.m */; };
+		6550C7191F73888000BA5BFD /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7181F73888000BA5BFD /* DCSpeedy.m */; };
+		6550C71C1F738E6F00BA5BFD /* KLFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C71B1F738E6F00BA5BFD /* KLFilterViewController.m */; };
+		6550C71F1F7390C000BA5BFD /* KLSildeBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C71E1F7390C000BA5BFD /* KLSildeBarView.m */; };
+		6550C7241F739C5200BA5BFD /* KLSearchListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7221F739C5200BA5BFD /* KLSearchListTableViewCell.m */; };
+		6550C7251F739C5200BA5BFD /* KLSearchListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6550C7231F739C5200BA5BFD /* KLSearchListTableViewCell.xib */; };
+		6550C7291F73A7C000BA5BFD /* KLgoodListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7281F73A7C000BA5BFD /* KLgoodListViewController.m */; };
+		6550C7331F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7311F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m */; };
+		6550C7341F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6550C7321F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib */; };
+		6550C7381F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7371F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.m */; };
+		6550C73B1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C73A1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m */; };
+		6550C73E1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C73D1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m */; };
+		6550C7421F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6550C7411F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib */; };
 		6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580812E1F6F8FB20061367E /* KLCategoryObject.m */; };
 		658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081351F6F9D450061367E /* KLCategoryItemButton.m */; };
 		658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081371F6F9D450061367E /* KLScrollTableViewCell.m */; };
@@ -166,6 +180,31 @@
 		653989021F692E56007BD83B /* KLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileViewController.h; sourceTree = "<group>"; };
 		653989031F692E56007BD83B /* KLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileViewController.m; sourceTree = "<group>"; };
 		653989051F693414007BD83B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		6550C7101F73672D00BA5BFD /* KLFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterView.h; sourceTree = "<group>"; };
+		6550C7111F73672D00BA5BFD /* KLFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterView.m; sourceTree = "<group>"; };
+		6550C7131F73680A00BA5BFD /* KLFilterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterButton.h; sourceTree = "<group>"; };
+		6550C7141F73680A00BA5BFD /* KLFilterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterButton.m; sourceTree = "<group>"; };
+		6550C7171F73888000BA5BFD /* DCSpeedy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSpeedy.h; sourceTree = "<group>"; };
+		6550C7181F73888000BA5BFD /* DCSpeedy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSpeedy.m; sourceTree = "<group>"; };
+		6550C71A1F738E6F00BA5BFD /* KLFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterViewController.h; sourceTree = "<group>"; };
+		6550C71B1F738E6F00BA5BFD /* KLFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterViewController.m; sourceTree = "<group>"; };
+		6550C71D1F7390C000BA5BFD /* KLSildeBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSildeBarView.h; sourceTree = "<group>"; };
+		6550C71E1F7390C000BA5BFD /* KLSildeBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSildeBarView.m; sourceTree = "<group>"; };
+		6550C7211F739C5200BA5BFD /* KLSearchListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSearchListTableViewCell.h; sourceTree = "<group>"; };
+		6550C7221F739C5200BA5BFD /* KLSearchListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSearchListTableViewCell.m; sourceTree = "<group>"; };
+		6550C7231F739C5200BA5BFD /* KLSearchListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSearchListTableViewCell.xib; sourceTree = "<group>"; };
+		6550C7271F73A7C000BA5BFD /* KLgoodListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLgoodListViewController.h; sourceTree = "<group>"; };
+		6550C7281F73A7C000BA5BFD /* KLgoodListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLgoodListViewController.m; sourceTree = "<group>"; };
+		6550C7301F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryGoodListTableViewCell.h; sourceTree = "<group>"; };
+		6550C7311F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryGoodListTableViewCell.m; sourceTree = "<group>"; };
+		6550C7321F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCategoryGoodListTableViewCell.xib; sourceTree = "<group>"; };
+		6550C7361F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterTitleTableViewCell.h; sourceTree = "<group>"; };
+		6550C7371F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterTitleTableViewCell.m; sourceTree = "<group>"; };
+		6550C7391F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterCategoryTableViewCell.h; sourceTree = "<group>"; };
+		6550C73A1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterCategoryTableViewCell.m; sourceTree = "<group>"; };
+		6550C73C1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterBrandTableViewCell.h; sourceTree = "<group>"; };
+		6550C73D1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterBrandTableViewCell.m; sourceTree = "<group>"; };
+		6550C7411F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLFilterTitleTableViewCell.xib; sourceTree = "<group>"; };
 		6580812D1F6F8FB20061367E /* KLCategoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryObject.h; sourceTree = "<group>"; };
 		6580812E1F6F8FB20061367E /* KLCategoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryObject.m; sourceTree = "<group>"; };
 		658081341F6F9D450061367E /* KLCategoryItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryItemButton.h; sourceTree = "<group>"; };
@@ -371,6 +410,7 @@
 		653988BE1F6920F1007BD83B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6550C7161F73887700BA5BFD /* Tool */,
 				658419021F70E75C00A51A34 /* NormalUI */,
 				6580814F1F6FCD0D0061367E /* Extensions */,
 				653988C51F6921D7007BD83B /* Additions */,
@@ -393,6 +433,8 @@
 		653988C01F6920F1007BD83B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6550C7261F73A7A700BA5BFD /* goodListView */,
+				6550C70F1F7366C300BA5BFD /* FilterView */,
 				659E766A1F727160002DFA42 /* searchView */,
 				653989051F693414007BD83B /* main.json */,
 				653988EC1F692A38007BD83B /* KLBaseViewController.h */,
@@ -496,6 +538,75 @@
 				653988FA1F692E32007BD83B /* KLShopCarViewController.m */,
 			);
 			path = ShopCar;
+			sourceTree = "<group>";
+		};
+		6550C70F1F7366C300BA5BFD /* FilterView */ = {
+			isa = PBXGroup;
+			children = (
+				6550C7351F73BC0400BA5BFD /* FilterCell */,
+				6550C7101F73672D00BA5BFD /* KLFilterView.h */,
+				6550C7111F73672D00BA5BFD /* KLFilterView.m */,
+				6550C7131F73680A00BA5BFD /* KLFilterButton.h */,
+				6550C7141F73680A00BA5BFD /* KLFilterButton.m */,
+				6550C71A1F738E6F00BA5BFD /* KLFilterViewController.h */,
+				6550C71B1F738E6F00BA5BFD /* KLFilterViewController.m */,
+				6550C71D1F7390C000BA5BFD /* KLSildeBarView.h */,
+				6550C71E1F7390C000BA5BFD /* KLSildeBarView.m */,
+			);
+			path = FilterView;
+			sourceTree = "<group>";
+		};
+		6550C7161F73887700BA5BFD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6550C7171F73888000BA5BFD /* DCSpeedy.h */,
+				6550C7181F73888000BA5BFD /* DCSpeedy.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6550C7201F739C3C00BA5BFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6550C7211F739C5200BA5BFD /* KLSearchListTableViewCell.h */,
+				6550C7221F739C5200BA5BFD /* KLSearchListTableViewCell.m */,
+				6550C7231F739C5200BA5BFD /* KLSearchListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6550C7261F73A7A700BA5BFD /* goodListView */ = {
+			isa = PBXGroup;
+			children = (
+				6550C72A1F73B00800BA5BFD /* Cell */,
+				6550C7271F73A7C000BA5BFD /* KLgoodListViewController.h */,
+				6550C7281F73A7C000BA5BFD /* KLgoodListViewController.m */,
+			);
+			path = goodListView;
+			sourceTree = "<group>";
+		};
+		6550C72A1F73B00800BA5BFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6550C7301F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.h */,
+				6550C7311F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m */,
+				6550C7321F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6550C7351F73BC0400BA5BFD /* FilterCell */ = {
+			isa = PBXGroup;
+			children = (
+				6550C7361F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.h */,
+				6550C7371F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.m */,
+				6550C7391F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.h */,
+				6550C73A1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m */,
+				6550C73C1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.h */,
+				6550C73D1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m */,
+				6550C7411F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib */,
+			);
+			path = FilterCell;
 			sourceTree = "<group>";
 		};
 		6580812C1F6F8F860061367E /* Model */ = {
@@ -659,6 +770,7 @@
 		659E766A1F727160002DFA42 /* searchView */ = {
 			isa = PBXGroup;
 			children = (
+				6550C7201F739C3C00BA5BFD /* Cell */,
 				659E766B1F727186002DFA42 /* KLSearchViewController.h */,
 				659E766C1F727186002DFA42 /* KLSearchViewController.m */,
 			);
@@ -799,17 +911,20 @@
 				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
 				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
+				6550C7251F739C5200BA5BFD /* KLSearchListTableViewCell.xib in Resources */,
 				658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */,
 				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
 				659E76411F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib in Resources */,
 				659E76481F720208002DFA42 /* ic_reduce.png in Resources */,
 				659E76531F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib in Resources */,
 				653988971F692028007BD83B /* Assets.xcassets in Resources */,
+				6550C7421F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib in Resources */,
 				653989061F693414007BD83B /* main.json in Resources */,
 				659E763C1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib in Resources */,
 				658419121F70F85900A51A34 /* KLProfileItemTableViewCell.xib in Resources */,
 				658418F11F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib in Resources */,
 				659E76471F720208002DFA42 /* ic_add.png in Resources */,
+				6550C7341F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib in Resources */,
 				653988951F692028007BD83B /* Main.storyboard in Resources */,
 				658419141F70FC8500A51A34 /* ProfileItem.plist in Resources */,
 			);
@@ -888,6 +1003,7 @@
 				653988DF1F6921D7007BD83B /* NSArray+Log.m in Sources */,
 				658418FA1F70BFD300A51A34 /* KLProfileInfoView.m in Sources */,
 				658419081F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m in Sources */,
+				6550C73E1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m in Sources */,
 				653988E41F6921D7007BD83B /* NSString+CZPath.m in Sources */,
 				658419111F70F85900A51A34 /* KLProfileItemTableViewCell.m in Sources */,
 				658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */,
@@ -898,14 +1014,20 @@
 				659E76401F71FB56002DFA42 /* KLShopCarItemTableViewCell.m in Sources */,
 				658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */,
 				6584191A1F70FF6A00A51A34 /* KLMyCollectionViewController.m in Sources */,
+				6550C7291F73A7C000BA5BFD /* KLgoodListViewController.m in Sources */,
 				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
 				659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */,
+				6550C7191F73888000BA5BFD /* DCSpeedy.m in Sources */,
+				6550C7241F739C5200BA5BFD /* KLSearchListTableViewCell.m in Sources */,
 				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
+				6550C71C1F738E6F00BA5BFD /* KLFilterViewController.m in Sources */,
+				6550C7121F73672D00BA5BFD /* KLFilterView.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
 				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
 				659E76701F727623002DFA42 /* UIBarButtonItem+KLExtension.m in Sources */,
 				659E76521F72451A002DFA42 /* KLCategoryTitleTableViewCell.m in Sources */,
+				6550C7151F73680A00BA5BFD /* KLFilterButton.m in Sources */,
 				653988FE1F692E41007BD83B /* KLCategoryViewController.m in Sources */,
 				6584191D1F70FF7700A51A34 /* KLAddressViewController.m in Sources */,
 				658418EF1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m in Sources */,
@@ -922,17 +1044,21 @@
 				653988E11F6921D7007BD83B /* NSObject+CZRuntime.m in Sources */,
 				6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */,
 				653988F41F692ABB007BD83B /* KLNavgationViewController.m in Sources */,
+				6550C7331F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m in Sources */,
 				6584190C1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m in Sources */,
 				659E765D1F7254CF002DFA42 /* KLChooseLanguageView.m in Sources */,
 				659E76571F724889002DFA42 /* KLScratchableLatexView.m in Sources */,
 				653989041F692E56007BD83B /* KLProfileViewController.m in Sources */,
 				653988E21F6921D7007BD83B /* NSString+CZBase64.m in Sources */,
 				653988EA1F6921D7007BD83B /* UIViewController+CZAddition.m in Sources */,
+				6550C73B1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m in Sources */,
 				653988E91F6921D7007BD83B /* UIView+CZAddition.m in Sources */,
 				653988F11F692A65007BD83B /* KLMainViewController.m in Sources */,
 				653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */,
+				6550C71F1F7390C000BA5BFD /* KLSildeBarView.m in Sources */,
 				653988E01F6921D7007BD83B /* NSAttributedString+CZAdditon.m in Sources */,
 				653988E61F6921D7007BD83B /* UIColor+CZAddition.m in Sources */,
+				6550C7381F73BC3A00BA5BFD /* KLFilterTitleTableViewCell.m in Sources */,
 				659E763B1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m in Sources */,
 				6539888F1F692028007BD83B /* AppDelegate.m in Sources */,
 				653988FB1F692E32007BD83B /* KLShopCarViewController.m in Sources */,

@@ -106,7 +106,7 @@ static NSString *categoryTitleCell = @"categoryTitle";
     }
     else{
         //计算高度
-        CGFloat height=0.8*(SCREEN_WIDTH-(leftMargin+leftMargin)*3)/3+2*topMargin;
+        CGFloat height=0.8*(SCREEN_WIDTH-(JGGeftMargin+JGGeftMargin)*3)/3+2*JGGtopMargin;
          //计算行数
         long int number = self.dataArr.count / 3;
         if (self.dataArr.count%3 != 0) {

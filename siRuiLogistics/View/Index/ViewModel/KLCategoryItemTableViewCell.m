@@ -44,6 +44,9 @@
 #pragma mark KLCategoryItemButtonDelegate
 -(void)clickBtnWithModel:(KLCategoryObject *)model{
     NSLog(@"%@",model.picDesc);
+    if (self.block) {
+        self.block(model);
+    }
 }
 
 

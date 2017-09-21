@@ -13,6 +13,7 @@
 #import "KLGoodListTableViewCell.h"
 #import "KLSalePromotionTableViewCell.h"
 #import "KLIndexSearchMessageChangeView.h"
+#import "KLgoodListViewController.h"
 // 轮播图cell
 static NSString *scrollPicCell  =  @"scrollCell";
 //分类cell
@@ -45,7 +46,7 @@ static NSString *promotionCell = @"promotionCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =[UIColor cz_randomColor];
+   // self.view.backgroundColor =[UIColor cz_randomColor];
     
     self.indexDefaultBackView.hidden =NO;
     self.indexSearchTopView.backgroundColor = [UIColor clearColor];
@@ -104,20 +105,7 @@ static NSString *promotionCell = @"promotionCell";
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden = YES;
 }
-#pragma mark KLIndexSearchMessageChangeViewDelegate
-//-(void)gotoMessageViewByBtn:(UIButton *)senderBtn{
-//    
-//}
-//
-//-(void)changeLangWithBtn:(UIButton *)senderBtn{
-//    [senderBtn setTitle:@"EN" forState:UIControlStateNormal];
-//}
 
-//-(void)gotoSearchView:(UISearchBar *)senderBar{
-//    NSLog(@"搜索。。");
-//    senderBar.text = @"我被点击了";
-//    [senderBar resignFirstResponder];
-//}
 
 #pragma mark  内存管理
 -(void)dealloc{
@@ -192,6 +180,10 @@ static NSString *promotionCell = @"promotionCell";
             cell = [[KLCategoryItemTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:categoryItemCell];
         }
         [cell setCellWithModelArr:self.categoryItemArr];
+        cell.block = ^(KLCategoryObject *model){
+            KLgoodListViewController *vc= [[KLgoodListViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:NO];
+        };
         return cell;
     }else if(indexPath.section == 3){
         if (indexPath.row == 0) {
