@@ -118,6 +118,8 @@
     
     CGPoint translation = [recognizer translationInView:self];
     
+    NSLog(@"%.2f,%.2f",translation.x,translation.y);
+    
     if(UIGestureRecognizerStateBegan == recognizer.state || UIGestureRecognizerStateChanged == recognizer.state){
         
         if (translation.x > 0 ) {//右滑

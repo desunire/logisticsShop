@@ -65,7 +65,7 @@ alpha:alphaValue]
 #pragma mark 图片设置
 #define plachHolderImage [UIImage imageNamed:@"placeholder"]
 
-
+#import "KLGoodBaseViewController.h"
 #import "KLScratchableLatexView.h"
 #import "DCSpeedy.h"
 #import "KLSildeBarView.h"
@@ -86,4 +86,5 @@ alpha:alphaValue]
 #import "UIImage+KLExtentsion.h"
 #import "UIImageView+WebCache.h"
 #import "KLChooseLanguageView.h"
+#import "UIBarButtonItem+KLExtension.h"
 #endif /* PrefixHeader_pch */

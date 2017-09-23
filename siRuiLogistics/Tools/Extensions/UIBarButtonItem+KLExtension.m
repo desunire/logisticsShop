@@ -26,4 +26,20 @@
     return [self initWithCustomView:back];
 }
 
+
+
++(UIBarButtonItem *)ItemWithImage:(UIImage *)image WithHighlighted:(UIImage *)HighlightedImage Target:(id)target action:(SEL)action
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:image forState:UIControlStateNormal];
+    [btn setImage:HighlightedImage forState:UIControlStateHighlighted];
+    [btn sizeToFit];
+    
+    [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    UIView *contentView = [[UIView alloc]initWithFrame:btn.frame];
+    [contentView addSubview:btn];
+    
+    return [[UIBarButtonItem alloc]initWithCustomView:contentView];
+}
+
 @end

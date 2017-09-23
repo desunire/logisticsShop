@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "KLLoadViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -29,11 +29,20 @@
     
     _window.backgroundColor = [UIColor whiteColor];
     
-    KLMainViewController * vc= [[KLMainViewController alloc] init];
+    if (/* DISABLES CODE */ (1)) {
+        KLLoadViewController *vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass( [KLLoadViewController class]) owner:self options:nil] firstObject];
+        _window.rootViewController = vc;
+        [_window makeKeyAndVisible];
+        
+    }else{
+        KLMainViewController * vc= [[KLMainViewController alloc] init];
+        
+        _window.rootViewController = vc;
+        
+        [_window makeKeyAndVisible];
+    }
     
-    _window.rootViewController = vc;
     
-    [_window makeKeyAndVisible]; 
     
     return YES;
 }

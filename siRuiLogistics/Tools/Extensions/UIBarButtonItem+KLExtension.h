@@ -18,4 +18,7 @@
  */
 -(instancetype)initWithCustomView:(NSString *)imageName andTarget:(SEL)selector;
 
+
++(UIBarButtonItem *)ItemWithImage:(UIImage *)image WithHighlighted:(UIImage *)HighlightedImage Target:(id)target action:(SEL)action;
+
 @end

@@ -81,6 +81,8 @@
 		658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6584191F1F70FF8600A51A34 /* KLSuggestViewController.m */; };
 		658419231F70FF9600A51A34 /* KLChangePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419221F70FF9600A51A34 /* KLChangePwdViewController.m */; };
 		658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */; };
+		658E48F51F74ADF00056C48E /* KLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E48F41F74ADF00056C48E /* KLDetailViewController.m */; };
+		658E48F81F74AE090056C48E /* KLGoodBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E48F71F74AE090056C48E /* KLGoodBaseViewController.m */; };
 		659E76371F71F916002DFA42 /* ShopCarSettlementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76361F71F916002DFA42 /* ShopCarSettlementView.m */; };
 		659E763B1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E76391F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.m */; };
 		659E763C1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659E763A1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib */; };
@@ -101,6 +103,9 @@
 		659E76651F72665D002DFA42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659E76671F72665D002DFA42 /* Localizable.strings */; };
 		659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E766C1F727186002DFA42 /* KLSearchViewController.m */; };
 		659E76701F727623002DFA42 /* UIBarButtonItem+KLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E766F1F727623002DFA42 /* UIBarButtonItem+KLExtension.m */; };
+		65A954241F7641540033EDB6 /* KLGoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E48F11F74ADE30056C48E /* KLGoodViewController.m */; };
+		65A954281F7641D40033EDB6 /* KLLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A954271F7641D40033EDB6 /* KLLoadViewController.m */; };
+		65A9542A1F7641E50033EDB6 /* KLLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A954291F7641E50033EDB6 /* KLLoadViewController.xib */; };
 		788A6A3842A63D7C51B937E9 /* Pods_siRuiLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */; };
 /* End PBXBuildFile section */
 
@@ -259,6 +264,12 @@
 		658419221F70FF9600A51A34 /* KLChangePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLChangePwdViewController.m; sourceTree = "<group>"; };
 		658419241F7102E900A51A34 /* NSDictionary+NTESJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NTESJson.h"; sourceTree = "<group>"; };
 		658419251F7102E900A51A34 /* NSDictionary+NTESJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NTESJson.m"; sourceTree = "<group>"; };
+		658E48F01F74ADE30056C48E /* KLGoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodViewController.h; sourceTree = "<group>"; };
+		658E48F11F74ADE30056C48E /* KLGoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodViewController.m; sourceTree = "<group>"; };
+		658E48F31F74ADF00056C48E /* KLDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDetailViewController.h; sourceTree = "<group>"; };
+		658E48F41F74ADF00056C48E /* KLDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDetailViewController.m; sourceTree = "<group>"; };
+		658E48F61F74AE090056C48E /* KLGoodBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodBaseViewController.h; sourceTree = "<group>"; };
+		658E48F71F74AE090056C48E /* KLGoodBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodBaseViewController.m; sourceTree = "<group>"; };
 		659E76351F71F916002DFA42 /* ShopCarSettlementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarSettlementView.h; sourceTree = "<group>"; };
 		659E76361F71F916002DFA42 /* ShopCarSettlementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarSettlementView.m; sourceTree = "<group>"; };
 		659E76381F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLShopCarTitleTableViewCell.h; sourceTree = "<group>"; };
@@ -292,6 +303,9 @@
 		659E766C1F727186002DFA42 /* KLSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSearchViewController.m; sourceTree = "<group>"; };
 		659E766E1F727623002DFA42 /* UIBarButtonItem+KLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+KLExtension.h"; sourceTree = "<group>"; };
 		659E766F1F727623002DFA42 /* UIBarButtonItem+KLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+KLExtension.m"; sourceTree = "<group>"; };
+		65A954261F7641D40033EDB6 /* KLLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLLoadViewController.h; sourceTree = "<group>"; };
+		65A954271F7641D40033EDB6 /* KLLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLLoadViewController.m; sourceTree = "<group>"; };
+		65A954291F7641E50033EDB6 /* KLLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLLoadViewController.xib; sourceTree = "<group>"; };
 		99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siRuiLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -433,6 +447,8 @@
 		653988C01F6920F1007BD83B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				65A954251F7641C40033EDB6 /* Load */,
+				658E48EF1F74AD640056C48E /* GoodDetail(商品详情) */,
 				6550C7261F73A7A700BA5BFD /* goodListView */,
 				6550C70F1F7366C300BA5BFD /* FilterView */,
 				659E766A1F727160002DFA42 /* searchView */,
@@ -719,6 +735,19 @@
 			path = SubController;
 			sourceTree = "<group>";
 		};
+		658E48EF1F74AD640056C48E /* GoodDetail(商品详情) */ = {
+			isa = PBXGroup;
+			children = (
+				658E48F61F74AE090056C48E /* KLGoodBaseViewController.h */,
+				658E48F71F74AE090056C48E /* KLGoodBaseViewController.m */,
+				658E48F01F74ADE30056C48E /* KLGoodViewController.h */,
+				658E48F11F74ADE30056C48E /* KLGoodViewController.m */,
+				658E48F31F74ADF00056C48E /* KLDetailViewController.h */,
+				658E48F41F74ADF00056C48E /* KLDetailViewController.m */,
+			);
+			path = "GoodDetail(商品详情)";
+			sourceTree = "<group>";
+		};
 		659E76341F71F8FB002DFA42 /* ViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +804,16 @@
 				659E766C1F727186002DFA42 /* KLSearchViewController.m */,
 			);
 			path = searchView;
+			sourceTree = "<group>";
+		};
+		65A954251F7641C40033EDB6 /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				65A954261F7641D40033EDB6 /* KLLoadViewController.h */,
+				65A954271F7641D40033EDB6 /* KLLoadViewController.m */,
+				65A954291F7641E50033EDB6 /* KLLoadViewController.xib */,
+			);
+			path = Load;
 			sourceTree = "<group>";
 		};
 		7D1436729A56F891BBFDAA30 /* Pods */ = {
@@ -908,6 +947,7 @@
 				658419011F70E60100A51A34 /* KLProfileOperateOrderView.xib in Resources */,
 				659E765F1F7254F6002DFA42 /* KLChooseLanguageView.xib in Resources */,
 				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
+				65A9542A1F7641E50033EDB6 /* KLLoadViewController.xib in Resources */,
 				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
 				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
@@ -999,12 +1039,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A954241F7641540033EDB6 /* KLGoodViewController.m in Sources */,
 				659E76621F7265A4002DFA42 /* NSBundle+Language.m in Sources */,
 				653988DF1F6921D7007BD83B /* NSArray+Log.m in Sources */,
 				658418FA1F70BFD300A51A34 /* KLProfileInfoView.m in Sources */,
 				658419081F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m in Sources */,
 				6550C73E1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m in Sources */,
 				653988E41F6921D7007BD83B /* NSString+CZPath.m in Sources */,
+				658E48F81F74AE090056C48E /* KLGoodBaseViewController.m in Sources */,
 				658419111F70F85900A51A34 /* KLProfileItemTableViewCell.m in Sources */,
 				658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */,
 				653988EE1F692A38007BD83B /* KLBaseViewController.m in Sources */,
@@ -1022,6 +1064,7 @@
 				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
 				6550C71C1F738E6F00BA5BFD /* KLFilterViewController.m in Sources */,
 				6550C7121F73672D00BA5BFD /* KLFilterView.m in Sources */,
+				65A954281F7641D40033EDB6 /* KLLoadViewController.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
 				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
@@ -1039,6 +1082,7 @@
 				659E76371F71F916002DFA42 /* ShopCarSettlementView.m in Sources */,
 				658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */,
 				653988E51F6921D7007BD83B /* UIButton+CZAddition.m in Sources */,
+				658E48F51F74ADF00056C48E /* KLDetailViewController.m in Sources */,
 				6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */,
 				658418FF1F70E5F700A51A34 /* KLProfileOperateOrderView.m in Sources */,
 				653988E11F6921D7007BD83B /* NSObject+CZRuntime.m in Sources */,
