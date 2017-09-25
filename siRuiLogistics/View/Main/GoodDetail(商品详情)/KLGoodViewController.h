@@ -10,4 +10,10 @@
 
 @interface KLGoodViewController : UIViewController
 
+
+/**
+ 轮播数组
+ */
+@property(copy,nonatomic)NSArray *shuffleArr;
+
 @end

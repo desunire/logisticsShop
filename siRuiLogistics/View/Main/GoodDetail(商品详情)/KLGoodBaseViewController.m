@@ -9,7 +9,7 @@
 #import "KLGoodBaseViewController.h"
 #import "KLGoodViewController.h"
 #import "KLDetailViewController.h"
-
+#import "KLBigImgShowViewController.h"
 
 @interface KLGoodBaseViewController ()<UIScrollViewDelegate>
 /**
@@ -188,7 +188,7 @@
         NSLog(@"收藏");
         button.selected = !button.selected;
     }else if(button.tag == 1){
-//        NSLog(@"购物车");
+        NSLog(@"购物车");
 //        DCMyTrolleyViewController *shopCarVc = [[DCMyTrolleyViewController alloc] init];
 //        shopCarVc.isTabBar = YES;
 //        shopCarVc.title = @"购物车";

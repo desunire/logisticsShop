@@ -117,6 +117,7 @@ static NSString *filterBrandCell = @"filterBrandCell";
 - (void)bottomButtonClick:(UIButton *)button
 {
 
+    
 }
 
 #pragma mark UITableViewDelegate,UITableViewDataSource

@@ -65,6 +65,13 @@
     
 }
 
+-(void)gotoMessageViewByBtn:(UIButton *)senderBtn{
+    
+    KLMessageCenterViewController *vc= [[KLMessageCenterViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
+    
+}
+
 #pragma mark 切换语言视图设置 KLIndexSearchMessageChangeViewDelegate
 -(void)initChangeLanguageView{
     self.chooseLanguageView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLChooseLanguageView class]) owner:self options:nil] firstObject];

@@ -29,7 +29,7 @@
     
     _window.backgroundColor = [UIColor whiteColor];
     
-    if (/* DISABLES CODE */ (1)) {
+    if (/* DISABLES CODE */ (0)) {
         KLLoadViewController *vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass( [KLLoadViewController class]) owner:self options:nil] firstObject];
         _window.rootViewController = vc;
         [_window makeKeyAndVisible];

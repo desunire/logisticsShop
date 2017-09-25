@@ -131,10 +131,8 @@ static NSString *categoryTitleCell = @"categoryTitle";
     if (indexPath.row == 0) {
         KLCategoryTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:categoryTitleCell];
         if (cell == nil) {
-            
             cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLCategoryTitleTableViewCell class]) owner:self options:nil] firstObject];
         }
-        
         return cell;
     }
     else{

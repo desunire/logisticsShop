@@ -23,7 +23,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <state key="normal" title="CN">
-                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="changeLanguage:" destination="Sgq-M1-dz7" eventType="touchUpInside" id="oDf-hN-gQ7"/>

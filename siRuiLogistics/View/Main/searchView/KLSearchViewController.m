@@ -68,7 +68,7 @@
 #pragma mark - 导航栏
 - (void)setUpNav
 {
-    self.searchBtn = [[UIButton alloc] initWithFrame:(CGRect){SCREEN_WIDTH - 40, 10, 35, 20}];
+    self.searchBtn = [[UIButton alloc] initWithFrame:(CGRect){SCREEN_WIDTH - 40, 10, 45, 30}];
     [self.searchBtn setTitle:NSLocalizedString(@"search", nil) forState:UIControlStateNormal];
     
     [self.searchBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -84,6 +84,9 @@
     self.searchBar = [[UISearchBar alloc] init];
     self.searchBar.placeholder = NSLocalizedString(@"searchPlaceholder", nil);
     self.searchBar.frame = CGRectMake(40, 25, SCREEN_WIDTH - 120, 35);
+    self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
+//    self.searchBar.layer.borderWidth = 1 ;
+//    self.searchBar.layer.borderColor = UIColorFromRGB(0xdadada).CGColor;
     self.navigationItem.titleView = self.searchBar;
 }
 #pragma mark  增加筛选视图

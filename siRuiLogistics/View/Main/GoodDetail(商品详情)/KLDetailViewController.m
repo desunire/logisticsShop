@@ -7,32 +7,48 @@
 //
 
 #import "KLDetailViewController.h"
-
+#import <WebKit/WebKit.h>
 @interface KLDetailViewController ()
+
+@property (strong, nonatomic) WKWebView *webView;
 
 @end
 
 @implementation KLDetailViewController
 
+#pragma mark - LazyLoad
+
+- (WKWebView *)webView
+{
+    if (!_webView) {
+        _webView = [[WKWebView alloc] initWithFrame:CGRectZero];
+        _webView.frame = self.view.bounds;
+        [self.view addSubview:_webView];
+    }
+    return _webView;
+}
+
+
+#pragma mark - LifeCyle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor cz_randomColor];
     
+    [self setUpBase];
+    
+    [self setUpGoodsParticularsWKWebView];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setUpBase
+{
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.webView.backgroundColor = self.view.backgroundColor;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setUpGoodsParticularsWKWebView
+{
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+    [self.webView loadRequest:request];
 }
-*/
 
 @end

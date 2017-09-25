@@ -49,6 +49,24 @@
 		6550C73B1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C73A1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m */; };
 		6550C73E1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C73D1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m */; };
 		6550C7421F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6550C7411F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib */; };
+		655EC5EB1F78933B00C7951E /* KLDetailShufflingHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC5EA1F78933B00C7951E /* KLDetailShufflingHeadView.m */; };
+		655EC5EF1F789D7C00C7951E /* KLGoodNameCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC5ED1F789D7C00C7951E /* KLGoodNameCollectionViewCell.m */; };
+		655EC5F01F789D7C00C7951E /* KLGoodNameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC5EE1F789D7C00C7951E /* KLGoodNameCollectionViewCell.xib */; };
+		655EC5F41F78AA8000C7951E /* KLGoodSpecCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC5F21F78AA8000C7951E /* KLGoodSpecCollectionViewCell.m */; };
+		655EC5F51F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC5F31F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib */; };
+		655EC5F91F78CC2600C7951E /* KLGoodDescCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC5F71F78CC2600C7951E /* KLGoodDescCollectionViewCell.m */; };
+		655EC5FA1F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC5F81F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib */; };
+		655EC5FD1F78D50400C7951E /* KLBigImgShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC5FC1F78D50400C7951E /* KLBigImgShowViewController.m */; };
+		655EC6011F78D6DF00C7951E /* KLBigImgShowViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EC6001F78D6DF00C7951E /* KLBigImgShowViewController.storyboard */; };
+		655EC6041F78D9E300C7951E /* KLBigImgShowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC6031F78D9E300C7951E /* KLBigImgShowCollectionViewCell.m */; };
+		655EC6071F78DA3D00C7951E /* RGCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC6061F78DA3D00C7951E /* RGCardViewLayout.m */; };
+		655EC60B1F78F67500C7951E /* KLMessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC60A1F78F67500C7951E /* KLMessageCenterViewController.m */; };
+		655EC60E1F78F68300C7951E /* KLMessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC60D1F78F68300C7951E /* KLMessageDetailViewController.m */; };
+		655EC6121F78F81F00C7951E /* KLNavTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC6111F78F81F00C7951E /* KLNavTitleView.m */; };
+		655EC6171F78FC5300C7951E /* KLMessageListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC6151F78FC5300C7951E /* KLMessageListTableViewCell.m */; };
+		655EC6181F78FC5300C7951E /* KLMessageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC6161F78FC5300C7951E /* KLMessageListTableViewCell.xib */; };
+		655EC61C1F79080D00C7951E /* KLMessageStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC61B1F79080D00C7951E /* KLMessageStateView.m */; };
+		655EC61E1F79081900C7951E /* KLMessageStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC61D1F79081900C7951E /* KLMessageStateView.xib */; };
 		6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580812E1F6F8FB20061367E /* KLCategoryObject.m */; };
 		658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081351F6F9D450061367E /* KLCategoryItemButton.m */; };
 		658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081371F6F9D450061367E /* KLScrollTableViewCell.m */; };
@@ -210,6 +228,36 @@
 		6550C73C1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterBrandTableViewCell.h; sourceTree = "<group>"; };
 		6550C73D1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterBrandTableViewCell.m; sourceTree = "<group>"; };
 		6550C7411F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLFilterTitleTableViewCell.xib; sourceTree = "<group>"; };
+		655EC5E91F78933B00C7951E /* KLDetailShufflingHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDetailShufflingHeadView.h; sourceTree = "<group>"; };
+		655EC5EA1F78933B00C7951E /* KLDetailShufflingHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDetailShufflingHeadView.m; sourceTree = "<group>"; };
+		655EC5EC1F789D7C00C7951E /* KLGoodNameCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodNameCollectionViewCell.h; sourceTree = "<group>"; };
+		655EC5ED1F789D7C00C7951E /* KLGoodNameCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodNameCollectionViewCell.m; sourceTree = "<group>"; };
+		655EC5EE1F789D7C00C7951E /* KLGoodNameCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLGoodNameCollectionViewCell.xib; sourceTree = "<group>"; };
+		655EC5F11F78AA8000C7951E /* KLGoodSpecCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodSpecCollectionViewCell.h; sourceTree = "<group>"; };
+		655EC5F21F78AA8000C7951E /* KLGoodSpecCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodSpecCollectionViewCell.m; sourceTree = "<group>"; };
+		655EC5F31F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLGoodSpecCollectionViewCell.xib; sourceTree = "<group>"; };
+		655EC5F61F78CC2600C7951E /* KLGoodDescCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLGoodDescCollectionViewCell.h; sourceTree = "<group>"; };
+		655EC5F71F78CC2600C7951E /* KLGoodDescCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLGoodDescCollectionViewCell.m; sourceTree = "<group>"; };
+		655EC5F81F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLGoodDescCollectionViewCell.xib; sourceTree = "<group>"; };
+		655EC5FB1F78D50400C7951E /* KLBigImgShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBigImgShowViewController.h; sourceTree = "<group>"; };
+		655EC5FC1F78D50400C7951E /* KLBigImgShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBigImgShowViewController.m; sourceTree = "<group>"; };
+		655EC6001F78D6DF00C7951E /* KLBigImgShowViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KLBigImgShowViewController.storyboard; sourceTree = "<group>"; };
+		655EC6021F78D9E300C7951E /* KLBigImgShowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBigImgShowCollectionViewCell.h; sourceTree = "<group>"; };
+		655EC6031F78D9E300C7951E /* KLBigImgShowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBigImgShowCollectionViewCell.m; sourceTree = "<group>"; };
+		655EC6051F78DA3D00C7951E /* RGCardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCardViewLayout.h; sourceTree = "<group>"; };
+		655EC6061F78DA3D00C7951E /* RGCardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayout.m; sourceTree = "<group>"; };
+		655EC6091F78F67500C7951E /* KLMessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMessageCenterViewController.h; sourceTree = "<group>"; };
+		655EC60A1F78F67500C7951E /* KLMessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMessageCenterViewController.m; sourceTree = "<group>"; };
+		655EC60C1F78F68300C7951E /* KLMessageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMessageDetailViewController.h; sourceTree = "<group>"; };
+		655EC60D1F78F68300C7951E /* KLMessageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMessageDetailViewController.m; sourceTree = "<group>"; };
+		655EC6101F78F81F00C7951E /* KLNavTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLNavTitleView.h; sourceTree = "<group>"; };
+		655EC6111F78F81F00C7951E /* KLNavTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLNavTitleView.m; sourceTree = "<group>"; };
+		655EC6141F78FC5300C7951E /* KLMessageListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMessageListTableViewCell.h; sourceTree = "<group>"; };
+		655EC6151F78FC5300C7951E /* KLMessageListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMessageListTableViewCell.m; sourceTree = "<group>"; };
+		655EC6161F78FC5300C7951E /* KLMessageListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLMessageListTableViewCell.xib; sourceTree = "<group>"; };
+		655EC61A1F79080D00C7951E /* KLMessageStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMessageStateView.h; sourceTree = "<group>"; };
+		655EC61B1F79080D00C7951E /* KLMessageStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMessageStateView.m; sourceTree = "<group>"; };
+		655EC61D1F79081900C7951E /* KLMessageStateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLMessageStateView.xib; sourceTree = "<group>"; };
 		6580812D1F6F8FB20061367E /* KLCategoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryObject.h; sourceTree = "<group>"; };
 		6580812E1F6F8FB20061367E /* KLCategoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryObject.m; sourceTree = "<group>"; };
 		658081341F6F9D450061367E /* KLCategoryItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryItemButton.h; sourceTree = "<group>"; };
@@ -447,6 +495,7 @@
 		653988C01F6920F1007BD83B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				655EC60F1F78F80B00C7951E /* NavTitleView */,
 				65A954251F7641C40033EDB6 /* Load */,
 				658E48EF1F74AD640056C48E /* GoodDetail(商品详情) */,
 				6550C7261F73A7A700BA5BFD /* goodListView */,
@@ -512,6 +561,7 @@
 		653988F51F692DF3007BD83B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				655EC6081F78F18E00C7951E /* MessageCenter */,
 				658419171F70FEEF00A51A34 /* SubController */,
 				658418F31F70BF5900A51A34 /* View */,
 				658418F41F70BF5900A51A34 /* ViewModel */,
@@ -623,6 +673,80 @@
 				6550C7411F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib */,
 			);
 			path = FilterCell;
+			sourceTree = "<group>";
+		};
+		655EC5E71F78915300C7951E /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				655EC5EC1F789D7C00C7951E /* KLGoodNameCollectionViewCell.h */,
+				655EC5ED1F789D7C00C7951E /* KLGoodNameCollectionViewCell.m */,
+				655EC5EE1F789D7C00C7951E /* KLGoodNameCollectionViewCell.xib */,
+				655EC5F11F78AA8000C7951E /* KLGoodSpecCollectionViewCell.h */,
+				655EC5F21F78AA8000C7951E /* KLGoodSpecCollectionViewCell.m */,
+				655EC5F31F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib */,
+				655EC5F61F78CC2600C7951E /* KLGoodDescCollectionViewCell.h */,
+				655EC5F71F78CC2600C7951E /* KLGoodDescCollectionViewCell.m */,
+				655EC5F81F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib */,
+			);
+			path = CollectionCell;
+			sourceTree = "<group>";
+		};
+		655EC5E81F7892DE00C7951E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				655EC5E91F78933B00C7951E /* KLDetailShufflingHeadView.h */,
+				655EC5EA1F78933B00C7951E /* KLDetailShufflingHeadView.m */,
+				655EC5FB1F78D50400C7951E /* KLBigImgShowViewController.h */,
+				655EC5FC1F78D50400C7951E /* KLBigImgShowViewController.m */,
+				655EC6001F78D6DF00C7951E /* KLBigImgShowViewController.storyboard */,
+				655EC6021F78D9E300C7951E /* KLBigImgShowCollectionViewCell.h */,
+				655EC6031F78D9E300C7951E /* KLBigImgShowCollectionViewCell.m */,
+				655EC6051F78DA3D00C7951E /* RGCardViewLayout.h */,
+				655EC6061F78DA3D00C7951E /* RGCardViewLayout.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		655EC6081F78F18E00C7951E /* MessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				655EC6191F7907D600C7951E /* View */,
+				655EC6131F78FC1500C7951E /* Cell */,
+				655EC6091F78F67500C7951E /* KLMessageCenterViewController.h */,
+				655EC60A1F78F67500C7951E /* KLMessageCenterViewController.m */,
+				655EC60C1F78F68300C7951E /* KLMessageDetailViewController.h */,
+				655EC60D1F78F68300C7951E /* KLMessageDetailViewController.m */,
+			);
+			path = MessageCenter;
+			sourceTree = "<group>";
+		};
+		655EC60F1F78F80B00C7951E /* NavTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				655EC6101F78F81F00C7951E /* KLNavTitleView.h */,
+				655EC6111F78F81F00C7951E /* KLNavTitleView.m */,
+			);
+			path = NavTitleView;
+			sourceTree = "<group>";
+		};
+		655EC6131F78FC1500C7951E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				655EC6141F78FC5300C7951E /* KLMessageListTableViewCell.h */,
+				655EC6151F78FC5300C7951E /* KLMessageListTableViewCell.m */,
+				655EC6161F78FC5300C7951E /* KLMessageListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		655EC6191F7907D600C7951E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				655EC61A1F79080D00C7951E /* KLMessageStateView.h */,
+				655EC61B1F79080D00C7951E /* KLMessageStateView.m */,
+				655EC61D1F79081900C7951E /* KLMessageStateView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6580812C1F6F8F860061367E /* Model */ = {
@@ -738,6 +862,8 @@
 		658E48EF1F74AD640056C48E /* GoodDetail(商品详情) */ = {
 			isa = PBXGroup;
 			children = (
+				655EC5E81F7892DE00C7951E /* Header */,
+				655EC5E71F78915300C7951E /* CollectionCell */,
 				658E48F61F74AE090056C48E /* KLGoodBaseViewController.h */,
 				658E48F71F74AE090056C48E /* KLGoodBaseViewController.m */,
 				658E48F01F74ADE30056C48E /* KLGoodViewController.h */,
@@ -942,17 +1068,22 @@
 			files = (
 				6539889A1F692028007BD83B /* LaunchScreen.storyboard in Resources */,
 				659E76491F720208002DFA42 /* icon10.png in Resources */,
+				655EC6011F78D6DF00C7951E /* KLBigImgShowViewController.storyboard in Resources */,
 				659E76651F72665D002DFA42 /* Localizable.strings in Resources */,
 				659E764A1F720208002DFA42 /* icon9.png in Resources */,
 				658419011F70E60100A51A34 /* KLProfileOperateOrderView.xib in Resources */,
 				659E765F1F7254F6002DFA42 /* KLChooseLanguageView.xib in Resources */,
+				655EC5F51F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib in Resources */,
 				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
+				655EC5FA1F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib in Resources */,
+				655EC6181F78FC5300C7951E /* KLMessageListTableViewCell.xib in Resources */,
 				65A9542A1F7641E50033EDB6 /* KLLoadViewController.xib in Resources */,
 				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
 				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
 				6550C7251F739C5200BA5BFD /* KLSearchListTableViewCell.xib in Resources */,
 				658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */,
+				655EC61E1F79081900C7951E /* KLMessageStateView.xib in Resources */,
 				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
 				659E76411F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib in Resources */,
 				659E76481F720208002DFA42 /* ic_reduce.png in Resources */,
@@ -962,6 +1093,7 @@
 				653989061F693414007BD83B /* main.json in Resources */,
 				659E763C1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib in Resources */,
 				658419121F70F85900A51A34 /* KLProfileItemTableViewCell.xib in Resources */,
+				655EC5F01F789D7C00C7951E /* KLGoodNameCollectionViewCell.xib in Resources */,
 				658418F11F70B12A00A51A34 /* KLIndexSearchMessageChangeView.xib in Resources */,
 				659E76471F720208002DFA42 /* ic_add.png in Resources */,
 				6550C7341F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib in Resources */,
@@ -1055,9 +1187,14 @@
 				658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */,
 				659E76401F71FB56002DFA42 /* KLShopCarItemTableViewCell.m in Sources */,
 				658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */,
+				655EC5EB1F78933B00C7951E /* KLDetailShufflingHeadView.m in Sources */,
+				655EC5EF1F789D7C00C7951E /* KLGoodNameCollectionViewCell.m in Sources */,
 				6584191A1F70FF6A00A51A34 /* KLMyCollectionViewController.m in Sources */,
 				6550C7291F73A7C000BA5BFD /* KLgoodListViewController.m in Sources */,
+				655EC6121F78F81F00C7951E /* KLNavTitleView.m in Sources */,
+				655EC5FD1F78D50400C7951E /* KLBigImgShowViewController.m in Sources */,
 				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
+				655EC61C1F79080D00C7951E /* KLMessageStateView.m in Sources */,
 				659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */,
 				6550C7191F73888000BA5BFD /* DCSpeedy.m in Sources */,
 				6550C7241F739C5200BA5BFD /* KLSearchListTableViewCell.m in Sources */,
@@ -1080,15 +1217,19 @@
 				659E764D1F723D93002DFA42 /* SCJPromptView.m in Sources */,
 				653988E71F6921D7007BD83B /* UILabel+CZAddition.m in Sources */,
 				659E76371F71F916002DFA42 /* ShopCarSettlementView.m in Sources */,
+				655EC5F91F78CC2600C7951E /* KLGoodDescCollectionViewCell.m in Sources */,
 				658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */,
 				653988E51F6921D7007BD83B /* UIButton+CZAddition.m in Sources */,
+				655EC5F41F78AA8000C7951E /* KLGoodSpecCollectionViewCell.m in Sources */,
 				658E48F51F74ADF00056C48E /* KLDetailViewController.m in Sources */,
 				6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */,
 				658418FF1F70E5F700A51A34 /* KLProfileOperateOrderView.m in Sources */,
 				653988E11F6921D7007BD83B /* NSObject+CZRuntime.m in Sources */,
 				6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */,
+				655EC6171F78FC5300C7951E /* KLMessageListTableViewCell.m in Sources */,
 				653988F41F692ABB007BD83B /* KLNavgationViewController.m in Sources */,
 				6550C7331F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m in Sources */,
+				655EC60E1F78F68300C7951E /* KLMessageDetailViewController.m in Sources */,
 				6584190C1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m in Sources */,
 				659E765D1F7254CF002DFA42 /* KLChooseLanguageView.m in Sources */,
 				659E76571F724889002DFA42 /* KLScratchableLatexView.m in Sources */,
@@ -1107,7 +1248,10 @@
 				6539888F1F692028007BD83B /* AppDelegate.m in Sources */,
 				653988FB1F692E32007BD83B /* KLShopCarViewController.m in Sources */,
 				658419231F70FF9600A51A34 /* KLChangePwdViewController.m in Sources */,
+				655EC6071F78DA3D00C7951E /* RGCardViewLayout.m in Sources */,
 				6539888C1F692028007BD83B /* main.m in Sources */,
+				655EC6041F78D9E300C7951E /* KLBigImgShowCollectionViewCell.m in Sources */,
+				655EC60B1F78F67500C7951E /* KLMessageCenterViewController.m in Sources */,
 				658419051F70E78C00A51A34 /* UpPicDownTextBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

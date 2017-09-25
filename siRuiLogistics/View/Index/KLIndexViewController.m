@@ -131,15 +131,17 @@ static NSString *promotionCell = @"promotionCell";
 #pragma mark 监听tablView的滑动距离
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
-    //NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
+    NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
     if (self.tableView.contentOffset.y>0) {
         CGFloat alpha = self.tableView.contentOffset.y/50.0;
         self.indexDefaultBackView.alpha =(alpha < 1.0 ?alpha:1.0);
         if (self.indexDefaultBackView.alpha == 1) {
             [self.indexSearchTopView.languageBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         }
+    }else if (self.tableView.contentOffset.y<-20){
+         [self.indexSearchTopView.languageBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     }else{
-         [self.indexSearchTopView.languageBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.indexSearchTopView.languageBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     }
     
     
