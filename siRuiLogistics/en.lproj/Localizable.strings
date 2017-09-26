@@ -24,3 +24,11 @@
 "search" = "search";
 
 "searchPlaceholder" = "商品，品牌或者分类";
+
+"allOrder" = "all";
+
+
+"waitSureOrder" = "waitSure";
+
+
+"waitSendOrder" = "waitSend";

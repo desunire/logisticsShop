@@ -21,7 +21,29 @@
 #define klObjectisEmpty(_object) (_object ==nil|| [_object isKindOfClass:[NSNull class]]||([_object respondsToSelector:@selector(length)]&&[(NSData *)_object length]==0)||([_object respondsToSelector:@selector(count)]&&[(NSArray *)_object count]==0))
 
 //4.1 设置RGB颜色
+//app风格颜色
 #define DefaultBackColor  UIColorFromRGB(0xbb1e10)
+
+//背景色tableView等
+#define viewBackColor UIColorFromRGB(0xf5f5f5)
+
+//筛选按钮颜色
+#define chooseBtnColor UIColorFromRGB(0xfbe9e9)
+
+//边框颜色：#dadada
+
+#define lineColor UIColorFromRGB(0xdadada)
+
+//图标灰色：#999
+
+//主标题：#333（30px）
+#define mainTitleColor UIColorFromRGB(0x333333)
+
+//次标题：#666 (28px)
+#define subTitleColor UIColorFromRGB(0x666666)
+
+//内容：#666（26px）
+
 
 #define KLsRCBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]
 

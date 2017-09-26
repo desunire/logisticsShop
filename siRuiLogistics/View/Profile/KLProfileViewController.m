@@ -12,6 +12,9 @@
 #import "UpPicDownTextBtn.h"
 #import "KLCustomManagerInfoTableViewCell.h"
 #import "KLProfileItemTableViewCell.h"
+#import "KLOrderViewController.h"
+
+
 //个人信息cell
 static NSString *profileInfoCell = @"profileInfoCell";
 
@@ -24,7 +27,7 @@ static NSString *customManagerCell  = @"customManagerCell";
 
 
 
-@interface KLProfileViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface KLProfileViewController ()<UITableViewDelegate,UITableViewDataSource,SCJPromptViewDelegate>
 
 
 /**
@@ -37,7 +40,11 @@ static NSString *customManagerCell  = @"customManagerCell";
  //个人中心具体的用户操作如我的收藏，我的售后等
  */
 @property(strong,nonatomic)NSArray *profileItemArr;
+//退出提示框
+@property(strong,nonatomic)SCJPromptView *scjPromptView;
 
+//售后提示框
+@property(strong,nonatomic)SCJPromptView *afterSalePromptView;
 
 @end
 
@@ -54,6 +61,8 @@ static NSString *customManagerCell  = @"customManagerCell";
     self.profileItemArr = [NSArray arrayWithContentsOfFile:path];
     NSLog(@"%@,,%@",path,self.profileItemArr);
     [self registerCell];
+    [self addPromptView];
+    [self addAfterSaleView];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -61,6 +70,47 @@ static NSString *customManagerCell  = @"customManagerCell";
     self.navigationController.navigationBar.hidden = YES;
 }
 
+#pragma mark 设置售后提示框
+-(void)addAfterSaleView{
+    
+    self.afterSalePromptView=[[SCJPromptView alloc]initWithFrame:self.view.frame];
+    self.afterSalePromptView.delegate=self;
+    [ self.afterSalePromptView setViewWithTitle:nil andMessge:@"请联系:你大爷133546789"
+     andCancelTitle:@"取消" andSureTitle:@"确认"];
+    self.afterSalePromptView.hidden = YES;
+    [self.tabBarController.view addSubview: self.afterSalePromptView];
+}
+
+
+#pragma mark 调往订单列表页面
+-(void)gotoOrderListView:(int)index;{
+    
+    KLOrderViewController *vc = [[KLOrderViewController alloc] init];
+    vc.nowOrderState = index;
+    [self.navigationController pushViewController:vc
+                                         animated:NO];
+    
+}
+
+#pragma mark 设置退出提示框
+-(void)addPromptView{
+    self.scjPromptView=[[SCJPromptView alloc]initWithFrame:self.view.frame];
+    self.scjPromptView.delegate=self;
+    [self.scjPromptView setViewWithTitle:nil andMessge:@"确定退出登录?" andCancelTitle:@"取消" andSureTitle:@"确认"];
+    self.scjPromptView.hidden = YES;
+    [self.tabBarController.view addSubview:self.scjPromptView];
+}
+#pragma mark SCJPromptViewDelegate
+-(void)chooseItem:(NSInteger)item{
+    if (item==0) {
+        NSLog(@"取消");
+    }
+    else if(item==1){
+        NSLog(@"确定");
+    }
+    self.afterSalePromptView.hidden = YES;
+    self.scjPromptView.hidden = YES;
+}
 
 #pragma mark 注册cell
 -(void)registerCell{
@@ -89,6 +139,8 @@ static NSString *customManagerCell  = @"customManagerCell";
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    __weak typeof(self)Wself= self;
+    
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             KLProfileInfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:profileInfoCell forIndexPath:indexPath] ;
@@ -103,6 +155,26 @@ static NSString *customManagerCell  = @"customManagerCell";
                 cell = [[KLProfileOperateOrderTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:orderInfoCell];
             }
             [cell setCellWithOperateItem:nil];
+            cell.block= ^(operateType type){
+                if (type == waitSureOrder) {
+                    [Wself gotoOrderListView:1];
+                }
+                
+                if (type == waitsendOrder) {
+                    [Wself gotoOrderListView:2];
+                }
+                
+                
+                if (type == afterSaleOrder) {
+                    Wself.afterSalePromptView.hidden = NO;
+                }
+                
+                if (type == allOrder) {
+                    [Wself gotoOrderListView:0];
+                }
+                
+                
+            };
             return cell;
         }else{
             KLCustomManagerInfoTableViewCell *cell =
@@ -130,18 +202,17 @@ static NSString *customManagerCell  = @"customManagerCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.section == 1) {
-        NSDictionary *dic = [self.profileItemArr objectAtIndex:indexPath.row];
-        if ([dic jsonString:@"view"]) {
-                
-                [DCURLRouter pushURLString:[dic jsonString:@"view"] animated:YES];
-            NSLog(@"%@",[dic jsonString:@"view"]);
-//                NSLog(@"%@", [DCURLRouter sharedDCURLRouter].currentViewController);
-//            
-//                UIViewController *twoVc = [DCURLRouter sharedDCURLRouter].currentViewController;
-//                twoVc.valueBlock = ^(id value) {
-//                    NSLog(@"%@", value);
-//                };
+        //注销账户单独处理
+        if (indexPath.row == self.profileItemArr.count-1) {
+            self.scjPromptView.hidden = NO;
+        }else{
+            NSDictionary *dic = [self.profileItemArr objectAtIndex:indexPath.row];
+            if ([dic jsonString:@"view"]) {
+                [DCURLRouter pushURLString:[dic jsonString:@"view"] animated:NO];
+                NSLog(@"%@",[dic jsonString:@"view"]);
+            }
         }
+       
     }
 }
 

@@ -6,7 +6,7 @@
 		<key>view</key>
 		<string>sun://collection</string>
 		<key>imageName</key>
-		<string>weibo-share</string>
+		<string>my_collection</string>
 		<key>title</key>
 		<string>我的收藏</string>
 	</dict>
@@ -14,7 +14,7 @@
 		<key>view</key>
 		<string>sun://address</string>
 		<key>imageName</key>
-		<string>icon</string>
+		<string>delivery_address</string>
 		<key>title</key>
 		<string>收货地址</string>
 	</dict>
@@ -22,7 +22,7 @@
 		<key>view</key>
 		<string>sun://suggest</string>
 		<key>imageName</key>
-		<string>kind</string>
+		<string>feedback</string>
 		<key>title</key>
 		<string>意见反馈</string>
 	</dict>
@@ -30,7 +30,7 @@
 		<key>view</key>
 		<string>sun://changePwd</string>
 		<key>imageName</key>
-		<string>kind</string>
+		<string>change_password</string>
 		<key>title</key>
 		<string>密码修改</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>view</key>
 		<string>nil</string>
 		<key>imageName</key>
-		<string>business_icon</string>
+		<string>logout</string>
 		<key>title</key>
 		<string>注销账户</string>
 	</dict>

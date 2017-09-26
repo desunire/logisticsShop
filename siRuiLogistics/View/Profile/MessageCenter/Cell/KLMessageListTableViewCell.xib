@@ -31,14 +31,24 @@
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnh-zM-XMJ">
+                        <rect key="frame" x="0.0" y="48.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="wup-6z-m6O"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="q50-XF-MVZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8pq-aK-f7F"/>
+                    <constraint firstAttribute="bottom" secondItem="jnh-zM-XMJ" secondAttribute="bottom" id="ATl-6D-PJ6"/>
                     <constraint firstItem="h9w-vT-mf3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hkr-T4-EZM"/>
                     <constraint firstAttribute="bottom" secondItem="q50-XF-MVZ" secondAttribute="bottom" id="IDn-Hi-fHt"/>
                     <constraint firstItem="h9w-vT-mf3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ltu-v6-Ekr"/>
                     <constraint firstItem="q50-XF-MVZ" firstAttribute="leading" secondItem="h9w-vT-mf3" secondAttribute="trailing" constant="10" id="d8O-jz-igG"/>
                     <constraint firstAttribute="trailing" secondItem="q50-XF-MVZ" secondAttribute="trailing" constant="10" id="fVZ-sf-82A"/>
+                    <constraint firstAttribute="trailing" secondItem="jnh-zM-XMJ" secondAttribute="trailing" id="k2a-Dd-GfY"/>
+                    <constraint firstItem="jnh-zM-XMJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mBs-ar-yQX"/>
                 </constraints>
             </tableViewCellContentView>
         </tableViewCell>

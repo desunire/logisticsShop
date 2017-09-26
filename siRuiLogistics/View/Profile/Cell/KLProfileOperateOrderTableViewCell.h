@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef enum : NSUInteger {
+    waitSureOrder,
+    waitsendOrder,
+    afterSaleOrder,
+    allOrder
+}operateType;
+
+
+typedef void(^orderOperateBlock)(operateType);
+
 @interface KLProfileOperateOrderTableViewCell : UITableViewCell
 
+
+@property(copy,nonatomic)orderOperateBlock block;
 
 -(void)setCellWithOperateItem:(id)sender;
 

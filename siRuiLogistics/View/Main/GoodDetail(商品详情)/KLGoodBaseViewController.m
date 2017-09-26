@@ -36,6 +36,8 @@
 
 @implementation KLGoodBaseViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpChildViewControllers];
@@ -240,6 +242,7 @@
     UIButton *button = _bgView.subviews[index];
     [self topBottonClick:button];
     [self addChildViewController];
+
 }
 
 

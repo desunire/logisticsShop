@@ -23,3 +23,11 @@
 "search" = "搜索";
 
 "searchPlaceholder" ="商品，品牌或者分类";
+
+"allOrder" = "全部";
+
+
+"waitSureOrder" = "待确认";
+
+
+"waitSendOrder" = "待发货";

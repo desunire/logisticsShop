@@ -35,22 +35,40 @@
     //绘制当前cell
    // operateView.waitSureBtn = [[UpPicDownTextBtn alloc] initWithFrame:CGRectZero andPicImage:@"kind" andText:@"待确认" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
     
-    [operateView.waitSureBtn setViewWithPicImage:@"kind" andText:@"待确认" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
+    [operateView.waitSureBtn setViewWithPicImage:@"mine_tobe_confirm" andText:@"待确认" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
+    
+    operateView.waitSendBtn.tag = waitSureOrder;
+    
+    [operateView.waitSureBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
     
     
-     [operateView.waitSendBtn setViewWithPicImage:@"kind" andText:@"待发货" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
+     [operateView.waitSendBtn setViewWithPicImage:@"mine_goods_undelivered_order" andText:@"待发货" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
+     operateView.waitSendBtn.tag = waitsendOrder;
+    [operateView.waitSendBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
     
+     [operateView.afterSaleBtn setViewWithPicImage:@"mine_customer_service" andText:@"售后" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
     
-     [operateView.afterSaleBtn setViewWithPicImage:@"kind" andText:@"售后" andTextColor:[UIColor grayColor] andTextFont:[UIFont systemFontOfSize:15.0]];
+    operateView.afterSaleBtn.tag = afterSaleOrder;
+    [operateView.afterSaleBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
     
+     [operateView.allOrderBtn setViewWithPicImage:@"mine_all_orders" andText:@"全部订单" andTextColor:[UIColor redColor] andTextFont:[UIFont systemFontOfSize:15.0]];
+    operateView.allOrderBtn.tag = allOrder;
+    [operateView.allOrderBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
     
-     [operateView.allOrderBtn setViewWithPicImage:@"kind" andText:@"全部订单" andTextColor:[UIColor redColor] andTextFont:[UIFont systemFontOfSize:15.0]];
     
     operateView.frame = self.contentView.frame;
     
     [self.contentView addSubview:operateView];
+ }
+
+
+-(void)clickItem:(UIButton *)sender{
     
+    if (self.block) {
+        self.block(sender.tag);
+    }
     
 }
+
 
 @end

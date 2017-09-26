@@ -25,3 +25,12 @@
 "search" = "search";
 
 "searchPlaceholder" = "xxxxxxxx";
+
+
+"allOrder" = "all";
+
+
+"waitSureOrder" = "waitSure";
+
+
+"waitSendOrder" = "waitSend";

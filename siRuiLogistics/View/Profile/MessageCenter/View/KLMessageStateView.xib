@@ -21,7 +21,10 @@
                         <constraint firstAttribute="width" constant="30" id="2A5-Td-11d"/>
                         <constraint firstAttribute="height" constant="30" id="tke-fK-qll"/>
                     </constraints>
-                    <state key="normal" image="xuanzhong"/>
+                    <state key="normal" image="weixuanzhong"/>
+                    <connections>
+                        <action selector="changeChooseState:" destination="7t0-Uf-2nN" eventType="touchUpInside" id="TBL-ye-iSw"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部已读" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bQ-K9-mKm">
                     <rect key="frame" x="0.0" y="45" width="375" height="20"/>
@@ -32,20 +35,33 @@
                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Rx-xu-MSo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BBp-OF-rqp"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="2Mp-k7-krx" firstAttribute="top" secondItem="7t0-Uf-2nN" secondAttribute="top" constant="10" id="3bK-5k-PUO"/>
                 <constraint firstItem="2Mp-k7-krx" firstAttribute="centerX" secondItem="7t0-Uf-2nN" secondAttribute="centerX" id="8k8-L5-aaX"/>
+                <constraint firstAttribute="trailing" secondItem="2Rx-xu-MSo" secondAttribute="trailing" id="JjG-07-rNC"/>
+                <constraint firstItem="2Rx-xu-MSo" firstAttribute="top" secondItem="7t0-Uf-2nN" secondAttribute="top" id="NZy-K8-ONh"/>
                 <constraint firstItem="8bQ-K9-mKm" firstAttribute="top" secondItem="2Mp-k7-krx" secondAttribute="bottom" constant="5" id="h2f-Na-sIe"/>
+                <constraint firstItem="2Rx-xu-MSo" firstAttribute="leading" secondItem="7t0-Uf-2nN" secondAttribute="leading" id="j56-1s-oea"/>
                 <constraint firstAttribute="trailing" secondItem="8bQ-K9-mKm" secondAttribute="trailing" id="o46-za-2CN"/>
                 <constraint firstItem="8bQ-K9-mKm" firstAttribute="leading" secondItem="7t0-Uf-2nN" secondAttribute="leading" id="vLm-CQ-KcO"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chooseBtn" destination="2Mp-k7-krx" id="LKA-iY-i5b"/>
+            </connections>
             <point key="canvasLocation" x="-64.5" y="-259"/>
         </view>
     </objects>
     <resources>
-        <image name="xuanzhong" width="30" height="30"/>
+        <image name="weixuanzhong" width="30" height="30"/>
     </resources>
 </document>

@@ -27,13 +27,14 @@
 -(void)setViewWithTitle:(NSString *)title andMessge:(NSString *)message andCancelTitle:(NSString *)cancel andSureTitle:(NSString *)sure{
     
     if (!KlStringisEmpty(title)) {
-        self.titleLabel=[UILabel setMyLabel:[UIFont boldSystemFontOfSize:18.0] andColor:[UIColor blackColor] andTextAlignment:NSTextAlignmentCenter];
+        self.titleLabel=[UILabel setMyLabel:[UIFont boldSystemFontOfSize:16.0] andColor:mainTitleColor andTextAlignment:NSTextAlignmentCenter];
         self.titleLabel.text=title;
+        self.titleLabel.numberOfLines = 0;
         [self.backView addSubview:self.titleLabel];
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.backView.mas_top).offset(20);
             make.left.equalTo(self.backView.mas_left).offset(0);
-            make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH-leftDistance*2, 20));
+            make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH-leftDistance*2, 40));
         }];
     }
     

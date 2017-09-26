@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6505DCC61F7A3A4E0075B267 /* KLAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCC51F7A3A4E0075B267 /* KLAddress.m */; };
+		6505DCC91F7A52940075B267 /* KLOrderStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCC81F7A52940075B267 /* KLOrderStateView.m */; };
+		6505DCCD1F7A54CE0075B267 /* KLOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCCC1F7A54CE0075B267 /* KLOrderViewController.m */; };
+		6505DCD01F7A5A950075B267 /* KLOrderBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCCF1F7A5A950075B267 /* KLOrderBaseViewController.m */; };
+		6505DCD31F7A5AA80075B267 /* KLAllOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCD21F7A5AA80075B267 /* KLAllOrderViewController.m */; };
+		6505DCD61F7A5AD10075B267 /* KLWaitSureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCD51F7A5AD10075B267 /* KLWaitSureViewController.m */; };
+		6505DCD91F7A5AE50075B267 /* KLWaitSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCD81F7A5AE50075B267 /* KLWaitSendViewController.m */; };
+		6505DCDE1F7A61AC0075B267 /* KLOrderListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6505DCDC1F7A61AC0075B267 /* KLOrderListTableViewCell.m */; };
+		6505DCDF1F7A61AC0075B267 /* KLOrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6505DCDD1F7A61AC0075B267 /* KLOrderListTableViewCell.xib */; };
 		6539888C1F692028007BD83B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539888B1F692028007BD83B /* main.m */; };
 		6539888F1F692028007BD83B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6539888E1F692028007BD83B /* AppDelegate.m */; };
 		653988921F692028007BD83B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653988911F692028007BD83B /* ViewController.m */; };
@@ -124,6 +133,18 @@
 		65A954241F7641540033EDB6 /* KLGoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E48F11F74ADE30056C48E /* KLGoodViewController.m */; };
 		65A954281F7641D40033EDB6 /* KLLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A954271F7641D40033EDB6 /* KLLoadViewController.m */; };
 		65A9542A1F7641E50033EDB6 /* KLLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65A954291F7641E50033EDB6 /* KLLoadViewController.xib */; };
+		65D91DB41F79EE2B004F6CBD /* KLCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D91DB21F79EE2B004F6CBD /* KLCollectionTableViewCell.m */; };
+		65D91DB51F79EE2B004F6CBD /* KLCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D91DB31F79EE2B004F6CBD /* KLCollectionTableViewCell.xib */; };
+		65D91DB91F79F32A004F6CBD /* KLAllChooseDelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D91DB81F79F32A004F6CBD /* KLAllChooseDelView.m */; };
+		65D91DBB1F79F333004F6CBD /* KLAllChooseDelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D91DBA1F79F333004F6CBD /* KLAllChooseDelView.xib */; };
+		65D91DC01F79FB64004F6CBD /* KLChangePwddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D91DBF1F79FB64004F6CBD /* KLChangePwddView.m */; };
+		65D91DC21F79FB6B004F6CBD /* KLChangePwddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D91DC11F79FB6B004F6CBD /* KLChangePwddView.xib */; };
+		65D91DC51F7A1CBC004F6CBD /* KLSuggestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D91DC41F7A1CBC004F6CBD /* KLSuggestionView.m */; };
+		65D91DC71F7A1CC5004F6CBD /* KLSuggestionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D91DC61F7A1CC5004F6CBD /* KLSuggestionView.xib */; };
+		65D91DCB1F7A27CF004F6CBD /* KLAddressListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D91DC91F7A27CF004F6CBD /* KLAddressListTableViewCell.m */; };
+		65D91DCC1F7A27CF004F6CBD /* KLAddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D91DCA1F7A27CF004F6CBD /* KLAddressListTableViewCell.xib */; };
+		65D91DD01F7A2F72004F6CBD /* KLEditAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D91DCE1F7A2F72004F6CBD /* KLEditAddressViewController.m */; };
+		65D91DD11F7A2F72004F6CBD /* KLEditAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D91DCF1F7A2F72004F6CBD /* KLEditAddressViewController.xib */; };
 		788A6A3842A63D7C51B937E9 /* Pods_siRuiLogistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +167,23 @@
 
 /* Begin PBXFileReference section */
 		1BEDD0645C8D3C9CC0C35F58 /* Pods-siRuiLogistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.release.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.release.xcconfig"; sourceTree = "<group>"; };
+		6505DCC41F7A3A4E0075B267 /* KLAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAddress.h; sourceTree = "<group>"; };
+		6505DCC51F7A3A4E0075B267 /* KLAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAddress.m; sourceTree = "<group>"; };
+		6505DCC71F7A52940075B267 /* KLOrderStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderStateView.h; sourceTree = "<group>"; };
+		6505DCC81F7A52940075B267 /* KLOrderStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderStateView.m; sourceTree = "<group>"; };
+		6505DCCB1F7A54CE0075B267 /* KLOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderViewController.h; sourceTree = "<group>"; };
+		6505DCCC1F7A54CE0075B267 /* KLOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderViewController.m; sourceTree = "<group>"; };
+		6505DCCE1F7A5A950075B267 /* KLOrderBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderBaseViewController.h; sourceTree = "<group>"; };
+		6505DCCF1F7A5A950075B267 /* KLOrderBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderBaseViewController.m; sourceTree = "<group>"; };
+		6505DCD11F7A5AA80075B267 /* KLAllOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAllOrderViewController.h; sourceTree = "<group>"; };
+		6505DCD21F7A5AA80075B267 /* KLAllOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAllOrderViewController.m; sourceTree = "<group>"; };
+		6505DCD41F7A5AD10075B267 /* KLWaitSureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWaitSureViewController.h; sourceTree = "<group>"; };
+		6505DCD51F7A5AD10075B267 /* KLWaitSureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWaitSureViewController.m; sourceTree = "<group>"; };
+		6505DCD71F7A5AE50075B267 /* KLWaitSendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWaitSendViewController.h; sourceTree = "<group>"; };
+		6505DCD81F7A5AE50075B267 /* KLWaitSendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWaitSendViewController.m; sourceTree = "<group>"; };
+		6505DCDB1F7A61AC0075B267 /* KLOrderListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderListTableViewCell.h; sourceTree = "<group>"; };
+		6505DCDC1F7A61AC0075B267 /* KLOrderListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderListTableViewCell.m; sourceTree = "<group>"; };
+		6505DCDD1F7A61AC0075B267 /* KLOrderListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLOrderListTableViewCell.xib; sourceTree = "<group>"; };
 		653988871F692028007BD83B /* siRuiLogistics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siRuiLogistics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6539888B1F692028007BD83B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6539888D1F692028007BD83B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -354,6 +392,24 @@
 		65A954261F7641D40033EDB6 /* KLLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLLoadViewController.h; sourceTree = "<group>"; };
 		65A954271F7641D40033EDB6 /* KLLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLLoadViewController.m; sourceTree = "<group>"; };
 		65A954291F7641E50033EDB6 /* KLLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLLoadViewController.xib; sourceTree = "<group>"; };
+		65D91DB11F79EE2B004F6CBD /* KLCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCollectionTableViewCell.h; sourceTree = "<group>"; };
+		65D91DB21F79EE2B004F6CBD /* KLCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCollectionTableViewCell.m; sourceTree = "<group>"; };
+		65D91DB31F79EE2B004F6CBD /* KLCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		65D91DB71F79F32A004F6CBD /* KLAllChooseDelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAllChooseDelView.h; sourceTree = "<group>"; };
+		65D91DB81F79F32A004F6CBD /* KLAllChooseDelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAllChooseDelView.m; sourceTree = "<group>"; };
+		65D91DBA1F79F333004F6CBD /* KLAllChooseDelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLAllChooseDelView.xib; sourceTree = "<group>"; };
+		65D91DBE1F79FB64004F6CBD /* KLChangePwddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLChangePwddView.h; sourceTree = "<group>"; };
+		65D91DBF1F79FB64004F6CBD /* KLChangePwddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLChangePwddView.m; sourceTree = "<group>"; };
+		65D91DC11F79FB6B004F6CBD /* KLChangePwddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLChangePwddView.xib; sourceTree = "<group>"; };
+		65D91DC31F7A1CBC004F6CBD /* KLSuggestionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSuggestionView.h; sourceTree = "<group>"; };
+		65D91DC41F7A1CBC004F6CBD /* KLSuggestionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSuggestionView.m; sourceTree = "<group>"; };
+		65D91DC61F7A1CC5004F6CBD /* KLSuggestionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSuggestionView.xib; sourceTree = "<group>"; };
+		65D91DC81F7A27CF004F6CBD /* KLAddressListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLAddressListTableViewCell.h; sourceTree = "<group>"; };
+		65D91DC91F7A27CF004F6CBD /* KLAddressListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLAddressListTableViewCell.m; sourceTree = "<group>"; };
+		65D91DCA1F7A27CF004F6CBD /* KLAddressListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLAddressListTableViewCell.xib; sourceTree = "<group>"; };
+		65D91DCD1F7A2F72004F6CBD /* KLEditAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLEditAddressViewController.h; sourceTree = "<group>"; };
+		65D91DCE1F7A2F72004F6CBD /* KLEditAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLEditAddressViewController.m; sourceTree = "<group>"; };
+		65D91DCF1F7A2F72004F6CBD /* KLEditAddressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLEditAddressViewController.xib; sourceTree = "<group>"; };
 		99371F74A29E5A23102367A8 /* Pods-siRuiLogistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-siRuiLogistics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-siRuiLogistics/Pods-siRuiLogistics.debug.xcconfig"; sourceTree = "<group>"; };
 		A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_siRuiLogistics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -390,6 +446,43 @@
 				A6900B59ED705CF6DA0DBD82 /* Pods_siRuiLogistics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6505DCC31F7A3A3F0075B267 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6505DCC41F7A3A4E0075B267 /* KLAddress.h */,
+				6505DCC51F7A3A4E0075B267 /* KLAddress.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6505DCCA1F7A54BE0075B267 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				6505DCDA1F7A61970075B267 /* Cell */,
+				6505DCCB1F7A54CE0075B267 /* KLOrderViewController.h */,
+				6505DCCC1F7A54CE0075B267 /* KLOrderViewController.m */,
+				6505DCCE1F7A5A950075B267 /* KLOrderBaseViewController.h */,
+				6505DCCF1F7A5A950075B267 /* KLOrderBaseViewController.m */,
+				6505DCD11F7A5AA80075B267 /* KLAllOrderViewController.h */,
+				6505DCD21F7A5AA80075B267 /* KLAllOrderViewController.m */,
+				6505DCD41F7A5AD10075B267 /* KLWaitSureViewController.h */,
+				6505DCD51F7A5AD10075B267 /* KLWaitSureViewController.m */,
+				6505DCD71F7A5AE50075B267 /* KLWaitSendViewController.h */,
+				6505DCD81F7A5AE50075B267 /* KLWaitSendViewController.m */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		6505DCDA1F7A61970075B267 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6505DCDB1F7A61AC0075B267 /* KLOrderListTableViewCell.h */,
+				6505DCDC1F7A61AC0075B267 /* KLOrderListTableViewCell.m */,
+				6505DCDD1F7A61AC0075B267 /* KLOrderListTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6539887E1F692028007BD83B = {
@@ -561,6 +654,7 @@
 		653988F51F692DF3007BD83B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6505DCCA1F7A54BE0075B267 /* Order */,
 				655EC6081F78F18E00C7951E /* MessageCenter */,
 				658419171F70FEEF00A51A34 /* SubController */,
 				658418F31F70BF5900A51A34 /* View */,
@@ -822,6 +916,8 @@
 				658418FD1F70E5F700A51A34 /* KLProfileOperateOrderView.h */,
 				658418FE1F70E5F700A51A34 /* KLProfileOperateOrderView.m */,
 				658419001F70E60100A51A34 /* KLProfileOperateOrderView.xib */,
+				6505DCC71F7A52940075B267 /* KLOrderStateView.h */,
+				6505DCC81F7A52940075B267 /* KLOrderStateView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -847,6 +943,9 @@
 		658419171F70FEEF00A51A34 /* SubController */ = {
 			isa = PBXGroup;
 			children = (
+				6505DCC31F7A3A3F0075B267 /* Model */,
+				65D91DB61F79F308004F6CBD /* View */,
+				65D91DB01F79EE14004F6CBD /* Cell */,
 				658419181F70FF6A00A51A34 /* KLMyCollectionViewController.h */,
 				658419191F70FF6A00A51A34 /* KLMyCollectionViewController.m */,
 				6584191B1F70FF7700A51A34 /* KLAddressViewController.h */,
@@ -855,6 +954,9 @@
 				6584191F1F70FF8600A51A34 /* KLSuggestViewController.m */,
 				658419211F70FF9600A51A34 /* KLChangePwdViewController.h */,
 				658419221F70FF9600A51A34 /* KLChangePwdViewController.m */,
+				65D91DCD1F7A2F72004F6CBD /* KLEditAddressViewController.h */,
+				65D91DCE1F7A2F72004F6CBD /* KLEditAddressViewController.m */,
+				65D91DCF1F7A2F72004F6CBD /* KLEditAddressViewController.xib */,
 			);
 			path = SubController;
 			sourceTree = "<group>";
@@ -940,6 +1042,35 @@
 				65A954291F7641E50033EDB6 /* KLLoadViewController.xib */,
 			);
 			path = Load;
+			sourceTree = "<group>";
+		};
+		65D91DB01F79EE14004F6CBD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				65D91DB11F79EE2B004F6CBD /* KLCollectionTableViewCell.h */,
+				65D91DB21F79EE2B004F6CBD /* KLCollectionTableViewCell.m */,
+				65D91DB31F79EE2B004F6CBD /* KLCollectionTableViewCell.xib */,
+				65D91DC81F7A27CF004F6CBD /* KLAddressListTableViewCell.h */,
+				65D91DC91F7A27CF004F6CBD /* KLAddressListTableViewCell.m */,
+				65D91DCA1F7A27CF004F6CBD /* KLAddressListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		65D91DB61F79F308004F6CBD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				65D91DB71F79F32A004F6CBD /* KLAllChooseDelView.h */,
+				65D91DB81F79F32A004F6CBD /* KLAllChooseDelView.m */,
+				65D91DBA1F79F333004F6CBD /* KLAllChooseDelView.xib */,
+				65D91DBE1F79FB64004F6CBD /* KLChangePwddView.h */,
+				65D91DBF1F79FB64004F6CBD /* KLChangePwddView.m */,
+				65D91DC11F79FB6B004F6CBD /* KLChangePwddView.xib */,
+				65D91DC31F7A1CBC004F6CBD /* KLSuggestionView.h */,
+				65D91DC41F7A1CBC004F6CBD /* KLSuggestionView.m */,
+				65D91DC61F7A1CC5004F6CBD /* KLSuggestionView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7D1436729A56F891BBFDAA30 /* Pods */ = {
@@ -1068,21 +1199,27 @@
 			files = (
 				6539889A1F692028007BD83B /* LaunchScreen.storyboard in Resources */,
 				659E76491F720208002DFA42 /* icon10.png in Resources */,
+				65D91DD11F7A2F72004F6CBD /* KLEditAddressViewController.xib in Resources */,
+				65D91DBB1F79F333004F6CBD /* KLAllChooseDelView.xib in Resources */,
 				655EC6011F78D6DF00C7951E /* KLBigImgShowViewController.storyboard in Resources */,
 				659E76651F72665D002DFA42 /* Localizable.strings in Resources */,
 				659E764A1F720208002DFA42 /* icon9.png in Resources */,
 				658419011F70E60100A51A34 /* KLProfileOperateOrderView.xib in Resources */,
+				65D91DCC1F7A27CF004F6CBD /* KLAddressListTableViewCell.xib in Resources */,
 				659E765F1F7254F6002DFA42 /* KLChooseLanguageView.xib in Resources */,
+				65D91DC71F7A1CC5004F6CBD /* KLSuggestionView.xib in Resources */,
 				655EC5F51F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib in Resources */,
 				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
 				655EC5FA1F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib in Resources */,
 				655EC6181F78FC5300C7951E /* KLMessageListTableViewCell.xib in Resources */,
 				65A9542A1F7641E50033EDB6 /* KLLoadViewController.xib in Resources */,
+				65D91DB51F79EE2B004F6CBD /* KLCollectionTableViewCell.xib in Resources */,
 				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
 				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
 				6550C7251F739C5200BA5BFD /* KLSearchListTableViewCell.xib in Resources */,
 				658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */,
+				65D91DC21F79FB6B004F6CBD /* KLChangePwddView.xib in Resources */,
 				655EC61E1F79081900C7951E /* KLMessageStateView.xib in Resources */,
 				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
 				659E76411F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib in Resources */,
@@ -1091,6 +1228,7 @@
 				653988971F692028007BD83B /* Assets.xcassets in Resources */,
 				6550C7421F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib in Resources */,
 				653989061F693414007BD83B /* main.json in Resources */,
+				6505DCDF1F7A61AC0075B267 /* KLOrderListTableViewCell.xib in Resources */,
 				659E763C1F71FA4F002DFA42 /* KLShopCarTitleTableViewCell.xib in Resources */,
 				658419121F70F85900A51A34 /* KLProfileItemTableViewCell.xib in Resources */,
 				655EC5F01F789D7C00C7951E /* KLGoodNameCollectionViewCell.xib in Resources */,
@@ -1178,12 +1316,15 @@
 				658419081F70EB5900A51A34 /* KLProfileOperateOrderTableViewCell.m in Sources */,
 				6550C73E1F73BC8A00BA5BFD /* KLFilterBrandTableViewCell.m in Sources */,
 				653988E41F6921D7007BD83B /* NSString+CZPath.m in Sources */,
+				6505DCDE1F7A61AC0075B267 /* KLOrderListTableViewCell.m in Sources */,
 				658E48F81F74AE090056C48E /* KLGoodBaseViewController.m in Sources */,
+				6505DCCD1F7A54CE0075B267 /* KLOrderViewController.m in Sources */,
 				658419111F70F85900A51A34 /* KLProfileItemTableViewCell.m in Sources */,
 				658081401F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.m in Sources */,
 				653988EE1F692A38007BD83B /* KLBaseViewController.m in Sources */,
 				659E765A1F724E7A002DFA42 /* KLCategoryContentTableViewCell.m in Sources */,
 				658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */,
+				65D91DC51F7A1CBC004F6CBD /* KLSuggestionView.m in Sources */,
 				658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */,
 				659E76401F71FB56002DFA42 /* KLShopCarItemTableViewCell.m in Sources */,
 				658081491F6FB69F0061367E /* KLGoodCollectView.m in Sources */,
@@ -1195,13 +1336,19 @@
 				655EC5FD1F78D50400C7951E /* KLBigImgShowViewController.m in Sources */,
 				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
 				655EC61C1F79080D00C7951E /* KLMessageStateView.m in Sources */,
+				6505DCD91F7A5AE50075B267 /* KLWaitSendViewController.m in Sources */,
 				659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */,
+				6505DCD61F7A5AD10075B267 /* KLWaitSureViewController.m in Sources */,
 				6550C7191F73888000BA5BFD /* DCSpeedy.m in Sources */,
 				6550C7241F739C5200BA5BFD /* KLSearchListTableViewCell.m in Sources */,
+				6505DCD31F7A5AA80075B267 /* KLAllOrderViewController.m in Sources */,
+				65D91DCB1F7A27CF004F6CBD /* KLAddressListTableViewCell.m in Sources */,
+				65D91DB41F79EE2B004F6CBD /* KLCollectionTableViewCell.m in Sources */,
 				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
 				6550C71C1F738E6F00BA5BFD /* KLFilterViewController.m in Sources */,
 				6550C7121F73672D00BA5BFD /* KLFilterView.m in Sources */,
 				65A954281F7641D40033EDB6 /* KLLoadViewController.m in Sources */,
+				6505DCC61F7A3A4E0075B267 /* KLAddress.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
 				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
@@ -1214,8 +1361,10 @@
 				658418F71F70BFB200A51A34 /* KLProfileInfoTableViewCell.m in Sources */,
 				658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */,
 				653988E81F6921D7007BD83B /* UIScreen+CZAddition.m in Sources */,
+				65D91DB91F79F32A004F6CBD /* KLAllChooseDelView.m in Sources */,
 				659E764D1F723D93002DFA42 /* SCJPromptView.m in Sources */,
 				653988E71F6921D7007BD83B /* UILabel+CZAddition.m in Sources */,
+				65D91DC01F79FB64004F6CBD /* KLChangePwddView.m in Sources */,
 				659E76371F71F916002DFA42 /* ShopCarSettlementView.m in Sources */,
 				655EC5F91F78CC2600C7951E /* KLGoodDescCollectionViewCell.m in Sources */,
 				658081521F6FCD320061367E /* UIImage+KLExtentsion.m in Sources */,
@@ -1231,15 +1380,18 @@
 				6550C7331F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m in Sources */,
 				655EC60E1F78F68300C7951E /* KLMessageDetailViewController.m in Sources */,
 				6584190C1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.m in Sources */,
+				6505DCD01F7A5A950075B267 /* KLOrderBaseViewController.m in Sources */,
 				659E765D1F7254CF002DFA42 /* KLChooseLanguageView.m in Sources */,
 				659E76571F724889002DFA42 /* KLScratchableLatexView.m in Sources */,
 				653989041F692E56007BD83B /* KLProfileViewController.m in Sources */,
 				653988E21F6921D7007BD83B /* NSString+CZBase64.m in Sources */,
 				653988EA1F6921D7007BD83B /* UIViewController+CZAddition.m in Sources */,
 				6550C73B1F73BC7000BA5BFD /* KLFilterCategoryTableViewCell.m in Sources */,
+				6505DCC91F7A52940075B267 /* KLOrderStateView.m in Sources */,
 				653988E91F6921D7007BD83B /* UIView+CZAddition.m in Sources */,
 				653988F11F692A65007BD83B /* KLMainViewController.m in Sources */,
 				653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */,
+				65D91DD01F7A2F72004F6CBD /* KLEditAddressViewController.m in Sources */,
 				6550C71F1F7390C000BA5BFD /* KLSildeBarView.m in Sources */,
 				653988E01F6921D7007BD83B /* NSAttributedString+CZAdditon.m in Sources */,
 				653988E61F6921D7007BD83B /* UIColor+CZAddition.m in Sources */,

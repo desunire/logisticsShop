@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define leftDistance  80
+#define leftDistance  50
 #define backViewHeight 150
 #define btnHeight 50
 
