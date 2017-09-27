@@ -20,8 +20,9 @@
         //设置图片和文字
         UIImageView *picImageView = [[UIImageView alloc] init];
         NSURL *picUrl = [NSURL URLWithString:model.urlPic];
-        [picImageView sd_setImageWithURL:picUrl placeholderImage:plachHolderImage options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
-        }];
+        
+//        [picImageView sd_setImageWithURL:picUrl placeholderImage:[UIImage imageNamed:@"clutch"] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+//        }];
         UILabel *title = [[UILabel alloc]init];
         title.textAlignment = NSTextAlignmentCenter;
         title.font = [UIFont systemFontOfSize:15.0];
@@ -31,6 +32,8 @@
         title.translatesAutoresizingMaskIntoConstraints = false;
         //添加图文,使用自动布局方式
         if (model.picDesc) {
+            [picImageView sd_setImageWithURL:picUrl placeholderImage:[UIImage imageNamed:@"clutch"] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+            }];
             //设置布局
             NSLayoutConstraint *constraintTop = [NSLayoutConstraint constraintWithItem:picImageView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.0 constant:topMargin];
             
@@ -69,6 +72,10 @@
             [self addConstraint:titleConstraintWidth];
             [self addConstraint:titleConstraintHeight];
         }else{
+            [picImageView sd_setImageWithURL:picUrl placeholderImage:[UIImage imageNamed:@"more_index"] options:SDWebImageRetryFailed progress:nil completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+            }];
+            
+            picImageView.contentMode = UIViewContentModeScaleAspectFit;
             //纯图片展示
             if (model.urlPic) {
                 [self addSubview:picImageView];

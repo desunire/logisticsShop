@@ -62,7 +62,7 @@
         [self addConstraints:@[titleConstraintX,titleConstraintTop,titleConstraintWidth,titleConstraintHeight]];
         
         //添加点击事件
-        [self addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+       // [self addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
         }
     
     return self;

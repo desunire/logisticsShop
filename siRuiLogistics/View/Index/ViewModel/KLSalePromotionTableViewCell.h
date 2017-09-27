@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-static CGFloat cellHeight = 240;
+
+//点击商品的Block
+typedef void(^clickGoodItemBlock)(NSString *);
+
+static CGFloat cellHeight = 260;
 
 @interface KLSalePromotionTableViewCell : UITableViewCell
+
+@property(copy,nonatomic)clickGoodItemBlock block;
 
 -(void)setCellWithPromotionArr:(NSMutableArray *)promotionArr;
 

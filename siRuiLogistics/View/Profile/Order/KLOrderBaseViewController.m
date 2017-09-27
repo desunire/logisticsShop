@@ -80,4 +80,13 @@
     return view;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    KLOrderDetailViewController *vc = [[KLOrderDetailViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:NO];
+}
+
 @end

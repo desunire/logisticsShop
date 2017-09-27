@@ -37,9 +37,24 @@
         CGFloat width = SCREEN_WIDTH/2;
         goodView.frame = CGRectMake(0+i%2*width, 0+i/2*cellHeight, width, cellHeight);
         goodView.showImageView .image = [UIImage kl_avatatImageWithSize:CGSizeMake(30, 30) andBackColor:[UIColor redColor]];
+        goodView.good = [NSString stringWithFormat:@"id:%d",i];
+        //给推广的商品view添加点击事件
+        UITapGestureRecognizer *tapView =[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickItem:)];
+        [goodView addGestureRecognizer:tapView];
         [self.contentView addSubview:goodView];
     }
     
 }
+
+-(void)clickItem:(UITapGestureRecognizer *)sender{
+    
+    //获取当前视图
+    KLGoodCollectView *view = (KLGoodCollectView *)sender.view;
+    if (self.block) {
+        self.block(view.good);
+    }
+    
+}
+
 
 @end

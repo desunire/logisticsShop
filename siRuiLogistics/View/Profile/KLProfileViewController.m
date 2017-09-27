@@ -13,7 +13,7 @@
 #import "KLCustomManagerInfoTableViewCell.h"
 #import "KLProfileItemTableViewCell.h"
 #import "KLOrderViewController.h"
-
+#import "KLLoadViewController.h"
 
 //个人信息cell
 static NSString *profileInfoCell = @"profileInfoCell";
@@ -23,13 +23,7 @@ static NSString *orderInfoCell = @"orderInfoCell";
 
 //客户经理信息
 static NSString *customManagerCell  = @"customManagerCell";
-
-
-
-
 @interface KLProfileViewController ()<UITableViewDelegate,UITableViewDataSource,SCJPromptViewDelegate>
-
-
 /**
  //当前页面偏移量 默认是0
  */
@@ -46,6 +40,8 @@ static NSString *customManagerCell  = @"customManagerCell";
 //售后提示框
 @property(strong,nonatomic)SCJPromptView *afterSalePromptView;
 
+//当前提示框的类型 0-退出登录 1-拨打售后电话
+@property(assign,nonatomic)int promptType;
 @end
 
 @implementation KLProfileViewController
@@ -106,7 +102,12 @@ static NSString *customManagerCell  = @"customManagerCell";
         NSLog(@"取消");
     }
     else if(item==1){
-        NSLog(@"确定");
+        //判断是1打售后电脑 还是 退出登录0
+        if (self.promptType == 0) {
+            KLLoadViewController *vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass( [KLLoadViewController class]) owner:self options:nil] firstObject];
+            [UIApplication sharedApplication].keyWindow.rootViewController = vc;
+        }
+        
     }
     self.afterSalePromptView.hidden = YES;
     self.scjPromptView.hidden = YES;
@@ -166,6 +167,7 @@ static NSString *customManagerCell  = @"customManagerCell";
                 
                 
                 if (type == afterSaleOrder) {
+                    Wself.promptType = 1;
                     Wself.afterSalePromptView.hidden = NO;
                 }
                 
@@ -204,6 +206,7 @@ static NSString *customManagerCell  = @"customManagerCell";
     if (indexPath.section == 1) {
         //注销账户单独处理
         if (indexPath.row == self.profileItemArr.count-1) {
+            self.promptType = 0;
             self.scjPromptView.hidden = NO;
         }else{
             NSDictionary *dic = [self.profileItemArr objectAtIndex:indexPath.row];
@@ -229,7 +232,8 @@ static NSString *customManagerCell  = @"customManagerCell";
             //计算订单视图的高度
             CGFloat width = SCREEN_WIDTH/4;
             CGFloat picWidth = width-leftMargin-rightMargin;
-            CGFloat height = picWidth+topMargin+belowMargin+titleHeight;
+            CGFloat height = picWidth+topMargin+belowMargin+titleHeight+leftMargin;
+            NSLog(@"%f",height);
             return height;
         }
         if (indexPath.row == 2) {
@@ -246,18 +250,26 @@ static NSString *customManagerCell  = @"customManagerCell";
     
     //NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
     //if (self.tableView.contentOffset.y>0) {
-        CGFloat alpha = self.tableView.contentOffset.y;
+      //  CGFloat alpha = self.tableView.contentOffset.y;
 //        self.test.alpha =(alpha < 1.0 ?alpha:1.0);
-        NSLog(@"%.2f",alpha);
+       // NSLog(@"%.2f",alpha);
   //  }
     self.offY = 0 - self.tableView.contentOffset.y;
     
-    
+   
     
 //    [self.tableView reloadData];
     
     
 }
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    if (self.tableView.contentOffset.y<0) {
+        self.tableView.contentOffset=CGPointMake(0, -10);
+    }
+}
+
 #pragma mark  内存管理
 -(void)dealloc{
      [self.tableView removeObserver:self forKeyPath:@"contentOffset"];

@@ -123,7 +123,7 @@
 {
     UIBarButtonItem *careItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"careAbout"] WithHighlighted:[UIImage imageNamed:@"careAbout"] Target:self action:@selector(careAbout)];
     
-    UIBarButtonItem *shopcarItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"shopcar_gray"] WithHighlighted:[UIImage imageNamed:@"shopcar_gray"] Target:self action:@selector(shopCarClick)];
+    UIBarButtonItem *shopcarItem = [UIBarButtonItem ItemWithImage:[UIImage imageNamed:@"goods_shopcar"] WithHighlighted:[UIImage imageNamed:@"goods_shopcar_red"] Target:self action:@selector(shopCarClick)];
     
     self.navigationItem.rightBarButtonItems = @[shopcarItem,careItem];
     
@@ -173,35 +173,24 @@
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.titleLabel.font = [UIFont boldSystemFontOfSize:16.0];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        button.tag = i + 2;
+        button.tag = i;
         [button setTitle:titles[i] forState:UIControlStateNormal];
         button.backgroundColor = (i == 0) ? [UIColor orangeColor] : DefaultBackColor;
         [button addTarget:self action:@selector(bottomButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         CGFloat buttonX = (buttonW * i);
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
-        
         [self.view addSubview:button];
     }
 }
-
+//点击加入购物车和立即购买按钮发送通知，在子控制器中处理
 - (void)bottomButtonClick:(UIButton *)button
 {
-    if (button.tag == 0) {
-        NSLog(@"收藏");
-        button.selected = !button.selected;
-    }else if(button.tag == 1){
-        NSLog(@"购物车");
-//        DCMyTrolleyViewController *shopCarVc = [[DCMyTrolleyViewController alloc] init];
-//        shopCarVc.isTabBar = YES;
-//        shopCarVc.title = @"购物车";
-//        [self.navigationController pushViewController:shopCarVc animated:YES];
-    }else  if (button.tag == 2 || button.tag == 3) { //父控制器的加入购物车和立即购买
+        //父控制器的加入购物车和立即购买
         //异步发通知
         dispatch_sync(dispatch_get_global_queue(0, 0), ^{
             NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%zd",button.tag],@"buttonTag", nil];
-            [[NSNotificationCenter defaultCenter]postNotificationName:@"ClikAddOrBuy" object:nil userInfo:dict];
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"ClickAddOrBuy" object:nil userInfo:dict];
         });
-    }
 }
 
 //添加子控制器

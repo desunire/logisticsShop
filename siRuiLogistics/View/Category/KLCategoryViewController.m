@@ -52,7 +52,7 @@ static NSString *categoryTitleCell = @"categoryTitle";
     self.dataArr =  @[@"1",@"1",@"1",@"1",@"1",@"1",@"1"];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = UIColorFromRGB(0xf1f1f1);
-    
+    [self.indexSearchTopView.languageBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

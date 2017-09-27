@@ -26,8 +26,10 @@
 
 "allOrder" = "全部";
 
-
 "waitSureOrder" = "待确认";
 
-
 "waitSendOrder" = "待发货";
+
+"rememberPwd" ="记住密码";
+
+"forgetPwd" ="忘记密码";

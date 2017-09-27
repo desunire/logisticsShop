@@ -118,6 +118,9 @@ static NSString *itemCell = @"shopCarItemCell";
 #pragma mark ShopCarSettlementViewDelegate
 -(void)gotoPay{
     NSLog(@"结算");
+    KLSubmitOrderViewController *vc= [[KLSubmitOrderViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
+    
 }
 -(void)delete:(id)sender{
     self.scjPromptView.hidden = NO;

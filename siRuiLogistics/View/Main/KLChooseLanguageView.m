@@ -7,7 +7,7 @@
 //
 
 #import "KLChooseLanguageView.h"
-
+#import "KLLoadViewController.h"
 @implementation KLChooseLanguageView
 
 /*
@@ -36,11 +36,18 @@
     // 然后将设置好的语言存储好，下次进来直接加载
     [[NSUserDefaults standardUserDefaults] setObject:language forKey:@"myLanguage"];
     [[NSUserDefaults standardUserDefaults] synchronize];
+    if (/* DISABLES CODE */ (1)) {
+        //KLLoadViewController *vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass( [KLLoadViewController class]) owner:self options:nil] firstObject];
+        [(KLLoadViewController *)[UIApplication sharedApplication].keyWindow.rootViewController initUI];
+//       [UIApplication sharedApplication].keyWindow.rootViewController = vc;
+//       [[UIApplication sharedApplication].keyWindow makeKeyAndVisible];
+    }else{
+        KLMainViewController * vc= [[KLMainViewController alloc] init];
+        [UIApplication sharedApplication].keyWindow.rootViewController =vc;
+        vc.selectedIndex = self.index;
+    }
     
-    
-     KLMainViewController * vc= [[KLMainViewController alloc] init];
-    [UIApplication sharedApplication].keyWindow.rootViewController =vc;
-    vc.selectedIndex = self.index;
+   
 }
 
 @end

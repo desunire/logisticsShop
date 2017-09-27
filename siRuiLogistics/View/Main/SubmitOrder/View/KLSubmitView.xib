@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="j28-Gb-tBV" customClass="KLSubmitView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:￥6700.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAo-z2-50t">
+                    <rect key="frame" x="10" y="0.0" width="150" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="OKW-fz-pK0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hG-0P-cM7">
+                    <rect key="frame" x="225" y="0.0" width="150" height="60"/>
+                    <color key="backgroundColor" red="0.73287379741668701" green="0.11962151527404785" blue="0.062725633382797241" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="SJm-NU-ALl"/>
+                    </constraints>
+                    <state key="normal" title="提交订单">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitBtnClick:" destination="j28-Gb-tBV" eventType="touchUpInside" id="nfV-Yn-8nZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZAo-z2-50t" firstAttribute="top" secondItem="j28-Gb-tBV" secondAttribute="top" id="Rvg-7q-OsL"/>
+                <constraint firstAttribute="bottom" secondItem="ZAo-z2-50t" secondAttribute="bottom" id="S9w-nF-Bf4"/>
+                <constraint firstAttribute="bottom" secondItem="9hG-0P-cM7" secondAttribute="bottom" id="Z8o-s4-FYx"/>
+                <constraint firstItem="ZAo-z2-50t" firstAttribute="leading" secondItem="j28-Gb-tBV" secondAttribute="leading" constant="10" id="adW-ci-6m9"/>
+                <constraint firstItem="9hG-0P-cM7" firstAttribute="top" secondItem="j28-Gb-tBV" secondAttribute="top" id="qM6-zd-uZE"/>
+                <constraint firstAttribute="trailing" secondItem="9hG-0P-cM7" secondAttribute="trailing" id="w67-xN-0FS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="totalPricelabel" destination="ZAo-z2-50t" id="2f6-Rz-tY0"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="22"/>
+        </view>
+    </objects>
+</document>

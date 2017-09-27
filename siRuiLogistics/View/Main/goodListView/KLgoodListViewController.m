@@ -104,7 +104,7 @@ static NSString *cateGoodListCell = @"cateGoodListCell";
 #pragma mark - 导航栏
 - (void)setUpNav
 {
-    self.searchBtn = [[UIButton alloc] initWithFrame:(CGRect){SCREEN_WIDTH - 40, 10, 35, 20}];
+    self.searchBtn = [[UIButton alloc] initWithFrame:(CGRect){SCREEN_WIDTH - 40, 10, 45, 30}];
     [self.searchBtn setTitle:NSLocalizedString(@"search", nil) forState:UIControlStateNormal];
     
     [self.searchBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

@@ -34,6 +34,9 @@ static NSString *goodDesCell = @"goodDesCell";
 /* 滚回顶部按钮 */
 @property (strong , nonatomic)UIButton *backTopButton;
 
+/* 通知 */
+@property (weak ,nonatomic) id dcObj;
+
 @end
 
 @implementation KLGoodViewController
@@ -72,6 +75,7 @@ static NSString *goodDesCell = @"goodDesCell";
     [super viewDidLoad];
     self.collectionView.backgroundColor = self.view.backgroundColor;
     [self setUpSuspendView];
+    [self acceptanceNote];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,7 +94,24 @@ static NSString *goodDesCell = @"goodDesCell";
     [self.navigationController pushViewController:vc animated:NO];
     
 }
-
+#pragma mark - 接受通知
+- (void)acceptanceNote
+{
+    __weak typeof(self)weakSelf = self;
+    //父类加入购物车，立即购买通知
+    _dcObj = [[NSNotificationCenter defaultCenter]addObserverForName:@"ClickAddOrBuy" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+            if ([note.userInfo[@"buttonTag"] isEqualToString:@"0"])
+            { //加入购物车（父类）
+                
+            }else if ([note.userInfo[@"buttonTag"] isEqualToString:@"1"])
+            {//立即购买（父类）
+                KLSubmitOrderViewController *vc = [[KLSubmitOrderViewController alloc] init];
+                [weakSelf.navigationController pushViewController:vc animated:NO];
+                
+            }
+    }];
+ 
+}
 
 #pragma mark - 悬浮按钮
 - (void)setUpSuspendView
@@ -98,7 +119,7 @@ static NSString *goodDesCell = @"goodDesCell";
     _backTopButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:_backTopButton];
     [_backTopButton addTarget:self action:@selector(ScrollToTop) forControlEvents:UIControlEventTouchUpInside];
-    [_backTopButton setImage:[UIImage imageNamed:@"btn_UpToTop"] forState:UIControlStateNormal];
+    [_backTopButton setImage:[UIImage imageNamed:@"backtop"] forState:UIControlStateNormal];
     _backTopButton.hidden = YES;
     _backTopButton.frame = CGRectMake(SCREEN_WIDTH - 50, SCREENH_HEIGHT - 100, 40, 40);
 }
@@ -117,8 +138,6 @@ static NSString *goodDesCell = @"goodDesCell";
 #pragma mark - <UIScrollViewDelegate>
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //判断回到顶部按钮是否隐藏
-    NSLog(@"%.2f>>%.2f",scrollView.contentOffset.y,SCREENH_HEIGHT);
     _backTopButton.hidden = (scrollView.contentOffset.y > SCREENH_HEIGHT*0.5-50) ? NO : YES;
 }
 

@@ -87,6 +87,8 @@ alpha:alphaValue]
 #pragma mark 图片设置
 #define plachHolderImage [UIImage imageNamed:@"placeholder"]
 
+#import "KLOrderDetailViewController.h"
+#import "KLSubmitOrderViewController.h"
 #import "KLNavTitleView.h"
 #import "KLMessageCenterViewController.h"
 #import "KLMessageDetailViewController.h"

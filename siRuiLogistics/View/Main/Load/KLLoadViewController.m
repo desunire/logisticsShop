@@ -7,8 +7,13 @@
 //
 
 #import "KLLoadViewController.h"
+#import "KLChooseLanguageView.h"
+
 
 @interface KLLoadViewController ()
+//切换语言的功能视图
+@property(strong,nonatomic)KLChooseLanguageView *chooseLanguageView;\
+
 
 @end
 
@@ -32,6 +37,47 @@
         make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH-20, 30));
     }];
     
+    [self.topImageView mas_updateConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.view.mas_left).offset(0);
+        
+        make.top.equalTo(self.view.mas_top).offset(0);
+        
+        make.size.mas_equalTo(CGSizeMake(SCREEN_WIDTH, 550*SCREENH_HEIGHT/1334));
+    }];
+    
+    [self.languageBtn sizeToFit];
+    
+    [self.languageBtn setTitle:@"language：CN" forState:UIControlStateNormal];
+    
+    [self initChangeLanguageView];
+    
+    [self initUI];
+}
+
+
+#pragma mark 初始化界面语言显示设置
+-(void)initUI{
+    
+    [self.remBtn setTitle:NSLocalizedString(@"rememberPwd", nil) forState:UIControlStateNormal];
+    
+     [self.forgetPwdBtn setTitle:NSLocalizedString(@"forgetPwd", nil) forState:UIControlStateNormal];
+}
+
+#pragma mark 切换语言视图设置 KLIndexSearchMessageChangeViewDelegate
+-(void)initChangeLanguageView{
+    self.chooseLanguageView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLChooseLanguageView class]) owner:self options:nil] firstObject];
+    [self.view addSubview:self.chooseLanguageView];
+    [self.chooseLanguageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.view.mas_left).offset(50);
+        make.top.equalTo(self.languageBtn.mas_bottom).offset(5);
+        make.size.mas_equalTo(CGSizeMake(self.chooseLanguageView.frame.size.width, self.chooseLanguageView.frame.size.height));
+    }];
+    self.chooseLanguageView.layer.cornerRadius = 5;
+    self.chooseLanguageView.layer.masksToBounds = YES;
+    self.chooseLanguageView.hidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +87,26 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    
+    [self.accountTextField resignFirstResponder];
+    [self.pwdTextField resignFirstResponder];
 }
 
+- (IBAction)changelanguageBtnClick:(id)sender {
+    
+    self.chooseLanguageView.hidden = !self.chooseLanguageView.hidden;
+}
+
+
+
+- (IBAction)forgetPwdBtnClick:(id)sender {
+}
+
+//登录系统
+- (IBAction)loadBtnClick:(id)sender {
+    
+    //设置根视图
+    KLMainViewController * vc= [[KLMainViewController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController =vc;
+    
+}
 @end

@@ -76,6 +76,25 @@
 		655EC6181F78FC5300C7951E /* KLMessageListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC6161F78FC5300C7951E /* KLMessageListTableViewCell.xib */; };
 		655EC61C1F79080D00C7951E /* KLMessageStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655EC61B1F79080D00C7951E /* KLMessageStateView.m */; };
 		655EC61E1F79081900C7951E /* KLMessageStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655EC61D1F79081900C7951E /* KLMessageStateView.xib */; };
+		6566CC951F7B3847000534C0 /* KLSubmitOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CC941F7B3847000534C0 /* KLSubmitOrderViewController.m */; };
+		6566CC9A1F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CC981F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.m */; };
+		6566CC9B1F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CC991F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.xib */; };
+		6566CC9F1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CC9D1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.m */; };
+		6566CCA01F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CC9E1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.xib */; };
+		6566CCA31F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCA21F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.m */; };
+		6566CCA71F7B4D6D000534C0 /* KLSubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCA61F7B4D6D000534C0 /* KLSubmitView.m */; };
+		6566CCA91F7B4D75000534C0 /* KLSubmitView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CCA81F7B4D75000534C0 /* KLSubmitView.xib */; };
+		6566CCAD1F7B537B000534C0 /* KLSubmitOrderFinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCAB1F7B537B000534C0 /* KLSubmitOrderFinishViewController.m */; };
+		6566CCAE1F7B537B000534C0 /* KLSubmitOrderFinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CCAC1F7B537B000534C0 /* KLSubmitOrderFinishViewController.xib */; };
+		6566CCF01F7B764C000534C0 /* KLOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCEF1F7B764C000534C0 /* KLOrderDetailViewController.m */; };
+		6566CCF41F7B7962000534C0 /* KLOrderStateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCF21F7B7962000534C0 /* KLOrderStateTableViewCell.m */; };
+		6566CCF51F7B7962000534C0 /* KLOrderStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CCF31F7B7962000534C0 /* KLOrderStateTableViewCell.xib */; };
+		6566CCF91F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCF71F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.m */; };
+		6566CCFA1F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CCF81F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.xib */; };
+		6566CCFE1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CCFC1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.m */; };
+		6566CCFF1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CCFD1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.xib */; };
+		6566CD031F7B7D60000534C0 /* KLOrderTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6566CD011F7B7D60000534C0 /* KLOrderTimeTableViewCell.m */; };
+		6566CD041F7B7D60000534C0 /* KLOrderTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6566CD021F7B7D60000534C0 /* KLOrderTimeTableViewCell.xib */; };
 		6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580812E1F6F8FB20061367E /* KLCategoryObject.m */; };
 		658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081351F6F9D450061367E /* KLCategoryItemButton.m */; };
 		658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658081371F6F9D450061367E /* KLScrollTableViewCell.m */; };
@@ -296,6 +315,36 @@
 		655EC61A1F79080D00C7951E /* KLMessageStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLMessageStateView.h; sourceTree = "<group>"; };
 		655EC61B1F79080D00C7951E /* KLMessageStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLMessageStateView.m; sourceTree = "<group>"; };
 		655EC61D1F79081900C7951E /* KLMessageStateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLMessageStateView.xib; sourceTree = "<group>"; };
+		6566CC931F7B3847000534C0 /* KLSubmitOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubmitOrderViewController.h; sourceTree = "<group>"; };
+		6566CC941F7B3847000534C0 /* KLSubmitOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubmitOrderViewController.m; sourceTree = "<group>"; };
+		6566CC971F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubmitOrderInfoTableViewCell.h; sourceTree = "<group>"; };
+		6566CC981F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubmitOrderInfoTableViewCell.m; sourceTree = "<group>"; };
+		6566CC991F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSubmitOrderInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6566CC9C1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubmitOrderGoodInfoTableViewCell.h; sourceTree = "<group>"; };
+		6566CC9D1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubmitOrderGoodInfoTableViewCell.m; sourceTree = "<group>"; };
+		6566CC9E1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSubmitOrderGoodInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6566CCA11F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubmitZitiOrderTableViewCell.h; sourceTree = "<group>"; };
+		6566CCA21F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubmitZitiOrderTableViewCell.m; sourceTree = "<group>"; };
+		6566CCA51F7B4D6D000534C0 /* KLSubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubmitView.h; sourceTree = "<group>"; };
+		6566CCA61F7B4D6D000534C0 /* KLSubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubmitView.m; sourceTree = "<group>"; };
+		6566CCA81F7B4D75000534C0 /* KLSubmitView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSubmitView.xib; sourceTree = "<group>"; };
+		6566CCAA1F7B537B000534C0 /* KLSubmitOrderFinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLSubmitOrderFinishViewController.h; sourceTree = "<group>"; };
+		6566CCAB1F7B537B000534C0 /* KLSubmitOrderFinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLSubmitOrderFinishViewController.m; sourceTree = "<group>"; };
+		6566CCAC1F7B537B000534C0 /* KLSubmitOrderFinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLSubmitOrderFinishViewController.xib; sourceTree = "<group>"; };
+		6566CCEE1F7B764C000534C0 /* KLOrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderDetailViewController.h; sourceTree = "<group>"; };
+		6566CCEF1F7B764C000534C0 /* KLOrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderDetailViewController.m; sourceTree = "<group>"; };
+		6566CCF11F7B7962000534C0 /* KLOrderStateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderStateTableViewCell.h; sourceTree = "<group>"; };
+		6566CCF21F7B7962000534C0 /* KLOrderStateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderStateTableViewCell.m; sourceTree = "<group>"; };
+		6566CCF31F7B7962000534C0 /* KLOrderStateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLOrderStateTableViewCell.xib; sourceTree = "<group>"; };
+		6566CCF61F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderDetailInfoTableViewCell.h; sourceTree = "<group>"; };
+		6566CCF71F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderDetailInfoTableViewCell.m; sourceTree = "<group>"; };
+		6566CCF81F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLOrderDetailInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6566CCFB1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderGoodDetailInfoTableViewCell.h; sourceTree = "<group>"; };
+		6566CCFC1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderGoodDetailInfoTableViewCell.m; sourceTree = "<group>"; };
+		6566CCFD1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLOrderGoodDetailInfoTableViewCell.xib; sourceTree = "<group>"; };
+		6566CD001F7B7D60000534C0 /* KLOrderTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLOrderTimeTableViewCell.h; sourceTree = "<group>"; };
+		6566CD011F7B7D60000534C0 /* KLOrderTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLOrderTimeTableViewCell.m; sourceTree = "<group>"; };
+		6566CD021F7B7D60000534C0 /* KLOrderTimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KLOrderTimeTableViewCell.xib; sourceTree = "<group>"; };
 		6580812D1F6F8FB20061367E /* KLCategoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryObject.h; sourceTree = "<group>"; };
 		6580812E1F6F8FB20061367E /* KLCategoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCategoryObject.m; sourceTree = "<group>"; };
 		658081341F6F9D450061367E /* KLCategoryItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCategoryItemButton.h; sourceTree = "<group>"; };
@@ -457,9 +506,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		6505DCCA1F7A54BE0075B267 /* Order */ = {
+		6505DCCA1F7A54BE0075B267 /* Order(订单列表和详情) */ = {
 			isa = PBXGroup;
 			children = (
+				6566CC911F7B3422000534C0 /* Model */,
 				6505DCDA1F7A61970075B267 /* Cell */,
 				6505DCCB1F7A54CE0075B267 /* KLOrderViewController.h */,
 				6505DCCC1F7A54CE0075B267 /* KLOrderViewController.m */,
@@ -471,7 +521,10 @@
 				6505DCD51F7A5AD10075B267 /* KLWaitSureViewController.m */,
 				6505DCD71F7A5AE50075B267 /* KLWaitSendViewController.h */,
 				6505DCD81F7A5AE50075B267 /* KLWaitSendViewController.m */,
+				6566CCEE1F7B764C000534C0 /* KLOrderDetailViewController.h */,
+				6566CCEF1F7B764C000534C0 /* KLOrderDetailViewController.m */,
 			);
+			name = "Order(订单列表和详情)";
 			path = Order;
 			sourceTree = "<group>";
 		};
@@ -481,6 +534,18 @@
 				6505DCDB1F7A61AC0075B267 /* KLOrderListTableViewCell.h */,
 				6505DCDC1F7A61AC0075B267 /* KLOrderListTableViewCell.m */,
 				6505DCDD1F7A61AC0075B267 /* KLOrderListTableViewCell.xib */,
+				6566CCF11F7B7962000534C0 /* KLOrderStateTableViewCell.h */,
+				6566CCF21F7B7962000534C0 /* KLOrderStateTableViewCell.m */,
+				6566CCF31F7B7962000534C0 /* KLOrderStateTableViewCell.xib */,
+				6566CCF61F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.h */,
+				6566CCF71F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.m */,
+				6566CCF81F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.xib */,
+				6566CCFB1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.h */,
+				6566CCFC1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.m */,
+				6566CCFD1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.xib */,
+				6566CD001F7B7D60000534C0 /* KLOrderTimeTableViewCell.h */,
+				6566CD011F7B7D60000534C0 /* KLOrderTimeTableViewCell.m */,
+				6566CD021F7B7D60000534C0 /* KLOrderTimeTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -588,6 +653,7 @@
 		653988C01F6920F1007BD83B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6566CC921F7B3817000534C0 /* SubmitOrder(提交订单) */,
 				655EC60F1F78F80B00C7951E /* NavTitleView */,
 				65A954251F7641C40033EDB6 /* Load */,
 				658E48EF1F74AD640056C48E /* GoodDetail(商品详情) */,
@@ -654,7 +720,7 @@
 		653988F51F692DF3007BD83B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				6505DCCA1F7A54BE0075B267 /* Order */,
+				6505DCCA1F7A54BE0075B267 /* Order(订单列表和详情) */,
 				655EC6081F78F18E00C7951E /* MessageCenter */,
 				658419171F70FEEF00A51A34 /* SubController */,
 				658418F31F70BF5900A51A34 /* View */,
@@ -839,6 +905,53 @@
 				655EC61A1F79080D00C7951E /* KLMessageStateView.h */,
 				655EC61B1F79080D00C7951E /* KLMessageStateView.m */,
 				655EC61D1F79081900C7951E /* KLMessageStateView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6566CC911F7B3422000534C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6566CC921F7B3817000534C0 /* SubmitOrder(提交订单) */ = {
+			isa = PBXGroup;
+			children = (
+				6566CCA41F7B4D57000534C0 /* View */,
+				6566CC961F7B38A6000534C0 /* Cell */,
+				6566CC931F7B3847000534C0 /* KLSubmitOrderViewController.h */,
+				6566CC941F7B3847000534C0 /* KLSubmitOrderViewController.m */,
+				6566CCAA1F7B537B000534C0 /* KLSubmitOrderFinishViewController.h */,
+				6566CCAB1F7B537B000534C0 /* KLSubmitOrderFinishViewController.m */,
+				6566CCAC1F7B537B000534C0 /* KLSubmitOrderFinishViewController.xib */,
+			);
+			name = "SubmitOrder(提交订单)";
+			path = SubmitOrder;
+			sourceTree = "<group>";
+		};
+		6566CC961F7B38A6000534C0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6566CC971F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.h */,
+				6566CC981F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.m */,
+				6566CCA11F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.h */,
+				6566CCA21F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.m */,
+				6566CC991F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.xib */,
+				6566CC9C1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.h */,
+				6566CC9D1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.m */,
+				6566CC9E1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6566CCA41F7B4D57000534C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6566CCA51F7B4D6D000534C0 /* KLSubmitView.h */,
+				6566CCA61F7B4D6D000534C0 /* KLSubmitView.m */,
+				6566CCA81F7B4D75000534C0 /* KLSubmitView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1199,6 +1312,7 @@
 			files = (
 				6539889A1F692028007BD83B /* LaunchScreen.storyboard in Resources */,
 				659E76491F720208002DFA42 /* icon10.png in Resources */,
+				6566CCFA1F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.xib in Resources */,
 				65D91DD11F7A2F72004F6CBD /* KLEditAddressViewController.xib in Resources */,
 				65D91DBB1F79F333004F6CBD /* KLAllChooseDelView.xib in Resources */,
 				655EC6011F78D6DF00C7951E /* KLBigImgShowViewController.storyboard in Resources */,
@@ -1211,21 +1325,26 @@
 				655EC5F51F78AA8000C7951E /* KLGoodSpecCollectionViewCell.xib in Resources */,
 				658081461F6FB09E0061367E /* KLGoodListTableViewCell.xib in Resources */,
 				655EC5FA1F78CC2600C7951E /* KLGoodDescCollectionViewCell.xib in Resources */,
+				6566CCA01F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.xib in Resources */,
 				655EC6181F78FC5300C7951E /* KLMessageListTableViewCell.xib in Resources */,
 				65A9542A1F7641E50033EDB6 /* KLLoadViewController.xib in Resources */,
 				65D91DB51F79EE2B004F6CBD /* KLCollectionTableViewCell.xib in Resources */,
 				658418FC1F70BFDF00A51A34 /* KLProfileInfoView.xib in Resources */,
 				658081411F6FAE610061367E /* KLSubtitleAndMoreTableViewCell.xib in Resources */,
+				6566CCFF1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.xib in Resources */,
 				6584190D1F70F31E00A51A34 /* KLCustomManagerInfoTableViewCell.xib in Resources */,
 				6550C7251F739C5200BA5BFD /* KLSearchListTableViewCell.xib in Resources */,
 				658419161F70FEB500A51A34 /* DCURLRouter.plist in Resources */,
 				65D91DC21F79FB6B004F6CBD /* KLChangePwddView.xib in Resources */,
 				655EC61E1F79081900C7951E /* KLMessageStateView.xib in Resources */,
+				6566CCA91F7B4D75000534C0 /* KLSubmitView.xib in Resources */,
 				6580814B1F6FB6B80061367E /* KLGoodCollectView.xib in Resources */,
 				659E76411F71FB56002DFA42 /* KLShopCarItemTableViewCell.xib in Resources */,
 				659E76481F720208002DFA42 /* ic_reduce.png in Resources */,
+				6566CCF51F7B7962000534C0 /* KLOrderStateTableViewCell.xib in Resources */,
 				659E76531F72451A002DFA42 /* KLCategoryTitleTableViewCell.xib in Resources */,
 				653988971F692028007BD83B /* Assets.xcassets in Resources */,
+				6566CD041F7B7D60000534C0 /* KLOrderTimeTableViewCell.xib in Resources */,
 				6550C7421F73BD4F00BA5BFD /* KLFilterTitleTableViewCell.xib in Resources */,
 				653989061F693414007BD83B /* main.json in Resources */,
 				6505DCDF1F7A61AC0075B267 /* KLOrderListTableViewCell.xib in Resources */,
@@ -1236,7 +1355,9 @@
 				659E76471F720208002DFA42 /* ic_add.png in Resources */,
 				6550C7341F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.xib in Resources */,
 				653988951F692028007BD83B /* Main.storyboard in Resources */,
+				6566CCAE1F7B537B000534C0 /* KLSubmitOrderFinishViewController.xib in Resources */,
 				658419141F70FC8500A51A34 /* ProfileItem.plist in Resources */,
+				6566CC9B1F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1324,6 +1445,7 @@
 				653988EE1F692A38007BD83B /* KLBaseViewController.m in Sources */,
 				659E765A1F724E7A002DFA42 /* KLCategoryContentTableViewCell.m in Sources */,
 				658081391F6F9D450061367E /* KLScrollTableViewCell.m in Sources */,
+				6566CCAD1F7B537B000534C0 /* KLSubmitOrderFinishViewController.m in Sources */,
 				65D91DC51F7A1CBC004F6CBD /* KLSuggestionView.m in Sources */,
 				658419201F70FF8600A51A34 /* KLSuggestViewController.m in Sources */,
 				659E76401F71FB56002DFA42 /* KLShopCarItemTableViewCell.m in Sources */,
@@ -1338,10 +1460,13 @@
 				655EC61C1F79080D00C7951E /* KLMessageStateView.m in Sources */,
 				6505DCD91F7A5AE50075B267 /* KLWaitSendViewController.m in Sources */,
 				659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */,
+				6566CD031F7B7D60000534C0 /* KLOrderTimeTableViewCell.m in Sources */,
+				6566CC9F1F7B392E000534C0 /* KLSubmitOrderGoodInfoTableViewCell.m in Sources */,
 				6505DCD61F7A5AD10075B267 /* KLWaitSureViewController.m in Sources */,
 				6550C7191F73888000BA5BFD /* DCSpeedy.m in Sources */,
 				6550C7241F739C5200BA5BFD /* KLSearchListTableViewCell.m in Sources */,
 				6505DCD31F7A5AA80075B267 /* KLAllOrderViewController.m in Sources */,
+				6566CCF91F7B7991000534C0 /* KLOrderDetailInfoTableViewCell.m in Sources */,
 				65D91DCB1F7A27CF004F6CBD /* KLAddressListTableViewCell.m in Sources */,
 				65D91DB41F79EE2B004F6CBD /* KLCollectionTableViewCell.m in Sources */,
 				6580814E1F6FC20D0061367E /* KLSalePromotionTableViewCell.m in Sources */,
@@ -1350,13 +1475,17 @@
 				65A954281F7641D40033EDB6 /* KLLoadViewController.m in Sources */,
 				6505DCC61F7A3A4E0075B267 /* KLAddress.m in Sources */,
 				653988E31F6921D7007BD83B /* NSString+CZHash.m in Sources */,
+				6566CC951F7B3847000534C0 /* KLSubmitOrderViewController.m in Sources */,
 				658081451F6FB09E0061367E /* KLGoodListTableViewCell.m in Sources */,
+				6566CCA71F7B4D6D000534C0 /* KLSubmitView.m in Sources */,
+				6566CCFE1F7B7B93000534C0 /* KLOrderGoodDetailInfoTableViewCell.m in Sources */,
 				653988921F692028007BD83B /* ViewController.m in Sources */,
 				659E76701F727623002DFA42 /* UIBarButtonItem+KLExtension.m in Sources */,
 				659E76521F72451A002DFA42 /* KLCategoryTitleTableViewCell.m in Sources */,
 				6550C7151F73680A00BA5BFD /* KLFilterButton.m in Sources */,
 				653988FE1F692E41007BD83B /* KLCategoryViewController.m in Sources */,
 				6584191D1F70FF7700A51A34 /* KLAddressViewController.m in Sources */,
+				6566CCA31F7B496D000534C0 /* KLSubmitZitiOrderTableViewCell.m in Sources */,
 				658418EF1F70B11200A51A34 /* KLIndexSearchMessageChangeView.m in Sources */,
 				658418F71F70BFB200A51A34 /* KLProfileInfoTableViewCell.m in Sources */,
 				658419261F7102E900A51A34 /* NSDictionary+NTESJson.m in Sources */,
@@ -1373,9 +1502,11 @@
 				658E48F51F74ADF00056C48E /* KLDetailViewController.m in Sources */,
 				6580813C1F6F9D6A0061367E /* KLCategoryItemTableViewCell.m in Sources */,
 				658418FF1F70E5F700A51A34 /* KLProfileOperateOrderView.m in Sources */,
+				6566CCF41F7B7962000534C0 /* KLOrderStateTableViewCell.m in Sources */,
 				653988E11F6921D7007BD83B /* NSObject+CZRuntime.m in Sources */,
 				6580812F1F6F8FB20061367E /* KLCategoryObject.m in Sources */,
 				655EC6171F78FC5300C7951E /* KLMessageListTableViewCell.m in Sources */,
+				6566CC9A1F7B3916000534C0 /* KLSubmitOrderInfoTableViewCell.m in Sources */,
 				653988F41F692ABB007BD83B /* KLNavgationViewController.m in Sources */,
 				6550C7331F73B27500BA5BFD /* KLCategoryGoodListTableViewCell.m in Sources */,
 				655EC60E1F78F68300C7951E /* KLMessageDetailViewController.m in Sources */,
@@ -1392,6 +1523,7 @@
 				653988F11F692A65007BD83B /* KLMainViewController.m in Sources */,
 				653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */,
 				65D91DD01F7A2F72004F6CBD /* KLEditAddressViewController.m in Sources */,
+				6566CCF01F7B764C000534C0 /* KLOrderDetailViewController.m in Sources */,
 				6550C71F1F7390C000BA5BFD /* KLSildeBarView.m in Sources */,
 				653988E01F6921D7007BD83B /* NSAttributedString+CZAdditon.m in Sources */,
 				653988E61F6921D7007BD83B /* UIColor+CZAddition.m in Sources */,

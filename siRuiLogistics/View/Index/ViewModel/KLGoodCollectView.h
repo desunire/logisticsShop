@@ -14,4 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *showImageView;
 
+
+//当前视图绑定的对象
+@property(copy,nonatomic)NSString *good;
+
 @end

@@ -89,7 +89,7 @@ static NSString *promotionCell = @"promotionCell";
     
     KLCategoryObject *model8 = [KLCategoryObject new];
     model8.picDesc = nil;
-    model8.urlPic = @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg";
+    model8.urlPic = @"xxx";
     
     
     self.categoryItemArr = @[model1,model2,model3,model4,model5,model6,model7,model8];
@@ -131,7 +131,7 @@ static NSString *promotionCell = @"promotionCell";
 #pragma mark 监听tablView的滑动距离
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     
-    NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
+   // NSLog(@"%.2f>>%.2f",self.tableView.contentOffset.y,self.tableView.contentInset.top);
     if (self.tableView.contentOffset.y>0) {
         CGFloat alpha = self.tableView.contentOffset.y/50.0;
         self.indexDefaultBackView.alpha =(alpha < 1.0 ?alpha:1.0);
@@ -148,10 +148,16 @@ static NSString *promotionCell = @"promotionCell";
     
     
 }
+
+#pragma mark 查看商品详情
+-(void)gotoGoodDetailWithId:(NSString *)goodId{
+    KLGoodBaseViewController *vc =[[KLGoodBaseViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
+}
 #pragma mark tableView代理和数据源方法实现
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    return  4;
+    return  3;
 }
 
 
@@ -168,7 +174,7 @@ static NSString *promotionCell = @"promotionCell";
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    __weak typeof(self)Wself = self;
     if (indexPath.section == 0) {
         KLScrollTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:scrollPicCell forIndexPath:indexPath];
         if (cell == nil) {
@@ -187,21 +193,22 @@ static NSString *promotionCell = @"promotionCell";
             [self.navigationController pushViewController:vc animated:NO];
         };
         return cell;
-    }else if(indexPath.section == 3){
-        if (indexPath.row == 0) {
-            KLSubtitleAndMoreTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLSubtitleAndMoreTableViewCell class]) owner:self options:nil] firstObject];
-            if (cell == nil) {
-                cell = [[KLSubtitleAndMoreTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:categoryItemCell];
-            }
-            return cell;
-        }else{
-            KLGoodListTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLGoodListTableViewCell class]) owner:self options:nil] firstObject];
-            if (cell == nil) {
-                cell = [[KLGoodListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:goodListCell];
-            }
-            return cell;
-        }
-    }
+   }
+        //else if(indexPath.section == 3){
+//        if (indexPath.row == 0) {
+//            KLSubtitleAndMoreTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLSubtitleAndMoreTableViewCell class]) owner:self options:nil] firstObject];
+//            if (cell == nil) {
+//                cell = [[KLSubtitleAndMoreTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:categoryItemCell];
+//            }
+//            return cell;
+//        }else{
+//            KLGoodListTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLGoodListTableViewCell class]) owner:self options:nil] firstObject];
+//            if (cell == nil) {
+//                cell = [[KLGoodListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:goodListCell];
+//            }
+//            return cell;
+//        }
+//    }
     else if(indexPath.section == 2){
         if (indexPath.row == 0) {
             KLSubtitleAndMoreTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLSubtitleAndMoreTableViewCell class]) owner:self options:nil] firstObject];
@@ -215,6 +222,10 @@ static NSString *promotionCell = @"promotionCell";
                 cell = [[KLSalePromotionTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:goodListCell];
             }
             [cell setCellWithPromotionArr:self.goodsListArr];
+            cell.block= ^(NSString *goodId){
+                NSLog(@"%@",goodId);
+                [Wself gotoGoodDetailWithId:goodId];
+            };
             return cell;
         }
     }
