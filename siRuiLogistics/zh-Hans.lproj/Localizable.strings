@@ -8,7 +8,9 @@
 
 "index" = "首页";
 
-"category" = "分类";
+"category" = "分类";//分类
+
+"brand" = "品牌";//品牌
 
 "shopcar" = "购物车";
 
@@ -33,3 +35,110 @@
 "rememberPwd" ="记住密码";
 
 "forgetPwd" ="忘记密码";
+
+"loadAccount" = "登录账户";//登录界面账号
+
+"loadPwd" = "密码";//登录界面密码placeHolder
+
+"loadLanguage" = "语言:CN";//登录界面语言显示
+
+"load" = "登录";//登录按钮显示
+
+//首页显示
+"hotRecommend" = "热门推荐";
+
+"More" = "更多";
+
+//购物车界面
+"edit" = "编辑";
+
+"finish" = "完成";
+
+"heji" ="合计";
+
+"delete" = "删除";
+
+"jiesuan" = "结算";
+
+"allChoose" = "全选";
+//个人中心
+"waitConfirmed" = "待确认";
+
+"waitSend" = "待发货";
+
+"afterSale" = "售后";
+
+"allOrder" = "全部订单";
+
+"myCollect" = "我的收藏";
+
+"goodsAddress" = "收货地址"
+;
+
+"feedBack" = "意见反馈";
+
+"passwordChange"= "密码修改";
+
+"logoutAccount"= "注销账户";
+
+//提示框
+"cancel" = "取消";
+
+"sure" = "确定";
+
+"pleaseContact" = "pleaseContact:";//请联系xxxx
+
+"allRead" = "全部设为已读";//全部设为已读
+
+"sureDelete" = "确定删除订单吗？";//确定删除订单吗？
+
+"sureSubmit" = "确定提交订单吗？";//确定提交订单吗？
+
+"sureLogout" = "确定要退出登录？";//确定要退出登录？
+
+//其他子页面
+"orderDetail" = "orderDetail";//订单详情
+
+"reset" = "Reset";//重置
+
+"goods" = "商品";//商品
+
+"detail" = "详情";//详情
+
+"addCart" = "加入购物车";//加入购物车
+
+"buyNow" = "立即购买";//立即购买
+
+"orderConfirmed" = "orderConfirmed";//订单确认
+
+
+//商品规格
+"goodPrice" = "单价";
+
+"goodNumber"= "数量";
+
+"goodModel" = "型号";//型号
+
+"goodinventory"= "库存";//库存
+
+
+//订单确认
+"orderConfirmed" = "订单确认";
+
+"peisong" = "配送";//配送
+
+"ziti" = "自提";//自提
+
+"pickWay" = "提货方式";//提货方式
+
+"receivedWay" = "收货方式";//收货方式
+
+"consignee" = "收货人";//收货人
+
+"shippingAddress" = "收货地址";//收货地址
+
+"salesManager" = "销售经理";//销售经理
+
+"takeAddress" = "提货地址";//提货地址
+
+"submitOrder" = "提交订单";//提交订单

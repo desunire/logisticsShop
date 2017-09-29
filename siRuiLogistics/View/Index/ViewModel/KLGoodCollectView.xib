@@ -122,6 +122,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="goodImageView" destination="GbE-1Y-KoU" id="bd1-hi-VZk"/>
+                <outlet property="goodOriginPriceLabel" destination="GGg-RP-JSw" id="wft-2v-AUc"/>
                 <outlet property="showImageView" destination="VYj-Qx-kuQ" id="YaT-zq-P1B"/>
             </connections>
             <point key="canvasLocation" x="-18" y="-197"/>

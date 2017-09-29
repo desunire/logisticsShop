@@ -23,11 +23,13 @@
         self.priceLabel=[UILabel setMyLabel:showFont andColor:showTextColor andTextAlignment:NSTextAlignmentLeft];
         
          self.allChooseLabel=[UILabel setMyLabel:showFont andColor:showTextColor andTextAlignment:NSTextAlignmentLeft];
+        self.allChooseLabel.text = totalText;
+        
         
         self.priceLabel.text=totalPriceText;
         self.priceLabel.textAlignment = NSTextAlignmentRight;
-        self.allChooseLabel.text = totalText;
-        self.settlementBtn=[UIButton setBtnWithTitle:@"结算" andFont:BigshowFont andTitleColor:UIColorFromRGB(0xffffff)];
+        
+        self.settlementBtn=[UIButton setBtnWithTitle:NSLocalizedString(@"jiesuan", nil) andFont:BigshowFont andTitleColor:UIColorFromRGB(0xffffff)];
         self.settlementBtn.backgroundColor=OperateBtnBackColor;
         [self.settlementBtn addTarget:self action:@selector(gotoSubmitOrder:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -97,10 +99,10 @@
         if (![[change jsonString:@"old"] isEqualToString:[change jsonString:@"new"]]) {
             //获取新的状态--改变UI
             if ([[change jsonString:@"new"] integerValue] == normalState) {
-                [self.settlementBtn setTitle:@"结算" forState:UIControlStateNormal];
+                [self.settlementBtn setTitle:NSLocalizedString(@"jiesuan", nil) forState:UIControlStateNormal];
                  self.priceLabel.hidden = NO;
             }else if([[change jsonString:@"new"] integerValue] == editState) {
-                [self.settlementBtn setTitle:@"删除" forState:UIControlStateNormal];
+                [self.settlementBtn setTitle:NSLocalizedString(@"delete", nil) forState:UIControlStateNormal];
                 self.priceLabel.hidden = YES;
             }
         }
@@ -161,7 +163,7 @@
     }
     
     self.priceLabel.text=priceInfo;
-    [self.settlementBtn setTitle:[NSString stringWithFormat:@"结算 (%ld)",number] forState:UIControlStateNormal];
+    [self.settlementBtn setTitle:[NSString stringWithFormat:@"%@ (%ld)",NSLocalizedString(@"jiesuan", nil),number] forState:UIControlStateNormal];
     
 }
 

@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    self.hotLabel.text = NSLocalizedString(@"hotRecommend", nil);
+    self.moreLabel.text =NSLocalizedString(@"More", nil);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

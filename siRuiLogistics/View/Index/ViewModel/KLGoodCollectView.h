@@ -14,6 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *showImageView;
 
+@property (weak, nonatomic) IBOutlet UIImageView *goodImageView;
+@property (weak, nonatomic) IBOutlet UILabel *goodOriginPriceLabel;
 
 //当前视图绑定的对象
 @property(copy,nonatomic)NSString *good;

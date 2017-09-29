@@ -88,7 +88,7 @@ static NSString *filterBrandCell = @"filterBrandCell";
     CGFloat buttonW = FiltrateViewScreenW/2;
     CGFloat buttonH = 50;
     CGFloat buttonY = SCREENH_HEIGHT - buttonH;
-    NSArray *titles = @[@"重置",@"确定"];
+    NSArray *titles = @[NSLocalizedString(@"reset", nil),NSLocalizedString(@"sure", nil)];
     for (NSInteger i = 0; i < titles.count; i++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:titles[i] forState:UIControlStateNormal];
@@ -139,6 +139,7 @@ static NSString *filterBrandCell = @"filterBrandCell";
             if (cell == nil) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLFilterTitleTableViewCell class]) owner:self options:nil] firstObject];
             }
+            cell.titleLabel.text = NSLocalizedString(@"category", nil);
             return cell;
         }
         else{
@@ -157,6 +158,7 @@ static NSString *filterBrandCell = @"filterBrandCell";
             if (cell == nil) {
                 cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLFilterTitleTableViewCell class]) owner:self options:nil] firstObject];
             }
+            cell.titleLabel.text = NSLocalizedString(@"brand", nil);
             return cell;
         }
         else{

@@ -24,9 +24,9 @@ typedef enum : NSUInteger {
 
 #define OperateBtnBackColor  UIColorFromRGB(0xbb1e10)
 
-#define totalText  @"合计"
+#define totalText  NSLocalizedString(@"allChoose", nil)
 
-#define totalPriceText  @"合计:￥0"
+#define totalPriceText  [NSString stringWithFormat:@"%@:￥0",NSLocalizedString(@"heji", nil)] 
 
 
 /**

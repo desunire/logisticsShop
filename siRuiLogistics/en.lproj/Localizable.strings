@@ -9,7 +9,9 @@
 
 "index" = "Index";
 
-"category" = "Category";
+"category" = "Category";//分类
+
+"brand" = "Brand";//品牌
 
 "shopcar" = "ShopCar";
 
@@ -23,16 +25,122 @@
 
 "search" = "search";
 
-"searchPlaceholder" = "商品，品牌或者分类";
+"searchPlaceholder" = "Commodity, brand or category";
 
 "allOrder" = "all";
 
-
 "waitSureOrder" = "waitSure";
-
 
 "waitSendOrder" = "waitSend";
 
 "rememberPwd" ="rememberPassword";
 
 "forgetPwd" ="forgetPassword";
+
+"loadAccount" = "loadAccount";//登录界面账号
+
+"loadPwd" = "password";//登录界面密码placeHolder
+
+"loadLanguage" = "Language:EN";//登录界面语言显示
+
+"load" = "Load";//登录按钮显示
+
+//首页显示
+"hotRecommend" = "HotRecommend";
+
+"More" = "More";
+
+//购物车界面
+"edit" = "Edit";
+
+"finish" = "Finish";
+
+"heji" ="Combined";
+
+"delete" = "Delete";
+
+"jiesuan" = "settlement";
+
+"allChoose" = "allChoose";
+
+//个人中心
+"waitConfirmed" = "waitConfirmed";
+
+"waitSend" = "waitSend";
+
+"afterSale" = "afterSale";
+
+"allOrder" = "allOrder";
+
+"myCollect" = "myCollect";
+
+"goodsAddress" = "goodsAddress";
+
+"feedBack" = "feedBack";
+
+"passwordChange"= "passwordChange";
+
+"logoutAccount"= "logoutAccount";
+
+
+//提示框
+"cancel" = "Cancel";
+
+"sure" = "Sure";
+
+"pleaseContact" = "pleaseContact:";//请联系xxxx
+
+"allRead" = "AllSetToRead";//全部设为已读
+
+"sureDelete" = "Sure you want to delete?";//确定删除订单吗？
+
+"sureSubmit" = "Sure you want to submit orders?";//确定提交订单吗？
+
+"sureLogout" = "Sure log out?";//确定要退出登录？
+
+//其他子页面
+"orderDetail" = "orderDetail";//订单详情
+
+"reset" = "Reset";//重置
+
+"goods" = "Goods";//商品
+
+"detail" = "Detail";//详情
+
+"addCart" = "AddToCart";//加入购物车
+
+"buyNow" = "BuyNow";//立即购买
+
+"orderConfirmed" = "orderConfirmed";//订单确认
+
+//商品规格
+"goodPrice" = "UnitPrice";
+
+"goodNumber"= "Number";
+
+"goodModel" = "Model";//型号
+
+"goodinventory"= "inventory";//库存
+
+
+//订单确认
+
+"orderConfirmed" = "orderConfirmed";
+
+"peisong" = "distribution";//配送
+
+"ziti" = "SinceTheLift";//自提
+
+"pickWay" = "pickUpWay";//提货方式
+
+"receivedWay" = "receivedWay";//收货方式
+
+"consignee" = "consignee";//收货人
+
+"shippingAddress" = "shippingAddress";//收货地址
+
+"salesManager" = "salesManager";//销售经理
+
+"takeAddress" = "takeAddress";//提货地址
+
+"submitOrder" = "submitOrder";//提交订单

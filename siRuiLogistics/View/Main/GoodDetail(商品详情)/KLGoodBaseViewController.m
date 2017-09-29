@@ -52,16 +52,16 @@
 #pragma mark - 头部View
 - (void)setUpTopButtonView
 {
-    NSArray *titles = @[@"商品",@"详情"];
+    NSArray *titles = @[NSLocalizedString(@"goods", nil),NSLocalizedString(@"detail", nil)];
     CGFloat margin = 5;
     _bgView = [[UIView alloc] init];
     _bgView.dc_centerX = SCREEN_WIDTH * 0.5;
     _bgView.dc_height = 44;
-    _bgView.dc_width = (_bgView.dc_height + margin) * titles.count;
+    _bgView.dc_width = (64 + margin) * titles.count;
     _bgView.dc_y = 0;
     self.navigationItem.titleView = _bgView;
     
-    CGFloat buttonW = _bgView.dc_height;
+    CGFloat buttonW = 64;
     CGFloat buttonH = _bgView.dc_height;
     CGFloat buttonY = _bgView.dc_y;
     for (NSInteger i = 0; i < titles.count; i++) {
@@ -165,7 +165,7 @@
 #pragma mark - 加入购物车 立即购买
 - (void)setUpRightTwoButton
 {
-    NSArray *titles = @[@"加入购物车",@"立即购买"];
+    NSArray *titles = @[NSLocalizedString(@"addCart", nil),NSLocalizedString(@"buyNow", nil)];
     CGFloat buttonW = SCREEN_WIDTH * 0.5;
     CGFloat buttonH = 50;
     CGFloat buttonY = SCREENH_HEIGHT - buttonH;

@@ -87,7 +87,7 @@
     NSLayoutConstraint *constraintLeft = [NSLayoutConstraint constraintWithItem:_picImageView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeading multiplier:1.0 constant:leftMargin];
     
     //计算图片的宽度
-    CGFloat width = self.bounds.size.width - leftMargin - rightMargin;
+    CGFloat width = self.frame.size.width - leftMargin - rightMargin;
     NSLayoutConstraint *constraintWidth = [NSLayoutConstraint constraintWithItem:_picImageView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:width];
     
     CGFloat height = width;
@@ -98,6 +98,7 @@
     
     [self addConstraints:@[constraintTop,constraintLeft,constraintWidth,constraintHeight]];
     
+    NSLog(@"图片高度%.f??%.f",self.frame.size.width,height);
     
     //picImageView.frame = CGRectMake(leftMargin, topMargin , width, height);
     

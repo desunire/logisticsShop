@@ -59,6 +59,9 @@
                             <constraint firstAttribute="width" constant="20" id="Mac-ek-Ha8"/>
                         </constraints>
                         <state key="normal" title="Button" image="shopcar_gray"/>
+                        <connections>
+                            <action selector="gotoShopCart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2u6-PF-MAV"/>
+                        </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVd-m8-THN">
                         <rect key="frame" x="0.0" y="98.5" width="375" height="1"/>
@@ -87,6 +90,13 @@
                     <constraint firstAttribute="trailing" secondItem="IN2-ta-1HS" secondAttribute="trailing" constant="40" id="yqi-zR-Rou"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="goodImageView" destination="1IM-cb-MfX" id="TS0-95-INR"/>
+                <outlet property="goodNameLabel" destination="z0l-cX-R1Z" id="vef-Cs-cXN"/>
+                <outlet property="goodOriginPriceLabel" destination="wag-v7-Ree" id="Pvk-QK-Lut"/>
+                <outlet property="goodPriceLabel" destination="IN2-ta-1HS" id="PRG-uB-1ts"/>
+                <outlet property="shopCarBtn" destination="gMC-kb-F5k" id="Rxx-nw-si5"/>
+            </connections>
             <point key="canvasLocation" x="29.5" y="60"/>
         </tableViewCell>
     </objects>

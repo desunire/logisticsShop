@@ -46,6 +46,10 @@
                     <constraint firstItem="TrT-MY-w7g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zFP-dh-75V"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="hotLabel" destination="FEC-da-y30" id="nzc-H4-WRo"/>
+                <outlet property="moreLabel" destination="TrT-MY-w7g" id="sBv-RF-xHe"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

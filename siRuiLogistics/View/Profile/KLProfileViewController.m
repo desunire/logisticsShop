@@ -50,9 +50,11 @@ static NSString *customManagerCell  = @"customManagerCell";
     [super viewDidLoad];
     //self.view.backgroundColor =[UIColor cz_randomColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.indexSearchTopView.hidden = YES;
-     [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionInitial context:nil];
+    self.indexSearchTopView.hidden = YES;//隐藏搜索框
+    [self.tableView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionInitial context:nil];
     self.offY = 0.0;
+//    self.tableView.frame = CGRectMake(0, 0, SCREEN_WIDTH,SCREENH_HEIGHT);
+    //获取个人中心中需要的操作（我的收藏，收货地址，意见反馈，密码修改，注销账户）
     NSString *path  = [[NSBundle mainBundle] pathForResource:@"ProfileItem.plist" ofType:nil];
     self.profileItemArr = [NSArray arrayWithContentsOfFile:path];
     NSLog(@"%@,,%@",path,self.profileItemArr);
@@ -104,6 +106,7 @@ static NSString *customManagerCell  = @"customManagerCell";
     else if(item==1){
         //判断是1打售后电脑 还是 退出登录0
         if (self.promptType == 0) {
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"isLoad"];
             KLLoadViewController *vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass( [KLLoadViewController class]) owner:self options:nil] firstObject];
             [UIApplication sharedApplication].keyWindow.rootViewController = vc;
         }
@@ -232,8 +235,8 @@ static NSString *customManagerCell  = @"customManagerCell";
             //计算订单视图的高度
             CGFloat width = SCREEN_WIDTH/4;
             CGFloat picWidth = width-leftMargin-rightMargin;
-            CGFloat height = picWidth+topMargin+belowMargin+titleHeight+leftMargin;
-            NSLog(@"%f",height);
+            CGFloat height = picWidth+topMargin+belowMargin+titleHeight+10;//10和下面的边距
+            NSLog(@"%f,%f",picWidth,height);
             return height;
         }
         if (indexPath.row == 2) {

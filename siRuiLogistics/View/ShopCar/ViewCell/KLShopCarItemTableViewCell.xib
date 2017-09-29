@@ -57,13 +57,13 @@
                             <constraint firstAttribute="height" constant="20" id="9dM-86-zAn"/>
                             <constraint firstAttribute="width" constant="30" id="DRN-Oc-Oxh"/>
                         </constraints>
-                        <state key="normal" image="ic_reduce"/>
+                        <state key="normal" image="reduce"/>
                         <connections>
                             <action selector="reduceNumClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zwe-2u-Bod"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMB-Sh-3MG" userLabel="当前商品数量按钮">
-                        <rect key="frame" x="205" y="75" width="60" height="20"/>
+                        <rect key="frame" x="204" y="75" width="60" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="9wH-bo-mk2"/>
                             <constraint firstAttribute="height" constant="20" id="ifP-iD-ZtT"/>
@@ -73,12 +73,12 @@
                         </state>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulc-ov-PJg" userLabel="增加数量按钮">
-                        <rect key="frame" x="265" y="75" width="30" height="20"/>
+                        <rect key="frame" x="263" y="75" width="30" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="IUk-ng-1gV"/>
                             <constraint firstAttribute="width" constant="30" id="dJy-Zc-qJ7"/>
                         </constraints>
-                        <state key="normal" image="ic_add"/>
+                        <state key="normal" image="add"/>
                         <connections>
                             <action selector="addNumberClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xGS-57-pDM"/>
                         </connections>
@@ -114,12 +114,12 @@
                     <constraint firstAttribute="trailing" secondItem="cUX-g1-5d8" secondAttribute="trailing" constant="10" id="cDy-Fa-EbV"/>
                     <constraint firstItem="8Ef-nC-joU" firstAttribute="leading" secondItem="xjN-L7-dvz" secondAttribute="trailing" constant="-30" id="cpo-QR-peD"/>
                     <constraint firstItem="cUX-g1-5d8" firstAttribute="leading" secondItem="yPC-a3-aRl" secondAttribute="trailing" constant="10" id="ebR-4n-bUr"/>
-                    <constraint firstItem="ulc-ov-PJg" firstAttribute="leading" secondItem="vMB-Sh-3MG" secondAttribute="trailing" id="i6Z-Rb-Osv"/>
+                    <constraint firstItem="ulc-ov-PJg" firstAttribute="leading" secondItem="vMB-Sh-3MG" secondAttribute="trailing" constant="-1" id="i6Z-Rb-Osv"/>
                     <constraint firstItem="cUX-g1-5d8" firstAttribute="top" secondItem="yPC-a3-aRl" secondAttribute="top" id="jcL-Ql-Omi"/>
                     <constraint firstItem="OVE-Oo-H0B" firstAttribute="top" secondItem="cUX-g1-5d8" secondAttribute="bottom" constant="25" id="kf4-OZ-Ox2"/>
                     <constraint firstItem="Z7K-yH-hvf" firstAttribute="top" secondItem="cUX-g1-5d8" secondAttribute="bottom" id="n9W-7W-BNf"/>
                     <constraint firstItem="uC2-Uw-vTt" firstAttribute="leading" secondItem="OVE-Oo-H0B" secondAttribute="trailing" constant="5" id="nJu-JA-PFz"/>
-                    <constraint firstItem="vMB-Sh-3MG" firstAttribute="leading" secondItem="uC2-Uw-vTt" secondAttribute="trailing" id="qAo-lY-3M5"/>
+                    <constraint firstItem="vMB-Sh-3MG" firstAttribute="leading" secondItem="uC2-Uw-vTt" secondAttribute="trailing" constant="-1" id="qAo-lY-3M5"/>
                     <constraint firstItem="yPC-a3-aRl" firstAttribute="leading" secondItem="xjN-L7-dvz" secondAttribute="trailing" constant="10" id="tlU-MH-kW3"/>
                     <constraint firstItem="uC2-Uw-vTt" firstAttribute="centerY" secondItem="OVE-Oo-H0B" secondAttribute="centerY" id="uBq-wB-FkU"/>
                 </constraints>
@@ -135,9 +135,9 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="add" width="50" height="50"/>
         <image name="car" width="512" height="337"/>
-        <image name="ic_add" width="50" height="50"/>
-        <image name="ic_reduce" width="50" height="50"/>
         <image name="icon9" width="40" height="40"/>
+        <image name="reduce" width="50" height="50"/>
     </resources>
 </document>

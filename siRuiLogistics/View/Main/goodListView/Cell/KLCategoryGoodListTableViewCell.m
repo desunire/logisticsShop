@@ -12,7 +12,16 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    //中划线
+//    NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],NSForegroundColorAttributeName:mainTitleColor};
+//    NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:@"$30.00" attributes:attribtDic];
+//    self.goodOriginPriceLabel.attributedText = attribtStr;
+
+    self.goodOriginPriceLabel.text = @"$150.00";
+    
+    [UILabel setMiddleLineWithText:@"" andForegroundColor:DefaultBackColor WithLabel:self.goodOriginPriceLabel];
+    
+   // [UILabel setMiddleLineWithText:@"￥30.0000" andForegroundColor:DefaultBackColor WithLabel:self.goodNameLabel];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -21,4 +30,6 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)gotoShopCart:(id)sender {
+}
 @end

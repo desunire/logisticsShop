@@ -8,7 +8,7 @@
 		<key>imageName</key>
 		<string>my_collection</string>
 		<key>title</key>
-		<string>我的收藏</string>
+		<string>myCollect</string>
 	</dict>
 	<dict>
 		<key>view</key>
@@ -16,7 +16,7 @@
 		<key>imageName</key>
 		<string>delivery_address</string>
 		<key>title</key>
-		<string>收货地址</string>
+		<string>goodsAddress</string>
 	</dict>
 	<dict>
 		<key>view</key>
@@ -24,7 +24,7 @@
 		<key>imageName</key>
 		<string>feedback</string>
 		<key>title</key>
-		<string>意见反馈</string>
+		<string>feedBack</string>
 	</dict>
 	<dict>
 		<key>view</key>
@@ -32,7 +32,7 @@
 		<key>imageName</key>
 		<string>change_password</string>
 		<key>title</key>
-		<string>密码修改</string>
+		<string>passwordChange</string>
 	</dict>
 	<dict>
 		<key>view</key>
@@ -40,7 +40,7 @@
 		<key>imageName</key>
 		<string>logout</string>
 		<key>title</key>
-		<string>注销账户</string>
+		<string>logoutAccount</string>
 	</dict>
 </array>
 </plist>

@@ -44,6 +44,7 @@
 		653989011F692E4B007BD83B /* KLIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653989001F692E4B007BD83B /* KLIndexViewController.m */; };
 		653989041F692E56007BD83B /* KLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653989031F692E56007BD83B /* KLProfileViewController.m */; };
 		653989061F693414007BD83B /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 653989051F693414007BD83B /* main.json */; };
+		653FD2DB1F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 653FD2DA1F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.m */; };
 		6550C7121F73672D00BA5BFD /* KLFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7111F73672D00BA5BFD /* KLFilterView.m */; };
 		6550C7151F73680A00BA5BFD /* KLFilterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7141F73680A00BA5BFD /* KLFilterButton.m */; };
 		6550C7191F73888000BA5BFD /* DCSpeedy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6550C7181F73888000BA5BFD /* DCSpeedy.m */; };
@@ -260,6 +261,8 @@
 		653989021F692E56007BD83B /* KLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLProfileViewController.h; sourceTree = "<group>"; };
 		653989031F692E56007BD83B /* KLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLProfileViewController.m; sourceTree = "<group>"; };
 		653989051F693414007BD83B /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		653FD2D91F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+KLLabelMiddleLine.h"; sourceTree = "<group>"; };
+		653FD2DA1F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+KLLabelMiddleLine.m"; sourceTree = "<group>"; };
 		6550C7101F73672D00BA5BFD /* KLFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterView.h; sourceTree = "<group>"; };
 		6550C7111F73672D00BA5BFD /* KLFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFilterView.m; sourceTree = "<group>"; };
 		6550C7131F73680A00BA5BFD /* KLFilterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFilterButton.h; sourceTree = "<group>"; };
@@ -999,6 +1002,8 @@
 				658081511F6FCD320061367E /* UIImage+KLExtentsion.m */,
 				659E766E1F727623002DFA42 /* UIBarButtonItem+KLExtension.h */,
 				659E766F1F727623002DFA42 /* UIBarButtonItem+KLExtension.m */,
+				653FD2D91F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.h */,
+				653FD2DA1F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1457,6 +1462,7 @@
 				655EC6121F78F81F00C7951E /* KLNavTitleView.m in Sources */,
 				655EC5FD1F78D50400C7951E /* KLBigImgShowViewController.m in Sources */,
 				658081381F6F9D450061367E /* KLCategoryItemButton.m in Sources */,
+				653FD2DB1F7E2DE700D376F2 /* NSMutableAttributedString+KLLabelMiddleLine.m in Sources */,
 				655EC61C1F79080D00C7951E /* KLMessageStateView.m in Sources */,
 				6505DCD91F7A5AE50075B267 /* KLWaitSendViewController.m in Sources */,
 				659E766D1F727186002DFA42 /* KLSearchViewController.m in Sources */,

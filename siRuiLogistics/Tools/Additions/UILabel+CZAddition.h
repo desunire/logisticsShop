@@ -32,4 +32,9 @@
 -(CGSize)getmultSize:(CGSize)size andFont:(UIFont *)font andText:(NSString *)str;
 
 
+//添加中划线
++(void)setMiddleLineWithText:(NSString *)text andForegroundColor:(UIColor *)ForegroundColor WithLabel:(UILabel *)label;
+
+//添加下划线
+-(NSMutableAttributedString *)setBottomLineWithText:(NSString *)text andForegroundColor:(UIColor *)ForegroundColor;
 @end

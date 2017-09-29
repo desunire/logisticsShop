@@ -53,4 +53,21 @@
     CGSize titleSize = [str boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attributes1 context:nil].size;
     return titleSize;
 }
+
+//添加中划线
++(void)setMiddleLineWithText:(NSString *)text andForegroundColor:(UIColor *)ForegroundColor WithLabel:(UILabel *)label{
+//    NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+//       NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:text attributes:attribtDic];
+        NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]};
+        NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:label.text attributes:attribtDic];
+      label.attributedText =attribtStr;
+}
+
+//添加下划线
+-(NSMutableAttributedString *)setBottomLineWithText:(NSString *)text andForegroundColor:(UIColor *)ForegroundColor{
+    // 下划线 NSDictionary *attribtDic = @{NSUnderlineStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle]}; NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:textStr attributes:attribtDic];
+    
+   return nil;
+}
+
 @end

@@ -48,7 +48,8 @@
     
     [self.languageBtn sizeToFit];
     
-    [self.languageBtn setTitle:@"language：CN" forState:UIControlStateNormal];
+    
+    
     
     [self initChangeLanguageView];
     
@@ -62,10 +63,21 @@
     [self.remBtn setTitle:NSLocalizedString(@"rememberPwd", nil) forState:UIControlStateNormal];
     
      [self.forgetPwdBtn setTitle:NSLocalizedString(@"forgetPwd", nil) forState:UIControlStateNormal];
+    
+    [self.languageBtn setTitle:NSLocalizedString(@"loadLanguage", nil) forState:UIControlStateNormal];
+    
+    [self.loadBtn setTitle:NSLocalizedString(@"load", nil) forState:UIControlStateNormal];
+    
+    
+    self.accountTextField.placeholder = NSLocalizedString(@"loadAccount", nil);
+    
+    self.pwdTextField.placeholder =NSLocalizedString(@"loadPwd", nil);
+    
 }
 
 #pragma mark 切换语言视图设置 KLIndexSearchMessageChangeViewDelegate
 -(void)initChangeLanguageView{
+    
     self.chooseLanguageView = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([KLChooseLanguageView class]) owner:self options:nil] firstObject];
     [self.view addSubview:self.chooseLanguageView];
     [self.chooseLanguageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -104,6 +116,10 @@
 //登录系统
 - (IBAction)loadBtnClick:(id)sender {
     
+    
+    //设置登录成功，沙盒存储登录信息
+    [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"isLoad"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     //设置根视图
     KLMainViewController * vc= [[KLMainViewController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController =vc;

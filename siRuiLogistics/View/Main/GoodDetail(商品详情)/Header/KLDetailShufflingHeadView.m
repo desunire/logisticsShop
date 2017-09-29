@@ -33,7 +33,8 @@
     self.backgroundColor = [UIColor whiteColor];
     _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, self.dc_height) delegate:self placeholderImage:nil];
     _cycleScrollView.autoScroll = NO; // 不自动滚动
-    
+    _cycleScrollView.currentPageDotColor = DefaultBackColor;
+    _cycleScrollView.pageDotColor = [UIColor whiteColor];
     [self addSubview:_cycleScrollView];
 }
 

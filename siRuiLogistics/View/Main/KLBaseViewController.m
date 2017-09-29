@@ -38,8 +38,8 @@
         if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@"es"]) {
             [self.indexSearchTopView.languageBtn setTitle:@"ES" forState:UIControlStateNormal];
         }
-        
-    }
+     }
+     self.indexSearchTopView.searchBar.placeholder = NSLocalizedString(@"search", nil);
 }
 
 #pragma mark 设置上面的搜索视图
@@ -94,7 +94,7 @@
 
 #pragma mark 初始化tableView
 -(void)initTableView{
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     
    // self.tableView.style =  UITableViewStylePlain;
     self.tableView.delegate = self;
@@ -103,6 +103,7 @@
     backView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:backView];
     [self.view insertSubview:self.tableView belowSubview:backView];
+    //[self.view addSubview:self.tableView];
 }
 
 #pragma mark tableView代理和数据源方法实现

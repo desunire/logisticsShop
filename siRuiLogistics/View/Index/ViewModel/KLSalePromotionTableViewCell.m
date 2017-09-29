@@ -41,6 +41,10 @@
         //给推广的商品view添加点击事件
         UITapGestureRecognizer *tapView =[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickItem:)];
         [goodView addGestureRecognizer:tapView];
+       // [UILabel setMiddleLineWithText:@"￥15.0" andForegroundColor:mainTitleColor WithLabel:goodView.goodOriginPriceLabel];
+        NSDictionary *attribtDic = @{NSStrikethroughStyleAttributeName: [NSNumber numberWithInteger:NSUnderlineStyleSingle],NSForegroundColorAttributeName:mainTitleColor};
+        NSMutableAttributedString *attribtStr = [[NSMutableAttributedString alloc]initWithString:@"$30.00" attributes:attribtDic];
+        goodView.goodOriginPriceLabel.attributedText = attribtStr;
         [self.contentView addSubview:goodView];
     }
     

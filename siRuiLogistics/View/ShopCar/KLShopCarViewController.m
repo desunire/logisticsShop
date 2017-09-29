@@ -66,9 +66,9 @@ static NSString *itemCell = @"shopCarItemCell";
 -(void)initPromptBox{
     self.scjPromptView=[[SCJPromptView alloc]initWithFrame:self.view.frame];
     self.scjPromptView.delegate=self;
-    [self.scjPromptView setViewWithTitle:nil andMessge:@"确定要删除吗?" andCancelTitle:@"取消" andSureTitle:@"确认"];
+    [self.scjPromptView setViewWithTitle:nil andMessge:NSLocalizedString(@"sureDelete", nil) andCancelTitle:NSLocalizedString(@"cancel", nil) andSureTitle:NSLocalizedString(@"sure", nil)];
     self.scjPromptView.hidden = YES;
-    [self.navigationController.view addSubview:self.scjPromptView];
+    [self.tabBarController.view addSubview:self.scjPromptView];
 }
 
 
@@ -83,8 +83,8 @@ static NSString *itemCell = @"shopCarItemCell";
 }
 #pragma mark 设置购物车页面的编辑删除功能
 -(void)addEdit{
-    self.editOrdelBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 20)];
-    [_editOrdelBtn setTitle:@"编辑" forState:UIControlStateNormal];
+    self.editOrdelBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
+    [_editOrdelBtn setTitle:NSLocalizedString(@"edit", nil) forState:UIControlStateNormal];
     [_editOrdelBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     [_editOrdelBtn addTarget:self action:@selector(editOrdelClick:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithCustomView:self.editOrdelBtn];
@@ -96,13 +96,13 @@ static NSString *itemCell = @"shopCarItemCell";
     if (self.OperateView.shopcarOperateState == normalState) {
         self.OperateView.shopcarOperateState =editState;
         [UIView animateWithDuration:0.5 animations:^{
-            [editOrDelBtn setTitle:@"完成" forState:UIControlStateNormal];
+            [editOrDelBtn setTitle:NSLocalizedString(@"finish", nil) forState:UIControlStateNormal];
             [editOrDelBtn setTitleColor:DefaultBackColor forState:UIControlStateNormal];
         }];
     }else{
         self.OperateView.shopcarOperateState  = normalState;
         [UIView animateWithDuration:0.5 animations:^{
-            [editOrDelBtn setTitle:@"编辑" forState:UIControlStateNormal];
+            [editOrDelBtn setTitle:NSLocalizedString(@"edit", nil) forState:UIControlStateNormal];
             [editOrDelBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         }];
     }

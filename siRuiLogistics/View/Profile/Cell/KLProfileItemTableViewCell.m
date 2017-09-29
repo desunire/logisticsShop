@@ -28,7 +28,7 @@
     }
     
     if ([dic jsonString:@"title"]) {
-        self.title.text = [dic valueForKey:@"title"];
+        self.title.text =NSLocalizedString([dic valueForKey:@"title"], nil);
     }
     
 }

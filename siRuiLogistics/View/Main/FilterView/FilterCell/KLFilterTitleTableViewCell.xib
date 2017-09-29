@@ -19,9 +19,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分类" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCl-bK-JgC">
-                        <rect key="frame" x="10" y="19.5" width="40" height="20"/>
+                        <rect key="frame" x="10" y="19.5" width="100" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="TAX-le-Hzq"/>
+                            <constraint firstAttribute="width" constant="100" id="TAX-le-Hzq"/>
                             <constraint firstAttribute="height" constant="20" id="wpa-uc-7LQ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -46,6 +46,10 @@
                     <constraint firstAttribute="trailing" secondItem="E4Y-CO-qMP" secondAttribute="trailing" constant="10" id="f3T-vv-dAz"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseLabel" destination="E4Y-CO-qMP" id="XSf-XA-Uhc"/>
+                <outlet property="titleLabel" destination="RCl-bK-JgC" id="Fgy-Lx-sW5"/>
+            </connections>
             <point key="canvasLocation" x="31.5" y="146.5"/>
         </tableViewCell>
     </objects>

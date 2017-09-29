@@ -16,8 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
+      
     [DCURLRouter loadConfigDictFromPlist:@"DCURLRouter.plist"];
     
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] && ![[[NSUserDefaults standardUserDefaults] objectForKey:@"myLanguage"] isEqualToString:@""]) {
@@ -29,7 +28,7 @@
     
     _window.backgroundColor = [UIColor whiteColor];
     
-    if (/* DISABLES CODE */ (1)) {
+    if (![[NSUserDefaults standardUserDefaults] valueForKey:@"isLoad"]) {
         KLLoadViewController *vc = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass( [KLLoadViewController class]) owner:self options:nil] firstObject];
         _window.rootViewController = vc;
         [_window makeKeyAndVisible];

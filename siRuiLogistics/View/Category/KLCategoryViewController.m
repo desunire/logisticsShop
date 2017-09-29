@@ -86,14 +86,14 @@ static NSString *categoryTitleCell = @"categoryTitle";
     
     [self.tableView registerClass:[KLCategoryContentTableViewCell class] forCellReuseIdentifier:categoryContentCell];
 }
-#pragma mark 设置上面的搜索视图
--(void)initSearchView{
-     self.indexSearchTopView = [KLIndexSearchMessageChangeView initView];
-    self.indexSearchTopView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
-    self.indexSearchTopView.delegate = self;
-    self.indexSearchTopView.state = NormalState;
-    [self.view addSubview:self.indexSearchTopView];
-}
+#pragma mark 设置上面的搜索视图 -- 不需要重写父类方法
+//-(void)initSearchView{
+//     self.indexSearchTopView = [KLIndexSearchMessageChangeView initView];
+//    self.indexSearchTopView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 60);
+//    self.indexSearchTopView.delegate = self;
+//    self.indexSearchTopView.state = NormalState;
+//    [self.view addSubview:self.indexSearchTopView];
+//}
 
 
 

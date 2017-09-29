@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface KLSubtitleAndMoreTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *hotLabel;
+@property (weak, nonatomic) IBOutlet UILabel *moreLabel;
 
 @end

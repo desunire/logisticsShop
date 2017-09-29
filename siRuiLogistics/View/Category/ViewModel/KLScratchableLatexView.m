@@ -30,7 +30,7 @@
             
             UIImageView *imageView = [[UIImageView alloc] init];
             
-            imageView.image = [UIImage imageNamed:@"backInfo"];
+            imageView.image = [UIImage imageNamed:@"i1"];
             //图片宽高
             CGFloat imageWidth =(SCREEN_WIDTH-(JGGeftMargin+JGGeftMargin)*3)/3;
             CGFloat imageHeight = proportion*(SCREEN_WIDTH-(JGGeftMargin+JGGeftMargin)*3)/3;
@@ -57,7 +57,7 @@
         //设置视图
         for (int i = 0; i < dataArr.count; i++) {
             UIImageView *imageView = [[UIImageView alloc] init];
-            imageView.image = [UIImage imageNamed:@"backInfo"];
+            imageView.image = [UIImage imageNamed:@"i1"];
             //图片宽高
             CGFloat imageWidth =(self.frame.size.width-(JGGeftMargin+JGGeftMargin)*3)/3;
             CGFloat imageHeight = proportion*(self.frame.size.width-(JGGeftMargin+JGGeftMargin)*3)/3;
@@ -82,10 +82,16 @@
         //设置视图
         for (int i = 0; i < dataArr.count; i++) {
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-            btn.backgroundColor = UIColorFromRGB(0xf2f2f2);
+            btn.backgroundColor = viewBackColor;
             btn.layer.cornerRadius = 5;
             btn.layer.masksToBounds = YES;
             [btn setTitle:[dataArr objectAtIndex:i] forState:UIControlStateNormal];
+            [btn setTitleColor:mainTitleColor forState:UIControlStateNormal];
+            btn.titleLabel.font = [UIFont systemFontOfSize:15.0];
+            if (i==0) {
+                [btn setTitleColor:DefaultBackColor forState:UIControlStateNormal];
+                btn.backgroundColor = chooseBtnColor;
+            }
             //图片宽高
             CGFloat imageWidth =(self.frame.size.width-(JGGeftMargin+JGGeftMargin)*3)/3;
             btn.frame = CGRectMake(JGGeftMargin+i%3*self.frame.size.width/3, JGGtopMargin+(height+JGGtopMargin)*(i/3), imageWidth, height);

@@ -103,7 +103,7 @@ static float operateViewHeight = 60;
 #pragma mark 设置navView
 -(void)setNav{
     
-    self.navigationItem.titleView = [[KLNavTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-80, 44) andTitle:@"订单确认"];
+    self.navigationItem.titleView = [[KLNavTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-80, 44) andTitle:NSLocalizedString(@"orderConfirmed", nil)];
     
 }
 

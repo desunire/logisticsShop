@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface KLCategoryGoodListTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *goodImageView;
+@property (weak, nonatomic) IBOutlet UILabel *goodNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodPriceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *goodOriginPriceLabel;
+@property (weak, nonatomic) IBOutlet UIButton *shopCarBtn;
+- (IBAction)gotoShopCart:(id)sender;
 
 @end

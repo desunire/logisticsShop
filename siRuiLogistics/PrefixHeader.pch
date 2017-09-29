@@ -111,6 +111,7 @@ alpha:alphaValue]
 #import "Masonry.h"
 #import "SDWebImageManager.h"
 #import "UIImage+KLExtentsion.h"
+#import "NSMutableAttributedString+KLLabelMiddleLine.h"
 #import "UIImageView+WebCache.h"
 #import "KLChooseLanguageView.h"
 #import "UIBarButtonItem+KLExtension.h"
