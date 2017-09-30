@@ -22,6 +22,7 @@
 
 @property(weak,nonatomic)id<KLSubmitViewDelegate>delagete;
 
+@property (weak, nonatomic) IBOutlet UIButton *submitBtn;
 
 @property (weak, nonatomic) IBOutlet UILabel *totalPricelabel;
 

@@ -20,5 +20,8 @@ typedef void(^changePickGoodStyleBlock)();
 @property (weak, nonatomic) IBOutlet UILabel *ztUsernameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ztPhoneLabel;
 - (IBAction)ztBtnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *pickWayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *saleManagerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *pickAddressLabel;
 
 @end

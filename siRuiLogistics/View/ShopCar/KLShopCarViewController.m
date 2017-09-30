@@ -55,6 +55,13 @@ static NSString *itemCell = @"shopCarItemCell";
     [self addOperateView];
     [self addEdit];
     [self initPromptBox];
+    CGRect leftViewbounds = self.navigationItem.leftBarButtonItem.customView.bounds;
+    CGRect rightViewbounds = self.navigationItem.rightBarButtonItem.customView.bounds;
+    //CGRect frame;
+    CGFloat maxWidth = leftViewbounds.size.width > rightViewbounds.size.width ? leftViewbounds.size.width : rightViewbounds.size.width;
+    
+    maxWidth += 15;//leftview 左右都有间隙，左边是5像素，右边是8像素，加2个像素的阀值 5 ＋ 8 ＋ 2
+     self.navigationItem.titleView = [[KLNavTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-2*maxWidth, 44) andTitle:NSLocalizedString(@"shopcar", nil)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,10 +116,21 @@ static NSString *itemCell = @"shopCarItemCell";
 }
 #pragma mark 购物车结算和删除汇总视图
 -(void)addOperateView{
-    self.OperateView = [[ShopCarSettlementView alloc] initWithFrame:CGRectMake(0, self.tabBarController.tabBar.frame.origin.y-self.tabBarController.tabBar.frame.size.height, SCREEN_WIDTH, 50)];
-    self.OperateView.shopcarOperateState = normalState;
-    self.OperateView.delegate = self;
-    [self.view insertSubview:self.OperateView aboveSubview:self.tabBarController.view];
+    //判断当前视图的是否是>1级视图
+    if (self.navigationController.childViewControllers.count == 1) {
+        NSLog(@"》》》》》》》》》%ld",self.navigationController.childViewControllers.count);
+        self.OperateView = [[ShopCarSettlementView alloc] initWithFrame:CGRectMake(0, self.tabBarController.tabBar.frame.origin.y-self.tabBarController.tabBar.frame.size.height, SCREEN_WIDTH, 50)];
+        self.OperateView.shopcarOperateState = normalState;
+        self.OperateView.delegate = self;
+        [self.view insertSubview:self.OperateView aboveSubview:self.tabBarController.view];
+    }else{
+        self.OperateView = [[ShopCarSettlementView alloc] initWithFrame:CGRectMake(0, SCREENH_HEIGHT-50, SCREEN_WIDTH, 50)];
+        self.OperateView.shopcarOperateState = normalState;
+        self.OperateView.delegate = self;
+        [self.view addSubview:self.OperateView];
+    }
+    
+    
 }
 
 #pragma mark ShopCarSettlementViewDelegate

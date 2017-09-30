@@ -129,16 +129,16 @@
 
 "ziti" = "自提";//自提
 
-"pickWay" = "提货方式";//提货方式
+"pickWay" = "提货方式:";//提货方式
 
-"receivedWay" = "收货方式";//收货方式
+"receivedWay" = "收货方式:";//收货方式
 
 "consignee" = "收货人";//收货人
 
-"shippingAddress" = "收货地址";//收货地址
+"shippingAddress" = "收货地址:";//收货地址
 
-"salesManager" = "销售经理";//销售经理
+"salesManager" = "销售经理:";//销售经理
 
-"takeAddress" = "提货地址";//提货地址
+"takeAddress" = "提货地址:";//提货地址
 
 "submitOrder" = "提交订单";//提交订单

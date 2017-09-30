@@ -131,16 +131,16 @@
 
 "ziti" = "SinceTheLift";//自提
 
-"pickWay" = "pickUpWay";//提货方式
+"pickWay" = "pickUpWay:";//提货方式
 
-"receivedWay" = "receivedWay";//收货方式
+"receivedWay" = "receivedWay:";//收货方式
 
-"consignee" = "consignee";//收货人
+"consignee" = "consignee:";//收货人
 
-"shippingAddress" = "shippingAddress";//收货地址
+"shippingAddress" = "shippingAddress:";//收货地址
 
-"salesManager" = "salesManager";//销售经理
+"salesManager" = "salesManager:";//销售经理
 
-"takeAddress" = "takeAddress";//提货地址
+"takeAddress" = "takeAddress:";//提货地址
 
 "submitOrder" = "submitOrder";//提交订单

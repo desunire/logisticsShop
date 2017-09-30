@@ -17,6 +17,11 @@
     self.psBtn.layer.borderWidth = 1;
     self.psBtn.layer.cornerRadius = 2;
     
+    //设置多国语言界面
+    self.pickWayLabel.text = NSLocalizedString(@"pickWay", nil);
+    self.receivedLabel.text =NSLocalizedString(@"consignee", nil);
+    self.receivedAddress.text =NSLocalizedString(@"shippingAddress", nil);
+    [self.psBtn setTitle:NSLocalizedString(@"peisong", nil) forState:UIControlStateNormal];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

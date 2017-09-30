@@ -18,7 +18,7 @@
                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计:￥6700.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAo-z2-50t">
                     <rect key="frame" x="10" y="0.0" width="150" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="OKW-fz-pK0"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="OKW-fz-pK0"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -49,6 +49,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="submitBtn" destination="9hG-0P-cM7" id="RuT-bv-lKi"/>
                 <outlet property="totalPricelabel" destination="ZAo-z2-50t" id="2f6-Rz-tY0"/>
             </connections>
             <point key="canvasLocation" x="29" y="22"/>

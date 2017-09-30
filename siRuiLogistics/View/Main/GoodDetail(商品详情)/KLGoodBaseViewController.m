@@ -10,7 +10,7 @@
 #import "KLGoodViewController.h"
 #import "KLDetailViewController.h"
 #import "KLBigImgShowViewController.h"
-
+#import "KLShopCarViewController.h"
 @interface KLGoodBaseViewController ()<UIScrollViewDelegate>
 /**
  界面切换视图
@@ -136,6 +136,8 @@
 
 -(void)shopCarClick{
     NSLog(@"购物车");
+    KLShopCarViewController *vc = [[KLShopCarViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 #pragma mark 懒加载控件

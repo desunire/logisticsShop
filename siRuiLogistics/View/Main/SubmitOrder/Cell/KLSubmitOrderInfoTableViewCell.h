@@ -24,5 +24,8 @@ typedef void(^changePickGoodStyleBlock)();
 @property (weak, nonatomic) IBOutlet UILabel *psUserNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *psPhoneLabel;
 - (IBAction)showAddressBtnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *pickWayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *receivedLabel;
+@property (weak, nonatomic) IBOutlet UILabel *receivedAddress;
 
 @end

@@ -45,7 +45,7 @@ static float operateViewHeight = 60;
 -(void)addPromptView{
     self.scjPromptView=[[SCJPromptView alloc]initWithFrame:self.view.frame];
     self.scjPromptView.delegate=self;
-    [self.scjPromptView setViewWithTitle:nil andMessge:@"确定要提交订单?" andCancelTitle:@"取消" andSureTitle:@"确认"];
+    [self.scjPromptView setViewWithTitle:nil andMessge:NSLocalizedString(@"sureSubmit", nil) andCancelTitle:NSLocalizedString(@"cancel", nil) andSureTitle:NSLocalizedString(@"sure", nil)];
     self.scjPromptView.hidden = YES;
     [self.navigationController.view addSubview:self.scjPromptView];
 }
@@ -89,7 +89,9 @@ static float operateViewHeight = 60;
     self.submitView.frame = CGRectMake(0, SCREENH_HEIGHT-operateViewHeight, SCREEN_WIDTH, operateViewHeight);
     
     self.submitView.delagete =self;
-    
+    //设置submitView的界面
+    self.submitView.totalPricelabel.text = [NSString stringWithFormat:@"%@:￥6700.00",NSLocalizedString(@"heji", nil)];
+    [self.submitView.submitBtn setTitle:NSLocalizedString(@"submitOrder", nil) forState:UIControlStateNormal];
     [self.view addSubview:self.submitView];
 }
 
@@ -201,7 +203,7 @@ static float operateViewHeight = 60;
     
     // 分别3个创建操作
     
-    UIAlertAction *laterAction = [UIAlertAction actionWithTitle:@"自提" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    UIAlertAction *laterAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"ziti", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
         if (self.pickgoodStyle != 0) {
              self.pickgoodStyle = 0;
@@ -211,7 +213,7 @@ static float operateViewHeight = 60;
         
     }];
     
-    UIAlertAction *neverAction = [UIAlertAction actionWithTitle:@"配送" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    UIAlertAction *neverAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"peisong", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
         if (self.pickgoodStyle != 1) {
             self.pickgoodStyle = 1;

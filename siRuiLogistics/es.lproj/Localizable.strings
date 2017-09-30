@@ -1,36 +1,146 @@
-/* 
-  Localizable.strings
-  siRuiLogistics
+/*
+ Localizable.strings
+ siRuiLogistics
+ 
+ Created by desunire on 2017/9/20.
+ Copyright © 2017年 desunire. All rights reserved.
+ */
 
-  Created by desunire on 2017/9/20.
-  Copyright © 2017年 desunire. All rights reserved.
-*/
 
-"index" = "página";
+"index" = "índice";
 
-"category" = "Laclasificación";
+"category" = "La clasificación";//分类
+
+"brand" = "La marca";//品牌
 
 "shopcar" = "Carros de";
 
-"me" = "mi";
+"me" = "Mi";
+
+"sale"= "En venta";
+
+"price" = "Los precios de";
+
+"filter"= "filtro";
+
+"search" = "encontrar";
+
+"searchPlaceholder" = "La marca de productos básicos, y la clasificación";
+
+"allOrder" = "Todos los pedidos";
+
+"waitSureOrder" = "Espera confirmar la orden";
+
+"waitSendOrder" = "Esperando órdenes de los envíos de";
+
+"rememberPwd" ="Recuerda la contraseña";
+
+"forgetPwd" ="Olvida la contraseña";
+
+"loadAccount" = "Cuentas de inicio de";//登录界面账号
+
+"loadPwd" = "La contraseña";//登录界面密码placeHolder
+
+"loadLanguage" = "Idioma: español muestra";//登录界面语言显示
+
+"load" = "De inicio de";//登录按钮显示
+
+//首页显示
+"hotRecommend" = "Recomiendo populares";
+
+"More" = "más";
+
+//购物车界面
+"edit" = "Editor";
+
+"finish" = "terminado";
+
+"heji" ="Total de";
+
+"delete" = "eliminar";
+
+"jiesuan" = "roza";
+
+"allChoose" = "Toda opción";
+
+//个人中心
+"waitConfirmed" = "Esperando confirmación";
+
+"waitSend" = "Esperando a los envíos de";
+
+"afterSale" = "Después de la";
+
+"allOrder" = "Todos los pedidos";
+
+"myCollect" = "Mi colección";
+
+"goodsAddress" = "La dirección de productos";
+
+"feedBack" = "comentarios";
+
+"passwordChange"= "Cambiar contraseñas";
+
+"logoutAccount"= "Cierra la sesión";
 
 
-"sale"= "sale";
+//提示框
+"cancel" = "la";
 
-"price" = "price";
+"sure" = "Seguro que";
 
-"filter"= "filter";
+"pleaseContact" = "Por favor contacte con:";//请联系xxxx
+
+"allRead" = "Todo se ha establecido para leer";//全部设为已读
+
+"sureDelete" = "Confirmado borrar orden?";//确定删除订单吗？
+
+"sureSubmit" = "Al confirmar pedido?";//确定提交订单吗？
+
+"sureLogout" = "Inicio de autoexclusión?";//确定要退出登录？
+
+//其他子页面
+"orderDetail" = "Orden más";//订单详情
+
+"reset" = "restaurar";//重置
+
+"goods" = "productos";//商品
+
+"detail" = "los";//详情
+
+"addCart" = "Al carro";//加入购物车
+
+"buyNow" = "comprar";//立即购买
+
+"orderConfirmed" = "Orden confirmó";//订单确认
+
+//商品规格
+"goodPrice" = "Los precios de los productos básicos";
+
+"goodNumber"= "Números de productos";
+
+"goodModel" = "Modelos de";//型号
+
+"goodinventory"= "de";//库存
 
 
-"search" = "search";
+//订单确认
 
-"searchPlaceholder" = "xxxxxxxx";
+"orderConfirmed" = "Orden confirmó";
 
+"peisong" = "La distribución de";//配送
 
-"allOrder" = "all";
+"ziti" = "Están tramando UN pedido su";//自提
 
+"pickWay" = "Están tramando UN pedido de manera";//提货方式
 
-"waitSureOrder" = "waitSure";
+"receivedWay" = "La recepción de manera";//收货方式
 
+"consignee" = "El destinatario";//收货人
 
-"waitSendOrder" = "waitSend";
+"shippingAddress" = "La dirección de recepción";//收货地址
+
+"salesManager" = "Director de ventas";//销售经理
+
+"takeAddress" = "Están tramando UN pedido la dirección";//提货地址
+
+"submitOrder" = "Por órdenes de";//提交订单
