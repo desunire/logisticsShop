@@ -21,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *rememberBtnClick;
 @property (weak, nonatomic) IBOutlet UIButton *forgetPwdBtn;
 - (IBAction)forgetPwdBtnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *showImageView;
+@property (weak, nonatomic) IBOutlet UIButton *remmberPwdBtn;
+- (IBAction)remberPwdBtnClick:(id)sender;
 
 -(void)initUI;
 

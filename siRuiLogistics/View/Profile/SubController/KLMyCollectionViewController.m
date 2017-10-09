@@ -12,7 +12,7 @@
 static float delViewHeight = 60;
 
 @interface KLMyCollectionViewController ()
-<UITableViewDelegate,UITableViewDataSource,SCJPromptViewDelegate,KLAllChooseDelViewDelegate>
+<UITableViewDelegate,UITableViewDataSource,SCJPromptViewDelegate,KLAllChooseDelViewDelegate,KLEmptyViewDelegate>
 //提示框
 @property(strong,nonatomic)SCJPromptView *scjPromptView;
 
@@ -27,6 +27,12 @@ static float delViewHeight = 60;
 //当前控制器状态 true--编辑删除状态 false--正常状态
 @property(assign,nonatomic)BOOL operateState;
 
+
+/**
+ 空视图
+ */
+@property(strong,nonatomic)KLEmptyView *emptyView;
+
 @end
 
 @implementation KLMyCollectionViewController
@@ -34,17 +40,30 @@ static float delViewHeight = 60;
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNav];
-    [self addPromptView];
-    [self addTabeView];
-    [self addDelView];
+    [self getCollectionList];
+}
+#pragma mark 获取我的收藏列表
+-(void)getCollectionList{
+    if (true) {
+        [self addPromptView];
+        [self addTabeView];
+        [self addDelView];
+    }else{
+        //添加空视图
+        [self setEmptyView:self.emptyView];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark 设置空视图（搜索结果为空）
+-(void)setEmptyView:(KLEmptyView *)emptyView{
+    emptyView= [[KLEmptyView alloc] initWithFrame:self.view.frame andBackImage:@"noAttention" andMessage:@""];
+    emptyView.delegate = self;
+    [self.view addSubview:emptyView];
 }
 
+-(void)clickView{
 
+}
 #pragma mark 设置navView
 -(void)setNav{
     
@@ -205,6 +224,10 @@ static float delViewHeight = 60;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    //查看商品详情
+    KLGoodBaseViewController *vc= [[KLGoodBaseViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
 }
 
 @end

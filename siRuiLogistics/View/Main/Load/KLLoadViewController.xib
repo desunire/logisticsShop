@@ -30,7 +30,7 @@
                             <constraint firstAttribute="height" constant="30" id="mJz-EI-shA"/>
                         </constraints>
                         <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNh-fT-r3f">
@@ -39,7 +39,7 @@
                             <constraint firstAttribute="height" constant="30" id="9La-md-W2y"/>
                         </constraints>
                         <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTJ-Su-bsC">
@@ -48,7 +48,10 @@
                             <constraint firstAttribute="width" constant="20" id="hfS-k1-B4n"/>
                             <constraint firstAttribute="height" constant="20" id="qpz-qb-xhG"/>
                         </constraints>
-                        <state key="normal" image="xuanzhong"/>
+                        <state key="normal" image="weixuanzhong"/>
+                        <connections>
+                            <action selector="remberPwdBtnClick:" destination="cza-dY-G0W" eventType="touchUpInside" id="FQq-Xf-Ocj"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAu-EX-ApO">
                         <rect key="frame" x="10" y="397" width="300" height="40"/>
@@ -64,9 +67,9 @@
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m91-yk-XjB">
-                        <rect key="frame" x="10" y="447" width="60" height="20"/>
+                        <rect key="frame" x="10" y="447" width="50" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="Az8-Mk-kHy"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Az8-Mk-kHy"/>
                             <constraint firstAttribute="height" constant="20" id="nns-Sc-kzS"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -92,7 +95,7 @@
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_down" translatesAutoresizingMaskIntoConstraints="NO" id="8MY-iX-Rhd">
-                        <rect key="frame" x="70" y="451.5" width="15" height="10"/>
+                        <rect key="frame" x="60" y="451.5" width="15" height="10"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="15" id="Gl7-6u-WZE"/>
                             <constraint firstAttribute="height" constant="10" id="bkD-ep-2tR"/>
@@ -104,6 +107,7 @@
                             <constraint firstAttribute="width" constant="200" id="BUK-uP-j0h"/>
                             <constraint firstAttribute="height" constant="30" id="Jmd-MG-Oam"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="记住密码">
                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -114,6 +118,7 @@
                             <constraint firstAttribute="width" constant="200" id="3rg-ex-Xhs"/>
                             <constraint firstAttribute="height" constant="30" id="Ur7-Br-WWw"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <state key="normal" title="忘记密码">
                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -159,6 +164,8 @@
                 <outlet property="pwdTextField" destination="nNh-fT-r3f" id="flY-bk-RQf"/>
                 <outlet property="remBtn" destination="GXb-02-E5R" id="Cg1-g1-jNP"/>
                 <outlet property="rememberBtnClick" destination="GXb-02-E5R" id="Lxd-TS-D1O"/>
+                <outlet property="remmberPwdBtn" destination="qTJ-Su-bsC" id="Cg1-pA-ib9"/>
+                <outlet property="showImageView" destination="8MY-iX-Rhd" id="Q2A-6f-twB"/>
                 <outlet property="topImageView" destination="RaL-pw-jwT" id="b26-rh-sZt"/>
             </connections>
             <point key="canvasLocation" x="-69" y="69"/>
@@ -167,6 +174,6 @@
     <resources>
         <image name="icon_down" width="21" height="12"/>
         <image name="topLoad" width="375" height="267"/>
-        <image name="xuanzhong" width="30" height="30"/>
+        <image name="weixuanzhong" width="30" height="30"/>
     </resources>
 </document>

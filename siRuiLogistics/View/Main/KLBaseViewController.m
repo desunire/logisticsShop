@@ -95,11 +95,9 @@
 #pragma mark 初始化tableView
 -(void)initTableView{
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-    
-   // self.tableView.style =  UITableViewStylePlain;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 20)];
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 20)];
     backView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:backView];
     [self.view insertSubview:self.tableView belowSubview:backView];
@@ -108,17 +106,12 @@
 
 #pragma mark tableView代理和数据源方法实现
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
     return  0;
 }
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return 0;
+     return 0;
 }
-
-
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     

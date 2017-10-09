@@ -8,7 +8,7 @@
 
 #import "KLSearchViewController.h"
 #import "KLSearchListTableViewCell.h"
-@interface KLSearchViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface KLSearchViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,KLEmptyViewDelegate>
 
 
 /**
@@ -34,7 +34,10 @@
 @property(strong,nonatomic)UITableView *tableView;
 
 
-
+/**
+ 空视图
+ */
+@property(strong,nonatomic)KLEmptyView *emptyView;
 
 
 @end
@@ -43,11 +46,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    //self.view.backgroundColor = [UIColor cz_randomColor];
-    [self addFilterView];
     [self setUpNav];
-    [self addTableView];
+//    [self addFilterView];
+//    [self addTableView];
+    [self setEmptyView:self.emptyView];
+}
+
+
+#pragma mark 设置空视图（搜索结果为空）
+-(void)setEmptyView:(KLEmptyView *)emptyView{
+    emptyView= [[KLEmptyView alloc] initWithFrame:self.view.frame andBackImage:@"noSearch" andMessage:@""];
+    emptyView.delegate = self;
+    [self.view addSubview:emptyView];
+}
+
+-(void)clickView{
+    [self.searchBar resignFirstResponder];
 }
 
 #pragma mark --设置tableView
@@ -70,12 +84,11 @@
 {
     self.searchBtn = [[UIButton alloc] initWithFrame:(CGRect){SCREEN_WIDTH - 40, 10, 45, 30}];
     [self.searchBtn setTitle:NSLocalizedString(@"search", nil) forState:UIControlStateNormal];
-    
     [self.searchBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    
     [self.searchBtn setBackgroundColor:DefaultBackColor];
-    
     self.searchBtn.titleLabel.font = [UIFont systemFontOfSize:10.0];
+    [self.searchBtn addTarget:self action:@selector(getSearchResultBySearchText:) forControlEvents:UIControlEventTouchUpInside];
+    
     
     self.searchBtn.layer.masksToBounds = YES;
     self.searchBtn.layer.cornerRadius = 5;
@@ -85,9 +98,50 @@
     self.searchBar.placeholder = NSLocalizedString(@"searchPlaceholder", nil);
     self.searchBar.frame = CGRectMake(40, 25, SCREEN_WIDTH - 120, 35);
     self.searchBar.searchBarStyle = UISearchBarStyleMinimal;
-//    self.searchBar.layer.borderWidth = 1 ;
-//    self.searchBar.layer.borderColor = UIColorFromRGB(0xdadada).CGColor;
+    self.searchBar.delegate = self;
     self.navigationItem.titleView = self.searchBar;
+}
+
+#pragma mark 点击键盘搜索按钮或者界面上的搜索按钮触发搜索事件
+
+-(void)getSearchResultBySearchText:(NSString *)text{
+    NSLog(@"%@",self.searchBar.text);
+    [self.searchBar resignFirstResponder];
+    //TODO:通过网络请求获取数据
+}
+
+#pragma mark 搜索框代理方法
+//点击键盘上的search按钮时候调用
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+   
+    [self getSearchResultBySearchText:searchBar.text];
+}
+//输入文本实时更新时调用
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    
+}
+//cancel按钮点击时调用
+- (void) searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+}
+//点击搜索框时调用
+//UISearchBarDelegate协议中定义的方法，当开始编辑时（搜索框成为第一响应者时）被调用。
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+//    searchBar.showsCancelButton =YES;
+//    
+//    [self customSearchBar];
+    
+}
+//定制搜索框的取消按钮，纯粹是摸索出来的仅供参考。
+- (void)customSearchBar
+{
+    for (UIView *view in [self.searchBar.subviews[0]subviews]) {
+        if ([view isKindOfClass:UIButton.class]) {
+            UIButton *button = (UIButton *)view;
+            [button setTitle:@"取消"forState:UIControlStateNormal];
+        }
+    }
 }
 #pragma mark  增加筛选视图
 -(void)addFilterView{
@@ -134,7 +188,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 3;
+    return 10;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

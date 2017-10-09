@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.emptyView.hidden = YES;
+
 }
 
 - (void)didReceiveMemoryWarning {

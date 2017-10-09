@@ -12,8 +12,10 @@
 
 @interface KLLoadViewController ()
 //切换语言的功能视图
-@property(strong,nonatomic)KLChooseLanguageView *chooseLanguageView;\
+@property(strong,nonatomic)KLChooseLanguageView *chooseLanguageView;
 
+//是否记住密码
+@property(assign,nonatomic)BOOL isRemmberPwd;
 
 @end
 
@@ -23,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
   
+    //FIXME:默认是记住密码
+    self.isRemmberPwd = false;
     
     self.loadBtn.layer.cornerRadius = 5;
     
@@ -54,24 +58,40 @@
     [self initChangeLanguageView];
     
     [self initUI];
+    
+    
+    //给标识选择语言图标添加点击事件
+    UITapGestureRecognizer *tap= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(changelanguageBtnClick:)];
+    self.showImageView.userInteractionEnabled = YES;
+    [self.showImageView addGestureRecognizer:tap];
+    
 }
 
 
+#pragma mark 切换语言
+- (IBAction)remberPwdBtnClick:(id)sender {
+    self.isRemmberPwd = !self.isRemmberPwd;
+    if (self.isRemmberPwd) {
+        [self.remmberPwdBtn setImage:[UIImage imageNamed:@"xuanzhong"] forState:UIControlStateNormal];
+    }else{
+        [self.remmberPwdBtn setImage:[UIImage imageNamed:@"weixuanzhong"] forState:UIControlStateNormal];
+    }
+}
 #pragma mark 初始化界面语言显示设置
 -(void)initUI{
     
     [self.remBtn setTitle:NSLocalizedString(@"rememberPwd", nil) forState:UIControlStateNormal];
     
-     [self.forgetPwdBtn setTitle:NSLocalizedString(@"forgetPwd", nil) forState:UIControlStateNormal];
+    [self.forgetPwdBtn setTitle:NSLocalizedString(@"forgetPwd", nil) forState:UIControlStateNormal];
     
     [self.languageBtn setTitle:NSLocalizedString(@"loadLanguage", nil) forState:UIControlStateNormal];
     
     [self.loadBtn setTitle:NSLocalizedString(@"load", nil) forState:UIControlStateNormal];
     
-    
     self.accountTextField.placeholder = NSLocalizedString(@"loadAccount", nil);
     
     self.pwdTextField.placeholder =NSLocalizedString(@"loadPwd", nil);
+ 
     
 }
 
@@ -106,10 +126,22 @@
 - (IBAction)changelanguageBtnClick:(id)sender {
     
     self.chooseLanguageView.hidden = !self.chooseLanguageView.hidden;
+    if (self.chooseLanguageView.hidden) {
+        [UIView animateWithDuration:0.25 animations:^{
+            CGAffineTransform transform= CGAffineTransformIdentity;
+            self.showImageView.transform = transform;
+        }];
+    }
+    if (!self.chooseLanguageView.hidden) {
+        [UIView animateWithDuration:0.25 animations:^{
+            CGAffineTransform transform= CGAffineTransformMakeRotation(M_PI*1);
+            self.showImageView.transform = transform;
+        }];
+    }
 }
 
 
-
+#pragma mark 忘记密码
 - (IBAction)forgetPwdBtnClick:(id)sender {
 }
 
@@ -123,6 +155,7 @@
     //设置根视图
     KLMainViewController * vc= [[KLMainViewController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController =vc;
+    //TODO: 判断是否需要记住密码
     
 }
 @end

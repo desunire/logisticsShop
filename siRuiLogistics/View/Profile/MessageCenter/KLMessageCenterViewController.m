@@ -15,7 +15,7 @@ static float stateViewHeight = 70;
 
 static NSString *messageListCell=  @"messageListCell";
 
-@interface KLMessageCenterViewController ()<UITableViewDelegate,UITableViewDataSource,SCJPromptViewDelegate>
+@interface KLMessageCenterViewController ()<UITableViewDelegate,UITableViewDataSource,SCJPromptViewDelegate,KLEmptyViewDelegate>
 
 @property(strong,nonatomic)KLMessageStateView *stateView;
 
@@ -24,6 +24,12 @@ static NSString *messageListCell=  @"messageListCell";
 
 @property(strong,nonatomic)UITableView *tableView;
 
+
+/**
+ 空视图
+ */
+@property(strong,nonatomic)KLEmptyView *emptyView;
+
 @end
 
 @implementation KLMessageCenterViewController
@@ -31,9 +37,7 @@ static NSString *messageListCell=  @"messageListCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.titleView = [[KLNavTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-80, 44) andTitle:@"消息中心"];
-    [self addButtomView];
-    [self addPromptView];
-    [self addTabeView];
+    [self getMessageList];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,18 +45,35 @@ static NSString *messageListCell=  @"messageListCell";
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark 获取消息中心的消息列表
+-(void)getMessageList{
+    if (false) {
+        [self addButtomView];
+        [self addPromptView];
+        [self addTabeView];
+    }else{
+        [self setEmptyView:self.emptyView];
+    }
+}
+#pragma mark 设置空视图（搜索结果为空）
+-(void)setEmptyView:(KLEmptyView *)emptyView{
+    emptyView= [[KLEmptyView alloc] initWithFrame:self.view.frame andBackImage:@"noNews" andMessage:@""];
+    emptyView.delegate = self;
+    [self.view addSubview:emptyView];
+}
+
+-(void)clickView{
+    
+}
+
 #pragma mark 设置界面UI
 -(void)addButtomView{
     
     self.stateView = [KLMessageStateView initView];
-    
     self.stateView.frame = CGRectMake(0, SCREENH_HEIGHT-stateViewHeight, SCREEN_WIDTH, stateViewHeight);
-    
     //初始化选择状态
     self.stateView.isAllChoose = false;
-    
     __weak typeof(self)wSelf = self;
-    
     self.stateView.block = ^(BOOL flag){
       
         if (flag) {

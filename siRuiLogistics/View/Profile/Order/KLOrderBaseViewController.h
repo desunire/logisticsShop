@@ -13,7 +13,15 @@
 
 @property(strong,nonatomic)UITableView *tableView;
 
+/**
+ 空视图
+ */
+@property(strong,nonatomic)KLEmptyView *emptyView;
 
 @property(assign,nonatomic)int nowIndex;
+
+
+//获取当前订单列表
+-(void)getOrderList;
 
 @end

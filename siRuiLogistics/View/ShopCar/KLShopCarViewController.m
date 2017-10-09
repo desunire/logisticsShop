@@ -40,33 +40,49 @@ static NSString *itemCell = @"shopCarItemCell";
  */
 @property(strong,nonatomic)SCJPromptView *scjPromptView;
 
+
+/**
+  购物车为空显示
+ */
+@property(strong,nonatomic)KLEmptyView *emptyView;
+
 @end
 
 @implementation KLShopCarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self registreCell];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT-self.tabBarController.tabBar.frame.size.height);
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    [self addOperateView];
-    [self addEdit];
-    [self initPromptBox];
+    //视图设置
     CGRect leftViewbounds = self.navigationItem.leftBarButtonItem.customView.bounds;
     CGRect rightViewbounds = self.navigationItem.rightBarButtonItem.customView.bounds;
-    //CGRect frame;
-    CGFloat maxWidth = leftViewbounds.size.width > rightViewbounds.size.width ? leftViewbounds.size.width : rightViewbounds.size.width;
-    
-    maxWidth += 15;//leftview 左右都有间隙，左边是5像素，右边是8像素，加2个像素的阀值 5 ＋ 8 ＋ 2
+    CGFloat maxWidth = leftViewbounds.size.width > rightViewbounds.size.width ? leftViewbounds.size.width : rightViewbounds.size.width;    maxWidth += 15;//leftview 左右都有间隙，左边是5像素，右边是8像素，加2个像素的阀值 5 ＋ 8 ＋ 2
      self.navigationItem.titleView = [[KLNavTitleView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH-2*maxWidth, 44) andTitle:NSLocalizedString(@"shopcar", nil)];
+    
+    [self nowShopCarState];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+-(void)nowShopCarState{
+    //TODO:   当前购物车为空
+    if (true) {
+        self.tableView.hidden = YES;
+        [self setEmptyView:self.emptyView];
+    }else{
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.tableView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREENH_HEIGHT-self.tabBarController.tabBar.frame.size.height);
+        self.tableView.delegate = self;
+        self.tableView.dataSource = self;
+        [self registreCell];
+        [self addOperateView];
+        [self addEdit];
+        [self initPromptBox];
+    }
+}
+
+#pragma mark 设置购物车为空的界面
+-(void)setEmptyView:(KLEmptyView *)emptyView{
+    emptyView = [[KLEmptyView alloc] initWithFrame:self.view.frame andBackImage:@"goodslist" andMessage:@""];
+    [self.view addSubview:emptyView];
 }
 
 #pragma mark 初始化提示框 SCJPromptViewDelegate

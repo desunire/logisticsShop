@@ -15,20 +15,24 @@
             <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxT-gq-44j">
-                    <rect key="frame" x="0.0" y="0.0" width="80" height="27"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="EN  English">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxT-gq-44j">
+                    <rect key="frame" x="0.0" y="30" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="English" image="EN">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="chooseEnglish:" destination="TJO-x5-DvI" eventType="touchUpInside" id="0X0-Rr-r9a"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-m6-nAt">
-                    <rect key="frame" x="0.0" y="63" width="80" height="27"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="ES  ESpan">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-m6-nAt">
+                    <rect key="frame" x="0.0" y="60" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="ESpan" image="ES">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -36,23 +40,25 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GjE-YB-O63">
-                    <rect key="frame" x="0.0" y="27" width="80" height="1"/>
+                    <rect key="frame" x="0.0" y="30" width="80" height="1"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="1" id="NCl-BT-Qwx"/>
+                        <constraint firstAttribute="height" constant="1" id="FWh-j3-m2u"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqq-mk-2M3">
-                    <rect key="frame" x="0.0" y="63" width="80" height="1"/>
+                    <rect key="frame" x="0.0" y="60" width="80" height="1"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="1" id="xjm-3X-HVY"/>
+                        <constraint firstAttribute="height" constant="1" id="DVE-KQ-Pci"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-Ky-pdp">
-                    <rect key="frame" x="0.0" y="27" width="80" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <state key="normal" title="CN    中文">
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-Ky-pdp">
+                    <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="中文" image="CN">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -62,23 +68,24 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="AXy-Ky-pdp" firstAttribute="top" secondItem="vxT-gq-44j" secondAttribute="bottom" id="7xT-59-I7W"/>
-                <constraint firstAttribute="trailing" secondItem="kJ8-m6-nAt" secondAttribute="trailing" id="Bty-50-Bh8"/>
-                <constraint firstItem="GjE-YB-O63" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="DCk-a0-aDK"/>
-                <constraint firstAttribute="bottom" secondItem="kJ8-m6-nAt" secondAttribute="bottom" id="JFB-oP-WxY"/>
-                <constraint firstAttribute="trailing" secondItem="GjE-YB-O63" secondAttribute="trailing" id="MvW-Ya-nXc"/>
-                <constraint firstItem="AXy-Ky-pdp" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="PS0-GO-TqX"/>
-                <constraint firstItem="wqq-mk-2M3" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="VRB-6A-R8C"/>
-                <constraint firstItem="wqq-mk-2M3" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="WBs-m2-J84"/>
-                <constraint firstItem="kJ8-m6-nAt" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="aX1-gP-o8n"/>
-                <constraint firstAttribute="trailing" secondItem="wqq-mk-2M3" secondAttribute="trailing" id="cEh-yr-NMs"/>
-                <constraint firstItem="kJ8-m6-nAt" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="gU5-nG-qeU"/>
-                <constraint firstItem="vxT-gq-44j" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="kKd-y0-PRm"/>
-                <constraint firstAttribute="trailing" secondItem="AXy-Ky-pdp" secondAttribute="trailing" id="ktg-uv-1np"/>
-                <constraint firstItem="GjE-YB-O63" firstAttribute="top" secondItem="vxT-gq-44j" secondAttribute="bottom" id="kzg-7D-1s5"/>
-                <constraint firstAttribute="trailing" secondItem="vxT-gq-44j" secondAttribute="trailing" id="r4L-hT-Dbb"/>
-                <constraint firstItem="vxT-gq-44j" firstAttribute="top" secondItem="TJO-x5-DvI" secondAttribute="top" id="vNB-gq-vlB"/>
-                <constraint firstItem="kJ8-m6-nAt" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="zC4-F7-aXa"/>
+                <constraint firstItem="wqq-mk-2M3" firstAttribute="top" secondItem="vxT-gq-44j" secondAttribute="bottom" id="1iW-Qh-GcN"/>
+                <constraint firstItem="kJ8-m6-nAt" firstAttribute="height" secondItem="vxT-gq-44j" secondAttribute="height" id="205-jt-6lC"/>
+                <constraint firstItem="vxT-gq-44j" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="2xZ-dZ-czs"/>
+                <constraint firstItem="vxT-gq-44j" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="4r3-0z-sjY"/>
+                <constraint firstAttribute="bottom" secondItem="kJ8-m6-nAt" secondAttribute="bottom" id="82o-F6-TwH"/>
+                <constraint firstAttribute="trailing" secondItem="AXy-Ky-pdp" secondAttribute="trailing" id="BX8-eE-bU0"/>
+                <constraint firstAttribute="trailing" secondItem="vxT-gq-44j" secondAttribute="trailing" id="G52-eO-cSn"/>
+                <constraint firstItem="AXy-Ky-pdp" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="Giq-Bo-ZDr"/>
+                <constraint firstItem="kJ8-m6-nAt" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="HXV-RP-dG4"/>
+                <constraint firstItem="vxT-gq-44j" firstAttribute="height" secondItem="AXy-Ky-pdp" secondAttribute="height" id="Lts-be-Mtc"/>
+                <constraint firstAttribute="trailing" secondItem="GjE-YB-O63" secondAttribute="trailing" id="MIX-DG-dns"/>
+                <constraint firstItem="GjE-YB-O63" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="PNN-t7-Dpy"/>
+                <constraint firstItem="kJ8-m6-nAt" firstAttribute="top" secondItem="vxT-gq-44j" secondAttribute="bottom" id="Wa7-im-Frp"/>
+                <constraint firstItem="AXy-Ky-pdp" firstAttribute="top" secondItem="TJO-x5-DvI" secondAttribute="top" id="XwD-oS-yz1"/>
+                <constraint firstAttribute="trailing" secondItem="wqq-mk-2M3" secondAttribute="trailing" id="hgK-5J-PQq"/>
+                <constraint firstAttribute="trailing" secondItem="kJ8-m6-nAt" secondAttribute="trailing" id="mss-id-RPr"/>
+                <constraint firstItem="wqq-mk-2M3" firstAttribute="leading" secondItem="TJO-x5-DvI" secondAttribute="leading" id="qBG-43-RNR"/>
+                <constraint firstItem="GjE-YB-O63" firstAttribute="top" secondItem="AXy-Ky-pdp" secondAttribute="bottom" id="vFW-lz-Rs5"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
@@ -89,4 +96,9 @@
             <point key="canvasLocation" x="-24" y="-7"/>
         </view>
     </objects>
+    <resources>
+        <image name="CN" width="19" height="9"/>
+        <image name="EN" width="19" height="9"/>
+        <image name="ES" width="19" height="9"/>
+    </resources>
 </document>

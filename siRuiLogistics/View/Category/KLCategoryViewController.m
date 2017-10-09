@@ -44,7 +44,6 @@ static NSString *categoryTitleCell = @"categoryTitle";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor =[UIColor cz_randomColor];
     self.navigationController.navigationBar.hidden = YES;
     [self setChooseLanguage];
     self.chooseLanguageView.index = 1;

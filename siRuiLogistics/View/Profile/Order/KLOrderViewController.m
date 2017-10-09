@@ -32,6 +32,9 @@ static float topViewHeight = 50;
 /* 标题按钮地下的指示器 */
 @property (weak ,nonatomic) UIView *indicatorView;
 
+
+
+
 @end
 
 @implementation KLOrderViewController
@@ -60,8 +63,10 @@ static float topViewHeight = 50;
     [self setUpInit];
     [self addTopView];
     [self addChildViewController];
-
 }
+
+
+
 #pragma mark 设置界面UI
 - (void)setUpInit
 {
@@ -73,8 +78,6 @@ static float topViewHeight = 50;
 
 #pragma mark 设置订单视图头部view
 -(void)addTopView{
-    
-    
     self.orderTopView = [[KLOrderStateView alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, topViewHeight) andChooseIndex:self.nowOrderState];
     self.orderTopView.delegate = self;
     [self.view addSubview:self.orderTopView];
