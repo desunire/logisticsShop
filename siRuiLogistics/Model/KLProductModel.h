@@ -70,12 +70,50 @@
  */
 @property(copy,nonatomic)NSString *safeStock;
 
-@property(copy,nonatomic)NSString *
 
-@property(copy,nonatomic)NSString *
 
-@property(copy,nonatomic)NSString *
+/**
+ 总库存
+ */
+@property(copy,nonatomic)NSString *totalStock;
 
-@property(copy,nonatomic)NSString *
+
+/**
+ 未发货库存
+ */
+@property(copy,nonatomic)NSString *unshippedStock;
+
+
+/**
+ 折扣
+ */
+@property(copy,nonatomic)NSString *discount;
+
+
+/**
+ 促销价格
+ */
+@property(copy,nonatomic)NSString *promotionPrice;
+
+/**
+ 是否可预订
+ */
+@property(copy,nonatomic)NSString *allowOrder;
+
+/**
+状态：1，正常 2，低于安全库存 3，缺货
+ */
+@property(copy,nonatomic)NSString *status;
+
+/**
+促销开始时间
+ */
+@property(copy,nonatomic)NSString *promotionBegin;
+
+/**
+促销结束时间
+ */
+@property(copy,nonatomic)NSString *promotionEnd;
+
 
 @end
